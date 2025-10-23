@@ -11,7 +11,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { Coffee, Utensils, GlassOfWine, Sandwich } from "lucide-react"
+import { Coffee, Utensils, Wine, Sandwich } from "lucide-react"
 
 const menuData = {
   breakfast: [
@@ -48,7 +48,7 @@ export function Menu() {
             <TabsTrigger value="breakfast" className="py-3 text-sm flex gap-2"><Coffee size={16}/>Petit Déjeuner</TabsTrigger>
             <TabsTrigger value="lunch" className="py-3 text-sm flex gap-2"><Utensils size={16}/>Déjeuner</TabsTrigger>
             <TabsTrigger value="dinner" className="py-3 text-sm flex gap-2"><Sandwich size={16}/>Dîner</TabsTrigger>
-            <TabsTrigger value="drinks" className="py-3 text-sm flex gap-2"><GlassOfWine size={16}/>Boissons</TabsTrigger>
+            <TabsTrigger value="drinks" className="py-3 text-sm flex gap-2"><Wine size={16}/>Boissons</TabsTrigger>
           </TabsList>
           
           <TabsContent value="breakfast" className="mt-8">
