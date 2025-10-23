@@ -6,7 +6,7 @@ import { Facebook, Instagram, Linkedin, Menu as MenuIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { BookingModal } from "@/components/modals/booking-modal"
 
 const navLinks = [
@@ -64,6 +64,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Menu</SheetTitle>
+                </SheetHeader>
                 <div className="flex flex-col items-center justify-center h-full">
                     <Link href="/" className="mb-8 text-4xl font-bold font-headline text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                         Le Lof
