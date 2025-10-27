@@ -12,8 +12,10 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog"
-import { BookingModal } from "../modals/booking-modal"
+import { Button } from "../ui/button"
+import Link from "next/link"
 
 const formulas = [
   {
@@ -72,7 +74,11 @@ export function Formulas() {
                   </CardDescription>
                 </DialogHeader>
                 <div className="flex justify-center pt-4">
-                  <BookingModal />
+                  <DialogClose asChild>
+                    <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                      <Link href="#quote">Demander un devis</Link>
+                    </Button>
+                  </DialogClose>
                 </div>
               </DialogContent>
             </Dialog>
