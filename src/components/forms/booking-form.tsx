@@ -33,6 +33,7 @@ import {
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
 import { handleBooking } from "@/app/actions"
+import { DialogFooter } from "../ui/dialog"
 
 const bookingSchema = z.object({
   name: z.string().min(2, "Le nom est requis."),
@@ -84,146 +85,151 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 pr-6">
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Nom & Prénoms</FormLabel>
-              <FormControl>
-                <Input {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <FormField
-            control={form.control}
-            name="phone"
-            render={({ field }) => (
-                <FormItem>
-                <FormLabel>Téléphone</FormLabel>
-                <FormControl>
-                    <Input type="tel" {...field} />
-                </FormControl>
-                <FormMessage />
-                </FormItem>
-            )}
-            />
-            <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-                <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                    <Input type="email" {...field} />
-                </FormControl>
-                <FormMessage />
-                </FormItem>
-            )}
-            />
-        </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <div className="space-y-4 pr-6">
           <FormField
             control={form.control}
-            name="date"
-            render={({ field }) => (
-              <FormItem className="flex flex-col">
-                <FormLabel>Date</FormLabel>
-                <Popover>
-                  <PopoverTrigger asChild>
-                    <FormControl>
-                      <Button
-                        variant={"outline"}
-                        className={cn(
-                          "w-full pl-3 text-left font-normal",
-                          !field.value && "text-muted-foreground"
-                        )}
-                      >
-                        {field.value ? (
-                          format(field.value, "PPP")
-                        ) : (
-                          <span>Choisissez une date</span>
-                        )}
-                        <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                      </Button>
-                    </FormControl>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-auto p-0" align="start">
-                    <Calendar
-                      mode="single"
-                      selected={field.value}
-                      onSelect={field.onChange}
-                      disabled={(date) => date < new Date() || date < new Date("1900-01-01")}
-                      initialFocus
-                    />
-                  </PopoverContent>
-                </Popover>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="time"
+            name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Heure</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormLabel>Nom & Prénoms</FormLabel>
+                <FormControl>
+                  <Input {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                  <FormItem>
+                  <FormLabel>Téléphone</FormLabel>
                   <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Choisissez une heure" />
-                    </SelectTrigger>
+                      <Input type="tel" {...field} />
                   </FormControl>
-                  <SelectContent>
-                    <SelectItem value="11:00">11:00</SelectItem>
-                    <SelectItem value="12:00">12:00</SelectItem>
-                    <SelectItem value="13:00">13:00</SelectItem>
-                    <SelectItem value="14:00">14:00</SelectItem>
-                    <SelectItem value="18:00">18:00</SelectItem>
-                    <SelectItem value="19:00">19:00</SelectItem>
-                    <SelectItem value="20:00">20:00</SelectItem>
-                    <SelectItem value="21:00">21:00</SelectItem>
-                    <SelectItem value="22:00">22:00</SelectItem>
-                  </SelectContent>
-                </Select>
+                  <FormMessage />
+                  </FormItem>
+              )}
+              />
+              <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                  <FormItem>
+                  <FormLabel>Email</FormLabel>
+                  <FormControl>
+                      <Input type="email" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                  </FormItem>
+              )}
+              />
+          </div>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <FormField
+              control={form.control}
+              name="date"
+              render={({ field }) => (
+                <FormItem className="flex flex-col">
+                  <FormLabel>Date</FormLabel>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <FormControl>
+                        <Button
+                          variant={"outline"}
+                          className={cn(
+                            "w-full pl-3 text-left font-normal",
+                            !field.value && "text-muted-foreground"
+                          )}
+                        >
+                          {field.value ? (
+                            format(field.value, "PPP")
+                          ) : (
+                            <span>Choisissez une date</span>
+                          )}
+                          <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
+                        </Button>
+                      </FormControl>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={field.value}
+                        onSelect={field.onChange}
+                        disabled={(date) => date < new Date() || date < new Date("1900-01-01")}
+                        initialFocus
+                      />
+                    </PopoverContent>
+                  </Popover>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="time"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Heure</FormLabel>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Choisissez une heure" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      <SelectItem value="11:00">11:00</SelectItem>
+                      <SelectItem value="12:00">12:00</SelectItem>
+                      <SelectItem value="13:00">13:00</SelectItem>
+                      <SelectItem value="14:00">14:00</SelectItem>
+                      <SelectItem value="18:00">18:00</SelectItem>
+                      <SelectItem value="19:00">19:00</SelectItem>
+                      <SelectItem value="20:00">20:00</SelectItem>
+                      <SelectItem value="21:00">21:00</SelectItem>
+                      <SelectItem value="22:00">22:00</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          </div>
+          <FormField
+            control={form.control}
+            name="guests"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Nombre de personnes</FormLabel>
+                <FormControl>
+                  <Input type="number" min="1" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Message (Optionnel)</FormLabel>
+                <FormControl>
+                  <Textarea placeholder="Une occasion spéciale?" {...field} />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
         </div>
-        <FormField
-          control={form.control}
-          name="guests"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Nombre de personnes</FormLabel>
-              <FormControl>
-                <Input type="number" min="1" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="message"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Message (Optionnel)</FormLabel>
-              <FormControl>
-                <Textarea placeholder="Une occasion spéciale?" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-          {form.formState.isSubmitting ? "Envoi..." : "Envoyer la demande"}
-        </Button>
+
+        <DialogFooter className="pt-4">
+            <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
+            {form.formState.isSubmitting ? "Envoi..." : "Envoyer la demande"}
+            </Button>
+        </DialogFooter>
       </form>
     </Form>
   )

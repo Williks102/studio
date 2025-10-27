@@ -35,15 +35,15 @@ export function BookingModal({ onOpenChange }: BookingModalProps) {
           Réservez maintenant
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-lg bg-background max-h-[90vh] flex flex-col">
-        <DialogHeader>
+      <DialogContent className="sm:max-w-lg bg-background max-h-[90vh] flex flex-col p-0">
+        <DialogHeader className="p-6 pb-4">
           <DialogTitle className="font-headline text-2xl text-primary">Réserver une table</DialogTitle>
           <DialogDescription>
             Remplissez le formulaire pour faire une demande de réservation.
           </DialogDescription>
         </DialogHeader>
-        <ScrollArea className="flex-1 pr-6 -mr-6">
-            <div className="pr-1">
+        <ScrollArea className="flex-1 overflow-y-auto">
+            <div className="px-6 pb-6">
                 <BookingForm setModalOpen={handleOpenChange} />
             </div>
         </ScrollArea>
