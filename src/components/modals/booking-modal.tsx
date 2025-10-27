@@ -31,7 +31,7 @@ export function BookingModal({ onOpenChange }: BookingModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
-        <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+        <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
           Réservez maintenant
         </Button>
       </DialogTrigger>
