@@ -43,7 +43,9 @@ export function BookingModal({ onOpenChange }: BookingModalProps) {
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="flex-1 pr-6 -mr-6">
-          <BookingForm setModalOpen={handleOpenChange} />
+            <div className="pr-1">
+                <BookingForm setModalOpen={handleOpenChange} />
+            </div>
         </ScrollArea>
       </DialogContent>
     </Dialog>

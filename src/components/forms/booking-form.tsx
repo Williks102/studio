@@ -84,7 +84,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 pr-6">
         <FormField
           control={form.control}
           name="name"
