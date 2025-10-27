@@ -65,7 +65,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background">
                 <SheetHeader>
-                  <SheetTitle className="sr-only">Menu</SheetTitle>
+                  <SheetTitle className="text-2xl font-bold font-headline text-primary sr-only">Menu</SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col items-center justify-center h-full">
                     <Link href="/" className="mb-8 text-4xl font-bold font-headline text-primary" onClick={() => setIsMobileMenuOpen(false)}>
@@ -84,7 +84,9 @@ export function Header() {
                         ))}
                     </nav>
                     <div className="mt-8 flex flex-col items-center gap-6">
-                        <BookingModal onOpenChange={setIsMobileMenuOpen} />
+                        <div className="hidden">
+                          <BookingModal onOpenChange={setIsMobileMenuOpen} />
+                        </div>
                         <SocialIcons />
                     </div>
                 </div>
