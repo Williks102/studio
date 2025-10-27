@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { BookingForm } from "@/components/forms/booking-form"
 import React from "react";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 type BookingModalProps = {
     onOpenChange?: (open: boolean) => void;
@@ -34,14 +35,16 @@ export function BookingModal({ onOpenChange }: BookingModalProps) {
           Réservez maintenant
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-background">
+      <DialogContent className="sm:max-w-lg bg-background max-h-[90vh] flex flex-col">
         <DialogHeader>
           <DialogTitle className="font-headline text-2xl text-primary">Réserver une table</DialogTitle>
           <DialogDescription>
             Remplissez le formulaire pour faire une demande de réservation.
           </DialogDescription>
         </DialogHeader>
-        <BookingForm setModalOpen={handleOpenChange} />
+        <ScrollArea className="flex-1 pr-6 -mr-6">
+          <BookingForm setModalOpen={handleOpenChange} />
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   )
