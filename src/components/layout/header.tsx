@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Menu as MenuIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -37,8 +38,15 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-3xl font-bold font-headline text-primary">
-          Le Lof
+        <Link href="/">
+            <Image 
+                src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
+                alt="Le Lof Logo" 
+                width={100} 
+                height={50}
+                className="h-12 w-auto object-contain"
+                priority
+            />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -68,8 +76,14 @@ export function Header() {
                   <SheetTitle className="text-2xl font-bold font-headline text-primary sr-only">Menu</SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col items-center justify-center h-full">
-                    <Link href="/" className="mb-8 text-4xl font-bold font-headline text-primary" onClick={() => setIsMobileMenuOpen(false)}>
-                        Le Lof
+                    <Link href="/" className="mb-8" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Image 
+                            src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
+                            alt="Le Lof Logo" 
+                            width={120} 
+                            height={60}
+                            className="h-14 w-auto object-contain"
+                        />
                     </Link>
                     <nav className="flex flex-col items-center gap-6 text-center">
                         {navLinks.map((link) => (

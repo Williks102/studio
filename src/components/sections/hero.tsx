@@ -58,10 +58,15 @@ export function Hero() {
         </CarouselContent>
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-          <h1 className="font-headline text-4xl font-bold md:text-6xl lg:text-7xl">
-            Le Lof
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl">
+           <Image
+            src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png"
+            alt="Le Lof Logo"
+            width={240}
+            height={120}
+            className="h-28 w-auto object-contain drop-shadow-lg md:h-32"
+            priority
+          />
+          <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">
             Goût, Élégance, Raffinement
           </p>
           <Button asChild size="lg" className="mt-6 bg-green-500 hover:bg-green-600 text-white">

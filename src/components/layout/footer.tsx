@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react"
 
 export function Footer() {
@@ -7,8 +8,14 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div className="space-y-4">
-            <Link href="/" className="text-3xl font-bold font-headline text-primary">
-              Le Lof
+            <Link href="/">
+              <Image 
+                  src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
+                  alt="Le Lof Logo" 
+                  width={120} 
+                  height={60}
+                  className="h-14 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm text-muted-foreground">
               Goût, élégance, raffinement.
