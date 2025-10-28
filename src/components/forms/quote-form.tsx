@@ -22,7 +22,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { useToast } from "@/hooks/use-toast"
-import { handleQuote } from "@/app/actions"
 
 const quoteSchema = z.object({
   name: z.string().min(2, "Le nom est requis."),
@@ -47,21 +46,26 @@ export function QuoteForm() {
     },
   })
 
-  async function onSubmit(data: QuoteFormValues) {
-    const result = await handleQuote(data)
-    if (result.success) {
-      toast({
-        title: "Devis demandé",
-        description: "Votre demande de devis a été envoyée avec succès. Nous vous contacterons bientôt.",
-      })
-      form.reset()
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Erreur",
-        description: result.message || "Une erreur est survenue.",
-      })
-    }
+  function onSubmit(data: QuoteFormValues) {
+    const message = `
+      *Nouvelle demande de devis*
+
+      *Nom et prénoms:* ${data.name}
+      *Contact:* ${data.contact}
+      *Adresse mail:* ${data.email}
+      *Formule:* ${data.formula}
+      *Nombre de personnes:* ${data.people}
+    `.trim().replace(/\n\s+/g, '\n');
+
+    const whatsappUrl = `https://wa.me/2250704353535?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+
+    toast({
+      title: "Demande de devis envoyée",
+      description: "Votre demande a été redirigée vers WhatsApp. Veuillez finaliser l'envoi.",
+    })
+    form.reset()
   }
 
   return (

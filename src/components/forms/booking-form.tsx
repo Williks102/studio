@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { format } from "date-fns"
 import { CalendarIcon } from "lucide-react"
+import { fr } from "date-fns/locale";
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -31,8 +32,6 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { useToast } from "@/hooks/use-toast"
-import { handleBooking } from "@/app/actions"
 import { DialogFooter } from "../ui/dialog"
 
 const bookingSchema = z.object({
@@ -52,8 +51,6 @@ interface BookingFormProps {
 }
 
 export function BookingForm({ setModalOpen }: BookingFormProps) {
-  const { toast } = useToast()
-
   const form = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
     defaultValues: {
@@ -65,28 +62,32 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
     },
   })
 
-  async function onSubmit(data: BookingFormValues) {
-    const result = await handleBooking(data)
-    if (result.success) {
-      toast({
-        title: "Réservation demandée",
-        description: "Votre demande de réservation a été envoyée avec succès. Nous vous contacterons bientôt.",
-      })
-      form.reset()
-      setModalOpen(false)
-    } else {
-      toast({
-        variant: "destructive",
-        title: "Erreur",
-        description: result.message || "Une erreur est survenue.",
-      })
-    }
+  function onSubmit(data: BookingFormValues) {
+    const formattedDate = format(data.date, "eeee dd LLLL yyyy", { locale: fr });
+    const message = `
+      *Nouvelle demande de réservation*
+
+      *Nom & Prénoms:* ${data.name}
+      *Téléphone:* ${data.phone}
+      *Email:* ${data.email}
+      *Date:* ${formattedDate}
+      *Heure:* ${data.time}
+      *Nombre de personnes:* ${data.guests}
+      *Message:* ${data.message || "Aucun"}
+    `.trim().replace(/\n\s+/g, '\n');
+
+    const whatsappUrl = `https://wa.me/2250704353535?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
+    form.reset();
+    setModalOpen(false);
   }
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        <div className="space-y-4 pr-6">
+        <div className="space-y-4 pr-1">
           <FormField
             control={form.control}
             name="name"
@@ -146,7 +147,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
                           )}
                         >
                           {field.value ? (
-                            format(field.value, "PPP")
+                            format(field.value, "PPP", { locale: fr })
                           ) : (
                             <span>Choisissez une date</span>
                           )}
@@ -156,6 +157,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0" align="start">
                       <Calendar
+                        locale={fr}
                         mode="single"
                         selected={field.value}
                         onSelect={field.onChange}
@@ -225,9 +227,9 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
           />
         </div>
 
-        <DialogFooter className="pt-4">
+        <DialogFooter className="pt-4 pr-1">
             <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-            {form.formState.isSubmitting ? "Envoi..." : "Envoyer la demande"}
+              {form.formState.isSubmitting ? "Envoi..." : "Envoyer la demande"}
             </Button>
         </DialogFooter>
       </form>
