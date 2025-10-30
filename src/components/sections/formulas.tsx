@@ -76,7 +76,7 @@ export function Formulas() {
                 <div className="flex justify-center pt-4">
                   <DialogClose asChild>
                     <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                      <Link href="#quote">Demander un devis</Link>
+                      <Link href="#quote">Faire ma Reservation</Link>
                     </Button>
                   </DialogClose>
                 </div>

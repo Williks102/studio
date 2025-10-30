@@ -6,7 +6,7 @@ export function Quote() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
-            Demandez un Devis
+            Faire une Reservation
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Organisez votre prochain événement avec nous. Remplissez le formulaire ci-dessous.

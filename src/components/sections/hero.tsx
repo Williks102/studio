@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import Autoplay from "embla-carousel-autoplay"
+import * as React from "react"
 
 import {
   Carousel,
@@ -34,13 +35,18 @@ function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
 
 export function Hero() {
   const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"))
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  )
 
   return (
     <section className="relative h-[60vh] w-full md:h-[80vh]">
       <Carousel
         className="h-full w-full"
-        plugins={[Autoplay({ delay: 5000, stopOnInteraction: true })]}
+        plugins={[plugin.current]}
         opts={{ loop: true }}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
       >
         <CarouselContent className="h-full">
           {heroImages.map((image, index) => (
@@ -58,16 +64,16 @@ export function Hero() {
         </CarouselContent>
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-           <Image
+          <Image
             src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png"
             alt="Le Lof Logo"
-            width={240}
-            height={120}
-            className="h-28 w-auto object-contain drop-shadow-lg md:h-32"
+            width={200}
+            height={100}
+            className="h-24 w-auto object-contain drop-shadow-lg"
             priority
           />
           <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">
-            Goût, Élégance, Raffinement
+            Goût, élégance, raffinement.
           </p>
           <Button asChild size="lg" className="mt-6 bg-green-500 hover:bg-green-600 text-white">
             <a href="https://wa.me/2250704353535" target="_blank" rel="noopener noreferrer">
