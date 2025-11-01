@@ -15,23 +15,23 @@ import {
 import { Button } from "../ui/button"
 
 function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        {...props}
-      >
-        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-      </svg>
-    )
-  }
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+    </svg>
+  )
+}
 
 export function Hero() {
   const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"))
@@ -55,15 +55,12 @@ export function Hero() {
           {heroImages.map((image, index) => (
             <CarouselItem key={index} className="h-full relative">
               <div className="relative w-full h-full bg-gray-800">
-                <Image
+                {/* CHANGEMENT PRINCIPAL : Utiliser <img> au lieu de <Image> */}
+                <img
                   src={image.imageUrl}
                   alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  fill
-                  className="object-cover"
-                  priority={index === 0}
-                  sizes="100vw"
-                  quality={85}
+                  className="w-full h-full object-cover"
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
               </div>
             </CarouselItem>
@@ -74,7 +71,7 @@ export function Hero() {
         
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none">
           <h1 className="font-headline text-4xl font-bold text-white drop-shadow-lg md:text-6xl">
-              Le Lof
+            Le Lof
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">
             Goût, élégance, raffinement.
