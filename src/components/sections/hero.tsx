@@ -14,7 +14,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Button } from "../ui/button"
-import Link from "next/link"
 
 function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
@@ -45,7 +44,7 @@ export function Hero() {
     <section className="relative h-[60vh] w-full md:h-[80vh]">
       <Carousel
         className="h-full w-full"
-        plugins={[plugin]}
+        plugins={[plugin.current]}
         opts={{ loop: true }}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
