@@ -2,21 +2,27 @@
   "placeholderImages": [
     {
       "id": "hero-1",
-      "description": "A beautifully plated African dish with vibrant colors.",
-      "imageUrl": "https://images.unsplash.com/photo-1665332111329-dd9d7fa46c74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnJpY2FuJTIwZm9vZHxlbnwwfHx8fDE3NjEyMjU2NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "african food"
+      "description": "Plat africain élégamment présenté.",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013427/253A0409_dljx4p.jpg",
+      "imageHint": "nourriture africaine"
     },
     {
       "id": "hero-2",
-      "description": "A close-up of a savory stew, rich in texture.",
-      "imageUrl": "https://images.unsplash.com/photo-1688940738506-acfe9334bf5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhZnJpY2FuJTIwc3Rld3xlbnwwfHx8fDE3NjEyMjU2NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "african stew"
+      "description": "Ambiance du restaurant avec des clients.",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013455/492694745_1239027928226203_6515833207908189518_n_vau3v2.jpg",
+      "imageHint": "ambiance restaurant"
     },
     {
       "id": "hero-3",
-      "description": "An elegant dessert with intricate details.",
-      "imageUrl": "https://images.unsplash.com/photo-1619950987941-4fbbb60a2631?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbGVnYW50JTIwZGVzc2VydHxlbnwwfHx8fDE3NjEyMjU2NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "elegant dessert"
+      "description": "Un cocktail coloré servi au bar.",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013456/WhatsApp_Image_2025-02-06_at_10.50.53_2_panfp7.jpg",
+      "imageHint": "cocktail exotique"
+    },
+    {
+      "id": "hero-4",
+      "description": "Un plat de pâtes gastronomique.",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013477/WhatsApp_Image_2025-02-27_at_10.17.53_1_ct8gp3.jpg",
+      "imageHint": "plat pates"
     },
     {
       "id": "menu-breakfast-1",

@@ -1,3 +1,4 @@
+
 "use client"
 
 import Image from "next/image"
@@ -13,6 +14,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Button } from "../ui/button"
+import Link from "next/link"
 
 function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
     return (
@@ -43,7 +45,7 @@ export function Hero() {
     <section className="relative h-[60vh] w-full md:h-[80vh]">
       <Carousel
         className="h-full w-full"
-        plugins={[plugin.current]}
+        plugins={[plugin]}
         opts={{ loop: true }}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
@@ -64,14 +66,9 @@ export function Hero() {
         </CarouselContent>
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-          <Image
-            src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png"
-            alt="Le Lof Logo"
-            width={200}
-            height={100}
-            className="h-24 w-auto object-contain drop-shadow-lg"
-            priority
-          />
+          <h1 className="font-headline text-4xl font-bold text-white drop-shadow-lg md:text-6xl">
+              Le Lof
+          </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">
             Goût, élégance, raffinement.
           </p>
