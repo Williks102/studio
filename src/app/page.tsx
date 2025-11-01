@@ -4,6 +4,7 @@ import { Hero } from '@/components/sections/hero';
 import { About } from '@/components/sections/about';
 import { Menu } from '@/components/sections/menu';
 import { Formulas } from '@/components/sections/formulas';
+import { Updates } from '@/components/sections/updates';
 import { AfricanVibes } from '@/components/sections/african-vibes';
 import { Quote } from '@/components/sections/quote';
 import { BookingModal } from '@/components/modals/booking-modal';
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Menu />
         <Formulas />
+        <Updates />
         <AfricanVibes />
         <Quote />
       </main>

@@ -14,6 +14,7 @@ const navLinks = [
   { href: "#about", label: "A Propos" },
   { href: "#menu", label: "Menu" },
   { href: "#formulas", label: "Formules" },
+  { href: "#updates", label: "Actualités" },
   { href: "#vibes", label: "African vibes" },
   { href: "#quote", label: "Contact" },
 ]
