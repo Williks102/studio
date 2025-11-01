@@ -36,13 +36,8 @@ function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
 export function Hero() {
   const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"))
   
-  // FIX 1: Changé stopOnInteraction à false + ajouté stopOnMouseEnter
   const plugin = React.useRef(
-    Autoplay({ 
-      delay: 5000, 
-      stopOnInteraction: false,
-      stopOnMouseEnter: true
-    })
+    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
   )
 
   return (
@@ -52,7 +47,6 @@ export function Hero() {
         plugins={[plugin.current]}
         opts={{ 
           loop: true,
-          duration: 30  // FIX 2: Transition plus fluide
         }}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
@@ -60,7 +54,6 @@ export function Hero() {
         <CarouselContent className="h-full">
           {heroImages.map((image, index) => (
             <CarouselItem key={index} className="h-full relative">
-              {/* FIX 3: Ajouté div avec background pour éviter le flash gris */}
               <div className="relative w-full h-full bg-gray-800">
                 <Image
                   src={image.imageUrl}
@@ -69,18 +62,16 @@ export function Hero() {
                   fill
                   className="object-cover"
                   priority={index === 0}
-                  sizes="100vw"  // FIX 4: Optimisation du chargement
-                  quality={85}   // FIX 5: Meilleure performance
+                  sizes="100vw"
+                  quality={85}
                 />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
         
-        {/* FIX 6: Ajouté pointer-events-none pour l'overlay */}
         <div className="absolute inset-0 bg-black/50 pointer-events-none" />
         
-        {/* FIX 7: Ajouté pointer-events-none au container, auto sur le bouton */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none">
           <h1 className="font-headline text-4xl font-bold text-white drop-shadow-lg md:text-6xl">
               Le Lof
@@ -96,7 +87,6 @@ export function Hero() {
           </Button>
         </div>
         
-        {/* FIX 8: Amélioration visuelle des boutons de navigation */}
         <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white border-white/30" />
         <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white border-white/30" />
       </Carousel>
