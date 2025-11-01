@@ -74,7 +74,7 @@ export function Hero() {
           <Button asChild size="lg" className="mt-6 bg-green-500 hover:bg-green-600 text-white">
             <a href="https://wa.me/2250704353535" target="_blank" rel="noopener noreferrer">
               <WhatsappIcon className="mr-2 h-6 w-6" />
-              Contactez-nous sur WhatsApp
+              Contactes-nous sur WhatsApp
             </a>
           </Button>
         </div>
