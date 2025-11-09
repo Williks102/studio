@@ -11,7 +11,7 @@ export function About() {
           </p>
         </div>
         <div className="mt-12 rounded-lg border bg-card p-8 text-center shadow-sm">
-            <h3 className="text-xl font-semibold font-headline text-primary">Nos Horaires d'Ouverture</h3>
+            <h3 className="text-xl font-semibold font-headline text-primary">Nos horaires d'ouverture</h3>
             <div className="mt-4 flex flex-col items-center justify-center space-y-2 text-foreground/80 md:flex-row md:space-x-8 md:space-y-0">
                 <p><span className="font-semibold">Journée :</span> 11H - 15H</p>
                 <p><span className="font-semibold">Soir :</span> 18H - 00H</p>
