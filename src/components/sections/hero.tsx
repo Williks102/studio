@@ -76,10 +76,10 @@ export function Hero() {
           {/* Contenu superposé */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none">
             <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl">
-              Le Lof
+             Restaurant Lelof
             </h1>
             <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl drop-shadow-lg">
-              Goût, élégance, raffinement.
+              African vibes
             </p>
             <Button asChild size="lg" className="mt-6 bg-green-500 hover:bg-green-600 text-white pointer-events-auto shadow-xl">
               <a href="https://wa.me/2250704353535" target="_blank" rel="noopener noreferrer">
