@@ -24,7 +24,7 @@ export function Footer() {
               <Link href="#" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Instagram">
+              <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
               <Link href="#" aria-label="Facebook">
@@ -41,7 +41,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+225 01 02 03 04 05</span>
+                <span>+225 0704353535</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
