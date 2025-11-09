@@ -30,7 +30,7 @@ export function Formulas() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
-            Découvrez Nos Formules
+            Découvrez nos formules
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -64,7 +64,7 @@ export function Formulas() {
                   <div className="flex justify-center pt-4">
                     <DialogClose asChild>
                       <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                        <Link href="#quote">Faire ma Reservation</Link>
+                        <Link href="#quote">Faire ma Réservation</Link>
                       </Button>
                     </DialogClose>
                   </div>
