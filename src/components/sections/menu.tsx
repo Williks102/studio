@@ -23,7 +23,7 @@ export function Menu() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
-            Découvrez Notre Menu
+            Découvrez notre menu
           </h2>
         </div>
         <Tabs defaultValue="lunch" className="w-full">
