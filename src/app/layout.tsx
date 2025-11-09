@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { FloatingWhatsAppButton } from "@/components/floating-whatsapp-button"
 
 export const metadata: Metadata = {
-  title: 'Le Lof',
-  description: 'Le Lof: goût, élégance, raffinement.',
+  title: 'Restaurant LeLof',
+  description: 'African vibe',
 };
 
 export default function RootLayout({
