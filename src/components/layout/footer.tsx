@@ -27,7 +27,7 @@ export function Footer() {
               <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Facebook">
+              <Link href="https://www.facebook.com/share/17hdPuU8Bu/" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
             </div>
@@ -45,7 +45,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>contact@lelof.com</span>
+                <span>contact@restaurantlelof.com</span>
               </li>
             </ul>
           </div>
