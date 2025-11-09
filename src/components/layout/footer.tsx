@@ -59,7 +59,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Le Lof. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Restaurant Lelof. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
