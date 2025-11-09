@@ -18,7 +18,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-muted-foreground">
-              Goût, élégance, raffinement.
+              African vibes 
             </p>
             <div className="flex space-x-4">
               <Link href="#" aria-label="LinkedIn">
