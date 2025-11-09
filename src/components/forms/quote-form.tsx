@@ -150,7 +150,7 @@ export function QuoteForm() {
           />
         </div>
         <Button size="lg" type="submit" className="w-full md:w-auto" disabled={form.formState.isSubmitting}>
-          {form.formState.isSubmitting ? "Envoi..." : "Faire ma Reservation"}
+          {form.formState.isSubmitting ? "Envoi..." : "Faire ma Réservation"}
         </Button>
       </form>
     </Form>
