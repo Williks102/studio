@@ -54,7 +54,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Journée : 11H - 15H</li>
               <li>Soir : 18H - 00H</li>
-              <li>Fermé le Lundi</li>
+             
             </ul>
           </div>
         </div>
