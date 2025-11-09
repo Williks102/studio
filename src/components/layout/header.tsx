@@ -116,13 +116,11 @@ export function Header() {
 function SocialIcons() {
   return (
     <div className="flex items-center gap-3">
-      <Link href="#" aria-label="LinkedIn">
-        <Linkedin className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
-      </Link>
-      <Link href="#" aria-label="Instagram">
+  
+      <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
         <Instagram className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
       </Link>
-      <Link href="#" aria-label="Facebook">
+      <Link href="https://www.facebook.com/share/17hdPuU8Bu/" aria-label="Facebook">
         <Facebook className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
       </Link>
     </div>
