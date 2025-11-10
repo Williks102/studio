@@ -21,9 +21,8 @@ export function Hero() {
 
   return (
     <section className="relative w-full">
-      {/* SOLUTION 2: Utiliser aspect-ratio pour maintenir les proportions */}
-      {/* Ratio 16:9 pour un format cinématographique */}
-      <div className="w-full aspect-[16/9] max-h-[80vh]">
+      {/* Ratio 16:9 pour un format cinématographique avec hauteur max */}
+      <div className="w-full aspect-[16/9] max-h-[75vh]">
         <Carousel
           className="h-full w-full"
           plugins={[plugin.current]}
@@ -37,12 +36,10 @@ export function Hero() {
             {heroImages.map((image, index) => (
               <CarouselItem key={index} className="h-full p-0">
                 <div className="relative w-full h-full bg-gray-900">
-                  {/* object-cover: remplit le conteneur en coupant si nécessaire */}
-                  {/* object-contain: affiche l'image entière avec des barres noires si nécessaire */}
                   <img
                     src={image.imageUrl}
                     alt={image.description}
-                    className="w-full h-full object-cover" // ou object-contain selon votre préférence
+                    className="w-full h-full object-cover"
                     loading={index === 0 ? "eager" : "lazy"}
                   />
                   
@@ -68,6 +65,8 @@ export function Hero() {
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white border-white/30 backdrop-blur-sm transition-all duration-200" />
         </Carousel>
       </div>
+      {/* Ajouter un élément invisible pour créer une séparation claire entre les sections */}
+      <div className="h-6"></div>
     </section>
   )
 }
