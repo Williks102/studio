@@ -22,7 +22,7 @@ export function Hero() {
   return (
     <section className="relative w-full">
       {/* Ratio 16:9 pour un format cinématographique avec hauteur max */}
-      <div className="w-full aspect-[16/9] max-h-[75vh]">
+      <div className="w-full aspect-[16/9] max-h-[60vh]">
         <Carousel
           className="h-full w-full"
           plugins={[plugin.current]}
