@@ -95,13 +95,13 @@
     {
       "id": "vibe-decor",
       "description": "Décor chic et ethnique de l'intérieur du restaurant",
-      "imageUrl": "https://images.unsplash.com/photo-1739202527610-9f9d2a5dbddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXRobmljJTIwZGVjb3J8ZW58MHx8fHwxNzYxMjI1NjQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013281/488622267_1220068850122111_5436014174674905878_n_t4azjy.jpg",
       "imageHint": "ethnic decor"
     },
     {
       "id": "vibe-ambiance",
       "description": "Clients profitant de leur soirée dans l'ambiance chaleureuse du restaurant",
-      "imageUrl": "https://images.unsplash.com/photo-1758389932194-ff3647e3a88c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZXN0YXVyYW50JTIwYW1iaWFuY2V8ZW58MHx8fHwxNzYxMjI1NjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013009/IMG_2557_ynxqpd.jpg",
       "imageHint": "restaurant ambiance"
     },
     {
