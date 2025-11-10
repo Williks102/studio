@@ -14,13 +14,18 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1">
-        <Hero />
-        <About />
-        <Menu />
-        <Formulas />
-        <Updates />
-        <AfricanVibes />
-        <Quote />
+        {/* Le Hero est dans un conteneur séparé pour éviter les problèmes de chevauchement */}
+        <div className="relative">
+          <Hero />
+        </div>
+        <div className="pt-4">
+          <About />
+          <Menu />
+          <Formulas />
+          <Updates />
+          <AfricanVibes />
+          <Quote />
+        </div>
       </main>
       <Footer />
       <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background/80 backdrop-blur-sm md:hidden">
