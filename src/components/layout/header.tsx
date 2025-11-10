@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Linkedin, Menu as MenuIcon } from "lucide-react"
+import { Facebook, Instagram, Menu as MenuIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -35,11 +35,12 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8 lg:px-12 gap-4">
+        {/* Logo */}
+        <Link href="/" className="flex-shrink-0">
             <Image 
                 src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
                 alt="Le Lof Logo" 
@@ -49,22 +50,28 @@ export function Header() {
                 priority
             />
         </Link>
-        <nav className="hidden items-center gap-6 md:flex">
+
+        {/* Navigation Desktop - avec plus d'espace */}
+        <nav className="hidden lg:flex items-center gap-8 flex-1 justify-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary whitespace-nowrap"
             >
               {link.label}
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-4 md:flex">
+
+        {/* Actions Desktop */}
+        <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
           <SocialIcons />
           <BookingModal />
         </div>
-        <div className="md:hidden">
+
+        {/* Menu Mobile */}
+        <div className="lg:hidden">
            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -116,7 +123,6 @@ export function Header() {
 function SocialIcons() {
   return (
     <div className="flex items-center gap-3">
-  
       <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
         <Instagram className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
       </Link>
