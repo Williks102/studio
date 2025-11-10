@@ -1,134 +1,73 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Instagram, Menu as MenuIcon } from "lucide-react"
+import { PlaceHolderImages } from "@/lib/placeholder-images"
+import Autoplay from "embla-carousel-autoplay"
+import * as React from "react"
 
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
-import { BookingModal } from "@/components/modals/booking-modal"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
-const navLinks = [
-  { href: "#about", label: "A Propos" },
-  { href: "#menu", label: "Menu" },
-  { href: "#formulas", label: "Formules" },
-  { href: "#updates", label: "Actualités" },
-  { href: "#vibes", label: "African vibes" },
-  { href: "#quote", label: "Contact" },
-]
-
-export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
-  return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
-      )}
-    >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8 lg:px-12 gap-4">
-        {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
-            <Image 
-                src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
-                alt="Le Lof Logo" 
-                width={100} 
-                height={50}
-                className="h-12 w-auto object-contain"
-                priority
-            />
-        </Link>
-
-        {/* Navigation Desktop - avec plus d'espace */}
-        <nav className="hidden lg:flex items-center gap-8 flex-1 justify-center">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary whitespace-nowrap"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Actions Desktop */}
-        <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
-          <SocialIcons />
-          <BookingModal />
-        </div>
-
-        {/* Menu Mobile */}
-        <div className="lg:hidden">
-           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <MenuIcon className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs bg-background">
-                <SheetHeader>
-                  <SheetTitle className="text-2xl font-bold font-headline text-primary sr-only">Menu</SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col items-center justify-center h-full">
-                    <Link href="/" className="mb-8" onClick={() => setIsMobileMenuOpen(false)}>
-                        <Image 
-                            src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
-                            alt="Le Lof Logo" 
-                            width={120} 
-                            height={60}
-                            className="h-14 w-auto object-contain"
-                        />
-                    </Link>
-                    <nav className="flex flex-col items-center gap-6 text-center">
-                        {navLinks.map((link) => (
-                        <Link
-                            key={link.href}
-                            href={link.href}
-                            className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            {link.label}
-                        </Link>
-                        ))}
-                    </nav>
-                    <div className="mt-8 flex flex-col items-center gap-6">
-                        <div className="hidden">
-                          <BookingModal onOpenChange={setIsMobileMenuOpen} />
-                        </div>
-                        <SocialIcons />
-                    </div>
-                </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-      </div>
-    </header>
+export function Hero() {
+  const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"))
+  
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
   )
-}
 
-function SocialIcons() {
   return (
-    <div className="flex items-center gap-3">
-      <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
-        <Instagram className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
-      </Link>
-      <Link href="https://www.facebook.com/share/17hdPuU8Bu/" aria-label="Facebook">
-        <Facebook className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
-      </Link>
-    </div>
+    <section className="relative w-full">
+      {/* SOLUTION 2: Utiliser aspect-ratio pour maintenir les proportions */}
+      {/* Ratio 16:9 pour un format cinématographique */}
+      <div className="w-full aspect-[16/9] max-h-[80vh]">
+        <Carousel
+          className="h-full w-full"
+          plugins={[plugin.current]}
+          opts={{ 
+            loop: true,
+          }}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+        >
+          <CarouselContent className="h-full">
+            {heroImages.map((image, index) => (
+              <CarouselItem key={index} className="h-full p-0">
+                <div className="relative w-full h-full bg-gray-900">
+                  {/* object-cover: remplit le conteneur en coupant si nécessaire */}
+                  {/* object-contain: affiche l'image entière avec des barres noires si nécessaire */}
+                  <img
+                    src={image.imageUrl}
+                    alt={image.description}
+                    className="w-full h-full object-cover" // ou object-contain selon votre préférence
+                    loading={index === 0 ? "eager" : "lazy"}
+                  />
+                  
+                  {/* Overlay sombre pour améliorer la lisibilité */}
+                  <div className="absolute inset-0 bg-black/40" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          
+          {/* Contenu superposé */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none">
+            <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl">
+             Restaurant Lelof
+            </h1>
+            <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl drop-shadow-lg">
+              African vibes
+            </p>
+          </div>
+          
+          {/* Navigation améliorée */}
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white border-white/30 backdrop-blur-sm transition-all duration-200" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white border-white/30 backdrop-blur-sm transition-all duration-200" />
+        </Carousel>
+      </div>
+    </section>
   )
 }
