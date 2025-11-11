@@ -21,9 +21,6 @@ export function Footer({ dict }: { dict: any }) {
               {dict.tagline}
             </p>
             <div className="flex space-x-4">
-              <Link href="#" aria-label="LinkedIn">
-                <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
-              </Link>
               <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
