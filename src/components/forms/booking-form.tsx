@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { z } from "zod"
 import { format } from "date-fns"
 import { CalendarIcon } from "lucide-react"
-import { fr } from "date-fns/locale";
+import { fr, enUS } from "date-fns/locale";
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -33,24 +33,30 @@ import {
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { DialogFooter } from "../ui/dialog"
+import { useParams } from "next/navigation";
 
-const bookingSchema = z.object({
-  name: z.string().min(2, "Le nom est requis."),
-  phone: z.string().min(10, "Un numéro de téléphone valide est requis."),
-  email: z.string().email("Une adresse e-mail valide est requise."),
-  date: z.date({ required_error: "Une date est requise." }),
-  time: z.string({ required_error: "Une heure est requise." }),
-  guests: z.coerce.number().min(1, "Il doit y avoir au moins 1 personne."),
-  message: z.string().optional(),
-})
-
-type BookingFormValues = z.infer<typeof bookingSchema>
 
 interface BookingFormProps {
   setModalOpen: (open: boolean) => void;
+  dict: any;
 }
 
-export function BookingForm({ setModalOpen }: BookingFormProps) {
+export function BookingForm({ setModalOpen, dict }: BookingFormProps) {
+  const params = useParams();
+  const lang = params.lang === 'en' ? enUS : fr;
+
+  const bookingSchema = z.object({
+    name: z.string().min(2, "Le nom est requis."),
+    phone: z.string().min(10, "Un numéro de téléphone valide est requis."),
+    email: z.string().email("Une adresse e-mail valide est requise."),
+    date: z.date({ required_error: "Une date est requise." }),
+    time: z.string({ required_error: "Une heure est requise." }),
+    guests: z.coerce.number().min(1, "Il doit y avoir au moins 1 personne."),
+    message: z.string().optional(),
+  })
+  
+  type BookingFormValues = z.infer<typeof bookingSchema>
+
   const form = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
     defaultValues: {
@@ -63,7 +69,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
   })
 
   function onSubmit(data: BookingFormValues) {
-    const formattedDate = format(data.date, "eeee dd LLLL yyyy", { locale: fr });
+    const formattedDate = format(data.date, "eeee dd LLLL yyyy", { locale: lang });
     const message = `
       *Nouvelle demande de réservation*
 
@@ -93,7 +99,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nom & Prénoms</FormLabel>
+                <FormLabel>{dict.name}</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -107,7 +113,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
               name="phone"
               render={({ field }) => (
                   <FormItem>
-                  <FormLabel>Téléphone</FormLabel>
+                  <FormLabel>{dict.phone}</FormLabel>
                   <FormControl>
                       <Input type="tel" {...field} />
                   </FormControl>
@@ -120,7 +126,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
               name="email"
               render={({ field }) => (
                   <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel>{dict.email}</FormLabel>
                   <FormControl>
                       <Input type="email" {...field} />
                   </FormControl>
@@ -135,7 +141,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
               name="date"
               render={({ field }) => (
                 <FormItem className="flex flex-col">
-                  <FormLabel>Date</FormLabel>
+                  <FormLabel>{dict.date}</FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
                       <FormControl>
@@ -147,9 +153,9 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
                           )}
                         >
                           {field.value ? (
-                            format(field.value, "PPP", { locale: fr })
+                            format(field.value, "PPP", { locale: lang })
                           ) : (
-                            <span>Choisissez une date</span>
+                            <span>{dict.chooseDate}</span>
                           )}
                           <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                         </Button>
@@ -157,7 +163,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
                     </PopoverTrigger>
                     <PopoverContent className="w-auto p-0" align="start">
                       <Calendar
-                        locale={fr}
+                        locale={lang}
                         mode="single"
                         selected={field.value}
                         onSelect={field.onChange}
@@ -175,11 +181,11 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
               name="time"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Heure</FormLabel>
+                  <FormLabel>{dict.time}</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Choisissez une heure" />
+                        <SelectValue placeholder={dict.chooseTime} />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -204,7 +210,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
             name="guests"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nombre de personnes</FormLabel>
+                <FormLabel>{dict.guests}</FormLabel>
                 <FormControl>
                   <Input type="number" min="1" {...field} />
                 </FormControl>
@@ -217,9 +223,9 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Message (Optionnel)</FormLabel>
+                <FormLabel>{dict.message}</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Une occasion spéciale?" {...field} />
+                  <Textarea placeholder={dict.specialOccasion} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -229,7 +235,7 @@ export function BookingForm({ setModalOpen }: BookingFormProps) {
 
         <DialogFooter className="pt-4 pr-1">
             <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-              {form.formState.isSubmitting ? "Envoi..." : "Envoyer la demande"}
+              {form.formState.isSubmitting ? dict.submitting : dict.submit}
             </Button>
         </DialogFooter>
       </form>

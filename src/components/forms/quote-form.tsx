@@ -33,7 +33,7 @@ const quoteSchema = z.object({
 
 type QuoteFormValues = z.infer<typeof quoteSchema>
 
-export function QuoteForm() {
+export function QuoteForm({ dict }: { dict: any }) {
   const { toast } = useToast()
 
   const form = useForm<QuoteFormValues>({
@@ -62,8 +62,8 @@ export function QuoteForm() {
     window.open(whatsappUrl, '_blank');
 
     toast({
-      title: "Demande de devis envoyée",
-      description: "Votre demande a été redirigée vers WhatsApp. Veuillez finaliser l'envoi.",
+      title: dict.successTitle,
+      description: dict.successDescription,
     })
     form.reset()
   }
@@ -77,7 +77,7 @@ export function QuoteForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nom et prénoms</FormLabel>
+                <FormLabel>{dict.name}</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -90,7 +90,7 @@ export function QuoteForm() {
             name="contact"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Contact</FormLabel>
+                <FormLabel>{dict.contact}</FormLabel>
                 <FormControl>
                   <Input {...field} />
                 </FormControl>
@@ -104,7 +104,7 @@ export function QuoteForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Adresse mail</FormLabel>
+              <FormLabel>{dict.email}</FormLabel>
               <FormControl>
                 <Input type="email" {...field} />
               </FormControl>
@@ -118,17 +118,17 @@ export function QuoteForm() {
             name="formula"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Formule</FormLabel>
+                <FormLabel>{dict.formula}</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Choisissez une formule" />
+                      <SelectValue placeholder={dict.chooseFormula} />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    <SelectItem value="brunch">Brunch</SelectItem>
-                    <SelectItem value="private-experience">Expérience culinaire privée</SelectItem>
-                    <SelectItem value="buffet">Buffet</SelectItem>
+                    <SelectItem value="brunch">{dict.formulas.brunch}</SelectItem>
+                    <SelectItem value="private-experience">{dict.formulas.private}</SelectItem>
+                    <SelectItem value="buffet">{dict.formulas.buffet}</SelectItem>
                   </SelectContent>
                 </Select>
                 <FormMessage />
@@ -140,7 +140,7 @@ export function QuoteForm() {
             name="people"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nombre de personnes</FormLabel>
+                <FormLabel>{dict.people}</FormLabel>
                 <FormControl>
                   <Input type="number" min="1" {...field} />
                 </FormControl>
@@ -150,7 +150,7 @@ export function QuoteForm() {
           />
         </div>
         <Button size="lg" type="submit" className="w-full md:w-auto" disabled={form.formState.isSubmitting}>
-          {form.formState.isSubmitting ? "Envoi..." : "Faire ma Reservation"}
+          {form.formState.isSubmitting ? dict.submitting : dict.submit}
         </Button>
       </form>
     </Form>

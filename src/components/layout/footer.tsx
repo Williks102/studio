@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react"
 
-export function Footer() {
+export function Footer({ dict }: { dict: any }) {
   return (
     <footer className="bg-card text-card-foreground">
       <div className="container mx-auto px-4 py-12 md:px-6">
@@ -18,7 +18,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-muted-foreground">
-              Goût, élégance, raffinement.
+              {dict.tagline}
             </p>
             <div className="flex space-x-4">
               <Link href="#" aria-label="LinkedIn">
@@ -33,33 +33,33 @@ export function Footer() {
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="font-semibold tracking-wider text-foreground">CONTACT</h3>
+            <h3 className="font-semibold tracking-wider text-foreground">{dict.contact}</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
-                <span>Abidjan, Côte d'Ivoire</span>
+                <span>{dict.address}</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+225 01 02 03 04 05</span>
+                <span>{dict.phone}</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>contact@lelof.com</span>
+                <span>{dict.email}</span>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="font-semibold tracking-wider text-foreground">HORAIRES</h3>
+            <h3 className="font-semibold tracking-wider text-foreground">{dict.hoursTitle}</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Journée : 11H - 15H</li>
-              <li>Soir : 18H - 00H</li>
-              <li>Fermé le Lundi</li>
+              <li>{dict.hoursDay}</li>
+              <li>{dict.hoursEvening}</li>
+              <li>{dict.hoursClosed}</li>
             </ul>
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Le Lof. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} {dict.copyright}</p>
         </div>
       </div>
     </footer>

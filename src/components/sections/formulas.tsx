@@ -1,5 +1,4 @@
 import { PartyPopper, Users, ShieldCheck } from "lucide-react"
-import { formulas } from "@/lib/formulas"
 import {
   Card,
   CardContent,
@@ -18,19 +17,41 @@ import {
 import { Button } from "../ui/button"
 import Link from "next/link"
 
-const iconMap = {
+const iconMap: { [key: string]: React.ElementType } = {
   PartyPopper: PartyPopper,
   ShieldCheck: ShieldCheck,
   Users: Users,
 }
 
-export function Formulas() {
+export function Formulas({ dict }: { dict: any }) {
+
+  const formulas = [
+    {
+      icon: 'PartyPopper',
+      title: dict.brunch.title,
+      shortDescription: dict.brunch.short,
+      longDescription: dict.brunch.long
+    },
+    {
+      icon: 'ShieldCheck',
+      title: dict.private.title,
+      shortDescription: dict.private.short,
+      longDescription: dict.private.long
+    },
+    {
+      icon: 'Users',
+      title: dict.buffet.title,
+      shortDescription: dict.buffet.short,
+      longDescription: dict.buffet.long
+    },
+  ];
+
   return (
     <section id="formulas" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
-            Découvrez Nos Formules
+            {dict.title}
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -64,7 +85,7 @@ export function Formulas() {
                   <div className="flex justify-center pt-4">
                     <DialogClose asChild>
                       <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                        <Link href="#quote">Faire ma Reservation</Link>
+                        <Link href="#quote">{dict.makeReservation}</Link>
                       </Button>
                     </DialogClose>
                   </div>

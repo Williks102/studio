@@ -33,11 +33,11 @@ function WhatsappIcon(props: React.SVGProps<SVGSVGElement>) {
     )
   }
 
-export function Hero() {
+export function Hero({ dict }: { dict: any }) {
   const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"))
   
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
+    Autoplay({ delay: 5000, stopOnInteraction: true, stopOnMouseEnter: true })
   )
 
   return (
@@ -74,15 +74,15 @@ export function Hero() {
         
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none">
           <h1 className="font-headline text-4xl font-bold text-white drop-shadow-lg md:text-6xl">
-              Le Lof
+              {dict.title}
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl drop-shadow-md">
-            Goût, élégance, raffinement.
+            {dict.subtitle}
           </p>
           <Button asChild size="lg" className="mt-6 bg-green-500 hover:bg-green-600 text-white pointer-events-auto">
             <a href="https://wa.me/2250704353535" target="_blank" rel="noopener noreferrer">
               <WhatsappIcon className="mr-2 h-6 w-6" />
-              Contactez-nous sur WhatsApp
+              {dict.whatsapp}
             </a>
           </Button>
         </div>

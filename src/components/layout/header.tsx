@@ -10,18 +10,18 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { BookingModal } from "@/components/modals/booking-modal"
 
-const navLinks = [
-  { href: "#about", label: "A Propos" },
-  { href: "#menu", label: "Menu" },
-  { href: "#formulas", label: "Formules" },
-  { href: "#updates", label: "Actualités" },
-  { href: "#vibes", label: "African vibes" },
-  { href: "#quote", label: "Contact" },
-]
-
-export function Header() {
+export function Header({ dict }: { dict: any }) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "#about", label: dict.about },
+    { href: "#menu", label: dict.menu },
+    { href: "#formulas", label: dict.formulas },
+    { href: "#updates", label: dict.updates },
+    { href: "#vibes", label: dict.vibes },
+    { href: "#quote", label: dict.contact },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +62,7 @@ export function Header() {
         </nav>
         <div className="hidden items-center gap-4 md:flex">
           <SocialIcons />
-          <BookingModal />
+          <BookingModal dict={{bookingModal: { title: dict.bookNow, description: "Fill the form to make a reservation request.", form: { submit: dict.bookNow } }}} />
         </div>
         <div className="md:hidden">
            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -100,7 +100,7 @@ export function Header() {
                     </nav>
                     <div className="mt-8 flex flex-col items-center gap-6">
                         <div className="hidden">
-                          <BookingModal onOpenChange={setIsMobileMenuOpen} />
+                          <BookingModal onOpenChange={setIsMobileMenuOpen} dict={{bookingModal: { title: dict.bookNow, description: "Fill the form to make a reservation request.", form: { submit: dict.bookNow } }}} />
                         </div>
                         <SocialIcons />
                     </div>

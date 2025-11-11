@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
-import { menuData } from "@/lib/menu"
 import {
   Card,
   CardContent,
@@ -15,23 +14,42 @@ import {
 import { Coffee, Utensils, Wine, Sandwich } from "lucide-react"
 
 
-export function Menu() {
+export function Menu({ dict }: { dict: any }) {
   const getImage = (id: string) => PlaceHolderImages.find((img) => img.id === id)
+
+  const menuData = {
+    breakfast: [
+      { name: dict.items.symphonie, imageId: "menu-breakfast-1" },
+      { name: dict.items.douceur, imageId: "menu-breakfast-2" },
+    ],
+    lunch: [
+      { name: dict.items.poisson, imageId: "menu-lunch-1" },
+      { name: dict.items.riz, imageId: "menu-lunch-2" },
+    ],
+    dinner: [
+      { name: dict.items.tagine, imageId: "menu-dinner-1" },
+      { name: dict.items.brochettes, imageId: "menu-dinner-2" },
+    ],
+    drinks: [
+      { name: dict.items.cocktail, imageId: "menu-drinks-1" },
+      { name: dict.items.the, imageId: "menu-drinks-2" },
+    ],
+  }
 
   return (
     <section id="menu" className="bg-card py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
-            Découvrez Notre Menu
+            {dict.title}
           </h2>
         </div>
         <Tabs defaultValue="lunch" className="w-full">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto">
-            <TabsTrigger value="breakfast" className="py-3 text-sm flex gap-2"><Coffee size={16}/>Petit Déjeuner</TabsTrigger>
-            <TabsTrigger value="lunch" className="py-3 text-sm flex gap-2"><Utensils size={16}/>Déjeuner</TabsTrigger>
-            <TabsTrigger value="dinner" className="py-3 text-sm flex gap-2"><Sandwich size={16}/>Dîner</TabsTrigger>
-            <TabsTrigger value="drinks" className="py-3 text-sm flex gap-2"><Wine size={16}/>Boissons</TabsTrigger>
+            <TabsTrigger value="breakfast" className="py-3 text-sm flex gap-2"><Coffee size={16}/>{dict.breakfast}</TabsTrigger>
+            <TabsTrigger value="lunch" className="py-3 text-sm flex gap-2"><Utensils size={16}/>{dict.lunch}</TabsTrigger>
+            <TabsTrigger value="dinner" className="py-3 text-sm flex gap-2"><Sandwich size={16}/>{dict.dinner}</TabsTrigger>
+            <TabsTrigger value="drinks" className="py-3 text-sm flex gap-2"><Wine size={16}/>{dict.drinks}</TabsTrigger>
           </TabsList>
           
           <TabsContent value="breakfast" className="mt-8">

@@ -1,0 +1,136 @@
+
+{
+    "header": {
+        "about": "About",
+        "menu": "Menu",
+        "formulas": "Formulas",
+        "updates": "News",
+        "vibes": "African vibes",
+        "contact": "Contact",
+        "bookNow": "Book Now"
+    },
+    "hero": {
+        "title": "Le Lof",
+        "subtitle": "Taste, elegance, refinement.",
+        "whatsapp": "Contact us on WhatsApp"
+    },
+    "about": {
+        "title": "About Us",
+        "description": "Born from a passion for African flavors and the desire to elevate them, Le Lof is a place where tradition meets modernity. Here, every plate tells a story, that of a continent rich in colors, spices, and emotions. Our team of enthusiasts promises you an unforgettable culinary journey, between authenticity and creativity.",
+        "openingHoursTitle": "Our Opening Hours",
+        "day": "Daytime",
+        "evening": "Evening"
+    },
+    "menu": {
+        "title": "Discover Our Menu",
+        "breakfast": "Breakfast",
+        "lunch": "Lunch",
+        "dinner": "Dinner",
+        "drinks": "Drinks",
+        "items": {
+            "symphonie": "Morning Symphony",
+            "douceur": "Exotic Sweetness",
+            "poisson": "Signature Grilled Fish",
+            "riz": "Royal Jollof Rice",
+            "tagine": "Lamb Tagine",
+            "brochettes": "Spicy Beef Skewers",
+            "cocktail": "Cocktail 'The Sunset'",
+            "the": "Traditional Mint Tea"
+        }
+    },
+    "formulas": {
+        "title": "Discover Our Formulas",
+        "brunch": {
+            "title": "Brunch",
+            "short": "A gourmet and convivial moment of sharing for your weekends.",
+            "long": "Our brunch formula is an invitation to relaxation and indulgence. Every weekend, discover a varied buffet with sweet and savory flavors, hot dishes, pastries, fresh juices, and revisited African specialties. It's the perfect opportunity to get together with family or friends in a warm atmosphere."
+        },
+        "private": {
+            "title": "Private Culinary Experience",
+            "short": "A chef at your disposal for an exclusive and memorable evening.",
+            "long": "Experience an exceptional evening with our private culinary experience. One of our chefs is entirely dedicated to your table to create a tailor-made menu according to your desires. It is the ideal formula for a special occasion, a romantic dinner, or an intimate celebration, where each dish is a work of art."
+        },
+        "buffet": {
+            "title": "Buffet",
+            "short": "An abundance of flavors for your events and celebrations.",
+            "long": "For your events, we offer a generous and varied buffet formula. A wide range of our best creations, from appetizers to desserts, is presented to delight all your guests. Ideal for birthdays, professional receptions, or any other major celebration."
+        },
+        "makeReservation": "Make my Reservation"
+    },
+    "updates": {
+        "title": "Our News",
+        "description": "Stay informed of our latest news, events, and special offers.",
+        "types": {
+            "info": "Info",
+            "promotion": "Promo",
+            "event": "Event",
+            "menu": "Menu"
+        }
+    },
+    "africanVibes": {
+        "title": "African Vibes",
+        "decor": {
+            "title": "The chic ethnic decor",
+            "description": "Our chic ethnic decor creates a warm and welcoming atmosphere, ideal for savoring revisited traditional dishes. Every detail, from the works of art to the furniture, reflects the cultural richness of the African continent while offering a modern touch."
+        },
+        "ambiance": {
+            "title": "The ambiance",
+            "description": "At LOF, each meal becomes a unique sensory experience. Soft background music, a soothing atmosphere, subdued lighting, a warm setting."
+        },
+        "activities": {
+            "title": "The Activities",
+            "description": "Vibrate to the rhythm of our live evenings, discover acoustic talents, have fun during our karaoke sessions, or enjoy our themed buffets."
+        }
+    },
+    "quote": {
+        "title": "Make a Reservation",
+        "description": "Organize your next event with us. Fill out the form below.",
+        "form": {
+            "name": "Full name",
+            "contact": "Contact",
+            "email": "Email address",
+            "formula": "Formula",
+            "people": "Number of people",
+            "chooseFormula": "Choose a formula",
+            "formulas": {
+                "brunch": "Brunch",
+                "private": "Private culinary experience",
+                "buffet": "Buffet"
+            },
+            "submit": "Make my Reservation",
+            "submitting": "Submitting...",
+            "successTitle": "Quote request sent",
+            "successDescription": "Your request has been redirected to WhatsApp. Please finalize sending."
+        }
+    },
+    "bookingModal": {
+        "title": "Book a table",
+        "description": "Fill out the form to make a reservation request.",
+        "form": {
+            "name": "Full Name",
+            "phone": "Phone",
+            "email": "Email",
+            "date": "Date",
+            "time": "Time",
+            "guests": "Number of guests",
+            "message": "Message (Optional)",
+            "specialOccasion": "A special occasion?",
+            "chooseDate": "Choose a date",
+            "chooseTime": "Choose a time",
+            "submit": "Send request",
+            "submitting": "Sending..."
+        }
+    },
+    "footer": {
+        "tagline": "Taste, elegance, refinement.",
+        "contact": "CONTACT",
+        "address": "Abidjan, Ivory Coast",
+        "phone": "+225 01 02 03 04 05",
+        "email": "contact@lelof.com",
+        "hoursTitle": "HOURS",
+        "hoursDay": "Day: 11AM - 3PM",
+        "hoursEvening": "Evening: 6PM - 12AM",
+        "hoursClosed": "Closed on Monday",
+        "copyright": "Le Lof. All rights reserved."
+    }
+}

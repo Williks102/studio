@@ -1,16 +1,33 @@
 import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
-import { vibes } from "@/lib/vibes"
 
-export function AfricanVibes() {
+export function AfricanVibes({ dict }: { dict: any }) {
   const getImage = (id: string) => PlaceHolderImages.find((img) => img.id === id)
+
+  const vibes = [
+    {
+      title: dict.decor.title,
+      description: dict.decor.description,
+      imageId: "vibe-decor",
+    },
+    {
+      title: dict.ambiance.title,
+      description: dict.ambiance.description,
+      imageId: "vibe-ambiance",
+    },
+    {
+      title: dict.activities.title,
+      description: dict.activities.description,
+      imageId: "vibe-activities",
+    },
+  ];
 
   return (
     <section id="vibes" className="bg-card py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
-            African Vibes
+            {dict.title}
           </h2>
         </div>
         <div className="space-y-16">

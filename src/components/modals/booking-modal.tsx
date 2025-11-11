@@ -15,10 +15,11 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 type BookingModalProps = {
     onOpenChange?: (open: boolean) => void;
+    dict: any;
 };
 
 
-export function BookingModal({ onOpenChange }: BookingModalProps) {
+export function BookingModal({ onOpenChange, dict }: BookingModalProps) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const handleOpenChange = (open: boolean) => {
@@ -32,19 +33,19 @@ export function BookingModal({ onOpenChange }: BookingModalProps) {
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-          Réservez maintenant
+          {dict.bookingModal.title}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg bg-background max-h-[90dvh] flex flex-col p-0">
         <DialogHeader className="p-6 pb-4">
-          <DialogTitle className="font-headline text-2xl text-primary">Réserver une table</DialogTitle>
+          <DialogTitle className="font-headline text-2xl text-primary">{dict.bookingModal.title}</DialogTitle>
           <DialogDescription>
-            Remplissez le formulaire pour faire une demande de réservation.
+            {dict.bookingModal.description}
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="flex-1 overflow-y-auto">
             <div className="px-6 pb-6">
-                <BookingForm setModalOpen={handleOpenChange} />
+                <BookingForm setModalOpen={handleOpenChange} dict={dict.bookingModal.form} />
             </div>
         </ScrollArea>
       </DialogContent>

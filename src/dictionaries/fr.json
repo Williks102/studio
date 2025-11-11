@@ -1,0 +1,136 @@
+
+{
+    "header": {
+        "about": "A Propos",
+        "menu": "Menu",
+        "formulas": "Formules",
+        "updates": "Actualités",
+        "vibes": "African vibes",
+        "contact": "Contact",
+        "bookNow": "Réservez maintenant"
+    },
+    "hero": {
+        "title": "Le Lof",
+        "subtitle": "Goût, élégance, raffinement.",
+        "whatsapp": "Contactez-nous sur WhatsApp"
+    },
+    "about": {
+        "title": "A Propos de Nous",
+        "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le Lof est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",
+        "openingHoursTitle": "Nos Horaires d'Ouverture",
+        "day": "Journée",
+        "evening": "Soir"
+    },
+    "menu": {
+        "title": "Découvrez Notre Menu",
+        "breakfast": "Petit Déjeuner",
+        "lunch": "Déjeuner",
+        "dinner": "Dîner",
+        "drinks": "Boissons",
+        "items": {
+            "symphonie": "Symphonie Matinale",
+            "douceur": "Douceur Exotique",
+            "poisson": "Poisson Braisé Signature",
+            "riz": "Riz Jolof Royal",
+            "tagine": "Tagine d'Agneau Confie",
+            "brochettes": "Brochettes de Boeuf Épicées",
+            "cocktail": "Cocktail 'Le Coucher du Soleil'",
+            "the": "Thé à la Menthe Traditionnel"
+        }
+    },
+    "formulas": {
+        "title": "Découvrez Nos Formules",
+        "brunch": {
+            "title": "Brunch",
+            "short": "Un moment de partage gourmand et convivial pour vos week-ends.",
+            "long": "Notre formule brunch est une invitation à la détente et à la gourmandise. Chaque week-end, découvrez un buffet varié avec des saveurs sucrées et salées, des plats chauds, des viennoiseries, des jus frais et des spécialités africaines revisitées. C'est l'occasion parfaite de se retrouver en famille ou entre amis dans une ambiance chaleureuse."
+        },
+        "private": {
+            "title": "Expérience culinaire privée",
+            "short": "Un chef à votre disposition pour une soirée exclusive et mémorable.",
+            "long": "Vivez une soirée d'exception avec notre expérience culinaire privée. Un de nos chefs se consacre entièrement à votre table pour créer un menu sur mesure selon vos envies. C'est la formule idéale pour une occasion spéciale, un dîner romantique ou une célébration intime, où chaque plat est une œuvre d'art."
+        },
+        "buffet": {
+            "title": "Buffet",
+            "short": "Une abondance de saveurs pour vos événements et célébrations.",
+            "long": "Pour vos événements, nous proposons une formule buffet généreuse et variée. Un large éventail de nos meilleures créations, des entrées aux desserts, est présenté pour ravir tous vos convives. Idéal pour les anniversaires, les réceptions professionnelles ou toute autre grande célébration."
+        },
+        "makeReservation": "Faire ma Reservation"
+    },
+    "updates": {
+        "title": "Nos Actualités",
+        "description": "Restez informé de nos dernières nouvelles, événements et offres spéciales.",
+        "types": {
+            "info": "Info",
+            "promotion": "Promo",
+            "event": "Événement",
+            "menu": "Menu"
+        }
+    },
+    "africanVibes": {
+        "title": "African Vibes",
+        "decor": {
+            "title": "Le décor ethnique chic",
+            "description": "Notre décor ethnique chic crée une atmosphère chaleureuse et accueillante, idéale pour savourer des plats traditionnels revisités. Chaque détail, des œuvres d'art aux meubles, reflète la richesse culturelle du continent africain tout en offrant une touche moderne."
+        },
+        "ambiance": {
+            "title": "L’ambiance",
+            "description": "Au LOF, chaque repas devient une expérience sensorielle unique. Musique douce en fond sonore, ambiance apaisante, éclairage tamisé, cadre chaleureux."
+        },
+        "activities": {
+            "title": "Les Activités",
+            "description": "Vibrez au rythme de nos soirées live, découvrez des talents en acoustique, amusez-vous lors de nos karaokés ou profitez de nos buffets thématiques."
+        }
+    },
+    "quote": {
+        "title": "Faire une Reservation",
+        "description": "Organisez votre prochain événement avec nous. Remplissez le formulaire ci-dessous.",
+        "form": {
+            "name": "Nom et prénoms",
+            "contact": "Contact",
+            "email": "Adresse mail",
+            "formula": "Formule",
+            "people": "Nombre de personnes",
+            "chooseFormula": "Choisissez une formule",
+            "formulas": {
+                "brunch": "Brunch",
+                "private": "Expérience culinaire privée",
+                "buffet": "Buffet"
+            },
+            "submit": "Faire ma Reservation",
+            "submitting": "Envoi...",
+            "successTitle": "Demande de devis envoyée",
+            "successDescription": "Votre demande a été redirigée vers WhatsApp. Veuillez finaliser l'envoi."
+        }
+    },
+    "bookingModal": {
+        "title": "Réserver une table",
+        "description": "Remplissez le formulaire pour faire une demande de réservation.",
+        "form": {
+            "name": "Nom & Prénoms",
+            "phone": "Téléphone",
+            "email": "Email",
+            "date": "Date",
+            "time": "Heure",
+            "guests": "Nombre de personnes",
+            "message": "Message (Optionnel)",
+            "specialOccasion": "Une occasion spéciale?",
+            "chooseDate": "Choisissez une date",
+            "chooseTime": "Choisissez une heure",
+            "submit": "Envoyer la demande",
+            "submitting": "Envoi..."
+        }
+    },
+    "footer": {
+        "tagline": "Goût, élégance, raffinement.",
+        "contact": "CONTACT",
+        "address": "Abidjan, Côte d'Ivoire",
+        "phone": "+225 01 02 03 04 05",
+        "email": "contact@lelof.com",
+        "hoursTitle": "HORAIRES",
+        "hoursDay": "Journée : 11H - 15H",
+        "hoursEvening": "Soir : 18H - 00H",
+        "hoursClosed": "Fermé le Lundi",
+        "copyright": "Le Lof. Tous droits réservés."
+    }
+}
