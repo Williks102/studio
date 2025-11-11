@@ -24,10 +24,10 @@ export function Footer({ dict }: { dict: any }) {
               <Link href="#" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Instagram">
+              <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
-              <Link href="#" aria-label="Facebook">
+              <Link href="https://www.facebook.com/share/17hdPuU8Bu/" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
             </div>
@@ -54,7 +54,6 @@ export function Footer({ dict }: { dict: any }) {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>{dict.hoursDay}</li>
               <li>{dict.hoursEvening}</li>
-              <li>{dict.hoursClosed}</li>
             </ul>
           </div>
         </div>
