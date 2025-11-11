@@ -3,12 +3,51 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Linkedin, Menu as MenuIcon } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Menu as MenuIcon, Globe } from "lucide-react"
+import { usePathname, useRouter } from "next/navigation"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { BookingModal } from "@/components/modals/booking-modal"
+import { i18n, type Locale } from "@/i18n-config"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+
+function LanguageSwitcher() {
+  const pathName = usePathname()
+  const router = useRouter()
+
+  const redirectedPathName = (locale: Locale) => {
+    if (!pathName) return "/"
+    const segments = pathName.split("/")
+    segments[1] = locale
+    return segments.join("/")
+  }
+
+  const currentLocale = pathName.split("/")[1] as Locale
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" className="h-9 w-9">
+          <Globe className="h-5 w-5" />
+          <span className="sr-only">Changer de langue</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {i18n.locales.map((locale) => (
+          <DropdownMenuItem
+            key={locale}
+            onClick={() => router.push(redirectedPathName(locale))}
+            className={cn("cursor-pointer", currentLocale === locale && "font-bold")}
+          >
+            {locale.toUpperCase()}
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
 
 export function Header({ dict }: { dict: any }) {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -60,11 +99,13 @@ export function Header({ dict }: { dict: any }) {
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-2 md:flex">
           <SocialIcons />
+          <LanguageSwitcher />
           <BookingModal dict={dict.bookingModal} />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2">
+           <LanguageSwitcher />
            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
