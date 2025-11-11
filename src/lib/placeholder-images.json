@@ -2,92 +2,110 @@
   "placeholderImages": [
     {
       "id": "hero-1",
-      "description": "Plat africain élégamment présenté.",
+      "description": "Plat africain élégamment présenté",
       "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013427/253A0409_dljx4p.jpg",
       "imageHint": "nourriture africaine"
     },
     {
       "id": "hero-2",
-      "description": "Ambiance du restaurant avec des clients.",
-      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013455/492694745_1239027928226203_6515833207908189518_n_vau3v2.jpg",
+      "description": "Ambiance du restaurant avec des clients",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013474/WhatsApp_Image_2025-02-06_at_10.53.50_2_sl237d.jpg",
       "imageHint": "ambiance restaurant"
     },
     {
       "id": "hero-3",
-      "description": "Un cocktail coloré servi au bar.",
+      "description": "Un cocktail coloré servi au bar",
       "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013456/WhatsApp_Image_2025-02-06_at_10.50.53_2_panfp7.jpg",
       "imageHint": "cocktail exotique"
     },
     {
       "id": "hero-4",
-      "description": "Un plat de pâtes gastronomique.",
+      "description": "Un plat de pâtes gastronomique",
       "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013477/WhatsApp_Image_2025-02-27_at_10.17.53_1_ct8gp3.jpg",
       "imageHint": "plat pates"
     },
     {
+      "id": "hero-5",
+      "description": "Un plat de pâtes gastronomique",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013292/WhatsApp_Image_2025-02-06_at_10.53.53_1_vmfbsq.jpg",
+      "imageHint": "plat pates"
+    },
+    {
+      "id": "hero-6",
+      "description": "Un plat de pâtes gastronomique",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013288/WhatsApp_Image_2025-02-06_at_10.53.52_2_kbshy9.jpg",
+      "imageHint": "plat pates"
+    },
+    {
+      "id": "hero-7",
+      "description": "Un plat de pâtes gastronomique",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013110/253A3546_m8lz35.jpg",
+      "imageHint": "plat pates"
+    },
+    {
       "id": "menu-breakfast-1",
-      "description": "A hearty African breakfast platter.",
+      "description": "Petit déjeuner africain copieux",
       "imageUrl": "https://images.unsplash.com/photo-1669034937770-498b5791b84c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhZnJpY2FuJTIwYnJlYWtmYXN0fGVufDB8fHx8MTc2MTIyNTY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "african breakfast"
     },
     {
       "id": "menu-breakfast-2",
-      "description": "A light and fruity breakfast option.",
+      "description": "Option de petit déjeuner léger et fruité",
       "imageUrl": "https://images.unsplash.com/photo-1498507297833-5373e346b4e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcnVpdCUyMGJvd2x8ZW58MHx8fHwxNzYxMTk2MDY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fruit bowl"
     },
     {
       "id": "menu-lunch-1",
-      "description": "Grilled fish served with vegetables.",
+      "description": "Poisson grillé servi avec des légumes",
       "imageUrl": "https://images.unsplash.com/photo-1551014700-0ca41391f312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncmlsbGVkJTIwZmlzaHxlbnwwfHx8fDE3NjExMTk5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "grilled fish"
     },
     {
       "id": "menu-lunch-2",
-      "description": "A vibrant and flavorful rice dish.",
+      "description": "Plat de riz vibrant et savoureux",
       "imageUrl": "https://images.unsplash.com/photo-1665332195309-9d75071138f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqb2xsb2YlMjByaWNlfGVufDB8fHx8MTc2MTE4OTMyOXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "jollof rice"
     },
     {
       "id": "menu-dinner-1",
-      "description": "A slow-cooked meat and vegetable tagine.",
+      "description": "Tajine de viande et légumes mijotés",
       "imageUrl": "https://images.unsplash.com/photo-1668887465493-c4b0351aea89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZWF0JTIwdGFnaW5lfGVufDB8fHx8MTc2MTIyNTY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "meat tagine"
     },
     {
       "id": "menu-dinner-2",
-      "description": "Skewered and grilled meat with spices.",
+      "description": "Brochettes de viande grillées aux épices",
       "imageUrl": "https://images.unsplash.com/photo-1577367997065-fdd8fd94fb3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmlsbGVkJTIwc2tld2Vyc3xlbnwwfHx8fDE3NjEyMjU2NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "grilled skewers"
     },
     {
       "id": "menu-drinks-1",
-      "description": "A colorful, exotic cocktail.",
+      "description": "Cocktail exotique coloré",
       "imageUrl": "https://images.unsplash.com/photo-1561122081-509d873bbc08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxleG90aWMlMjBjb2NrdGFpbHxlbnwwfHx8fDE3NjEyMjU2NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "exotic cocktail"
     },
     {
       "id": "menu-drinks-2",
-      "description": "A traditional spiced African tea.",
+      "description": "Thé africain épicé traditionnel",
       "imageUrl": "https://images.unsplash.com/photo-1642698817356-52d9d3c9d1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3BpY2VkJTIwdGVhfGVufDB8fHx8MTc2MTIyNTY0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "spiced tea"
     },
     {
       "id": "vibe-decor",
-      "description": "The chic and ethnic decor of the restaurant interior.",
-      "imageUrl": "https://images.unsplash.com/photo-1739202527610-9f9d2a5dbddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZXRobmljJTIwZGVjb3J8ZW58MHx8fHwxNzYxMjI1NjQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Décor chic et ethnique de l'intérieur du restaurant",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013281/488622267_1220068850122111_5436014174674905878_n_t4azjy.jpg",
       "imageHint": "ethnic decor"
     },
     {
       "id": "vibe-ambiance",
-      "description": "Guests enjoying their evening in the restaurant's warm ambiance.",
-      "imageUrl": "https://images.unsplash.com/photo-1758389932194-ff3647e3a88c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxyZXN0YXVyYW50JTIwYW1iaWFuY2V8ZW58MHx8fHwxNzYxMjI1NjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Clients profitant de leur soirée dans l'ambiance chaleureuse du restaurant",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013009/IMG_2557_ynxqpd.jpg",
       "imageHint": "restaurant ambiance"
     },
     {
       "id": "vibe-activities",
-      "description": "A live music performance at the restaurant.",
-      "imageUrl": "https://images.unsplash.com/photo-1484876065684-b683cf17d276?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsaXZlJTIwbXVzaWN8ZW58MHx8fHwxNzYxMTk3MzU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Performance de musique live au restaurant",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013007/1L7A9940_sgzfeh.jpg",
       "imageHint": "live music"
     }
   ]
