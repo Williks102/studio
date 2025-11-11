@@ -1,3 +1,5 @@
+"use client"
+
 import { updates } from '@/lib/updates';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';

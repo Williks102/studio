@@ -19,7 +19,7 @@ export default async function Home({
   const dict = await getDictionary(lang);
   return (
     <div className="flex min-h-screen flex-col bg-background">
-      <Header dict={dict.header} />
+      <Header dict={{...dict.header, bookingModal: dict.bookingModal}} />
       <main className="flex-1">
         <Hero dict={dict.hero} />
         <About dict={dict.about} />

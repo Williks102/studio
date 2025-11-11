@@ -62,7 +62,7 @@ export function Header({ dict }: { dict: any }) {
         </nav>
         <div className="hidden items-center gap-4 md:flex">
           <SocialIcons />
-          <BookingModal dict={{bookingModal: { title: dict.bookNow, description: "Fill the form to make a reservation request.", form: { submit: dict.bookNow } }}} />
+          <BookingModal dict={dict.bookingModal} />
         </div>
         <div className="md:hidden">
            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -98,10 +98,8 @@ export function Header({ dict }: { dict: any }) {
                         </Link>
                         ))}
                     </nav>
-                    <div className="mt-8 flex flex-col items-center gap-6">
-                        <div className="hidden">
-                          <BookingModal onOpenChange={setIsMobileMenuOpen} dict={{bookingModal: { title: dict.bookNow, description: "Fill the form to make a reservation request.", form: { submit: dict.bookNow } }}} />
-                        </div>
+                    <div className="mt-8 flex flex-col items-center gap-6 w-full px-8">
+                        <BookingModal onOpenChange={setIsMobileMenuOpen} dict={dict.bookingModal} />
                         <SocialIcons />
                     </div>
                 </div>

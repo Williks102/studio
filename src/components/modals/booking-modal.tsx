@@ -33,19 +33,19 @@ export function BookingModal({ onOpenChange, dict }: BookingModalProps) {
     <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-          {dict.bookingModal.title}
+          {dict.title}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg bg-background max-h-[90dvh] flex flex-col p-0">
         <DialogHeader className="p-6 pb-4">
-          <DialogTitle className="font-headline text-2xl text-primary">{dict.bookingModal.title}</DialogTitle>
+          <DialogTitle className="font-headline text-2xl text-primary">{dict.title}</DialogTitle>
           <DialogDescription>
-            {dict.bookingModal.description}
+            {dict.description}
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="flex-1 overflow-y-auto">
             <div className="px-6 pb-6">
-                <BookingForm setModalOpen={handleOpenChange} dict={dict.bookingModal.form} />
+                <BookingForm setModalOpen={handleOpenChange} dict={dict.form} />
             </div>
         </ScrollArea>
       </DialogContent>
