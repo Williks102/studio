@@ -50,7 +50,7 @@ export function Hero({ dict }: { dict: any }) {
         </CarouselContent>
         
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none">
-          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl">
+          <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-2xl">
            {dict.title}
           </h1>
           <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl drop-shadow-lg">
