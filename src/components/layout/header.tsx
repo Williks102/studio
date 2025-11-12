@@ -11,9 +11,9 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { BookingModal } from "@/components/modals/booking-modal"
 import { i18n, type Locale } from "@/i18n-config"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
 
-function LanguageSwitcher() {
+function LanguageSwitcher({ dict }: { dict: any }) {
   const pathName = usePathname()
   const router = useRouter()
 
@@ -35,6 +35,8 @@ function LanguageSwitcher() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
+        <DropdownMenuLabel>{dict.language}</DropdownMenuLabel>
+        <DropdownMenuSeparator />
         {i18n.locales.map((locale) => (
           <DropdownMenuItem
             key={locale}
@@ -105,13 +107,13 @@ export function Header({ dict }: { dict: any }) {
         
         <div className="hidden lg:flex items-center gap-2">
           <SocialIcons />
-          <LanguageSwitcher />
+          <LanguageSwitcher dict={dict} />
           <BookingModal dict={dict.bookingModal} />
         </div>
 
         {/* Menu Mobile */}
         <div className="lg:hidden flex items-center gap-2">
-           <LanguageSwitcher />
+           <LanguageSwitcher dict={dict} />
            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
