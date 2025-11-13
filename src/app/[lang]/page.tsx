@@ -11,11 +11,12 @@ import { BookingModal } from '@/components/modals/booking-modal';
 import { getDictionary } from '@/get-dictionary';
 import { Locale } from '@/i18n-config';
 
-export default async function Home({
-  params: { lang },
-}: {
-  params: { lang: Locale }
-}) {
+type HomePageProps = {
+  params: { lang: Locale };
+};
+
+export default async function Home({ params }: HomePageProps) {
+  const { lang } = params;
   const dict = await getDictionary(lang);
   return (
     <div className="flex min-h-screen flex-col bg-background">

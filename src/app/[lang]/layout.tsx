@@ -13,13 +13,15 @@ export const metadata: Metadata = {
   description: 'African vibe',
 };
 
+type RootLayoutProps = {
+  children: React.ReactNode;
+  params: { lang: Locale };
+};
+
 export default function RootLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: { lang: Locale };
-}>) {
+}: RootLayoutProps) {
   return (
     <html lang={params.lang}>
       <head>
