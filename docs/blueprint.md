@@ -2,7 +2,7 @@
 
 ## Core Features:
 
-- Homepage Carousel: Display a rotating carousel of dish images with the tagline: 'Le Lof: goût, élégance, raffinement'.
+- Homepage Carousel: Display a rotating carousel of dish images with the tagline: 'Le Lof: African vibes'.
 - Social Media Follow Buttons: Implement 'Follow' buttons linking to Le Lof's LinkedIn, Instagram, and Facebook accounts to increase visibility and followers.
 - "About Us" Section: Show the story of Le Lof. Originating from a passion for African flavors and a desire to enhance them, Le Lof is where tradition meets modernity. Each dish tells the story of a continent rich in colors, spices, and emotions.
 - Menu Display: Display the breakfast, lunch, dinner, and drink menus. Use images of main dishes for each category.
