@@ -50,10 +50,10 @@ export function Hero({ dict }: { dict: any }) {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        {/* Suppression complète des marges négatives */}
-        <CarouselContent className="h-full ml-0">
+        {/* Suppression TOTALE des marges négatives - pas de ml-4 ou pl-4 */}
+        <CarouselContent className="h-full !ml-0">
           {heroImages.map((image, index) => (
-            <CarouselItem key={image.id} className="h-full pl-0 basis-full">
+            <CarouselItem key={image.id} className="h-full !pl-0 basis-full">
               <div className="relative w-full h-full">
                 <HeroImage image={image} priority={index === 0} />
                 {/* Overlay gradient plus foncé pour meilleur contraste du texte */}
