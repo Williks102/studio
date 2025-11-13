@@ -3,51 +3,36 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Menu as MenuIcon, Globe } from "lucide-react"
-import { usePathname, useRouter } from "next/navigation"
+import { Facebook, Instagram, Menu as MenuIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { BookingModal } from "@/components/modals/booking-modal"
-import { i18n, type Locale } from "@/i18n-config"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuLabel, DropdownMenuSeparator } from "@/components/ui/dropdown-menu"
+import { LanguageSwitcher } from "@/components/layout/language-switcher"
 
-function LanguageSwitcher({ dict }: { dict: any }) {
-  const pathName = usePathname()
-  const router = useRouter()
-
-  const redirectedPathName = (locale: Locale) => {
-    if (!pathName) return "/"
-    const segments = pathName.split("/")
-    segments[1] = locale
-    return segments.join("/")
-  }
-
-  const currentLocale = pathName.split("/")[1] as Locale
-
+function SocialIcons() {
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon" className="h-9 w-9">
-          <Globe className="h-5 w-5" />
-          <span className="sr-only">Changer de langue</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuLabel>{dict.language}</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        {i18n.locales.map((locale) => (
-          <DropdownMenuItem
-            key={locale}
-            onClick={() => router.push(redirectedPathName(locale))}
-            className={cn("cursor-pointer", currentLocale === locale && "font-bold")}
-          >
-            {locale.toUpperCase()}
-          </DropdownMenuItem>
-        ))}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div className="flex items-center gap-2">
+      <Link 
+        href="https://www.facebook.com/profile.php?id=61571002723074" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-foreground/60 transition-colors hover:text-primary"
+      >
+        <Facebook className="h-5 w-5" />
+        <span className="sr-only">Facebook</span>
+      </Link>
+      <Link 
+        href="https://www.instagram.com/lelofabidjan/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-foreground/60 transition-colors hover:text-primary"
+      >
+        <Instagram className="h-5 w-5" />
+        <span className="sr-only">Instagram</span>
+      </Link>
+    </div>
   )
 }
 
@@ -76,7 +61,8 @@ export function Header({ dict }: { dict: any }) {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled ?
+        "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8 lg:px-12 gap-4">
@@ -137,38 +123,25 @@ export function Header({ dict }: { dict: any }) {
                     </Link>
                     <nav className="flex flex-col items-center gap-6 text-center">
                         {navLinks.map((link) => (
-                        <Link
-                            key={link.href}
-                            href={link.href}
-                            className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            {link.label}
-                        </Link>
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                {link.label}
+                            </Link>
                         ))}
                     </nav>
-                    <div className="mt-8 flex flex-col items-center gap-6 w-full px-8">
-                        <BookingModal onOpenChange={setIsMobileMenuOpen} dict={dict.bookingModal} />
+                    <div className="mt-8 flex flex-col items-center gap-4 w-full px-8">
                         <SocialIcons />
+                        <BookingModal dict={dict.bookingModal} fullWidth />
                     </div>
                 </div>
             </SheetContent>
-          </Sheet>
+        </Sheet>
         </div>
       </div>
     </header>
-  )
-}
-
-function SocialIcons() {
-  return (
-    <div className="flex items-center gap-3">
-      <Link href="https://www.instagram.com/restaurantlof?igsh=YWZ6ZTFlbjl2M3Fm" aria-label="Instagram">
-        <Instagram className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
-      </Link>
-      <Link href="https://www.facebook.com/share/17hdPuU8Bu/" aria-label="Facebook">
-        <Facebook className="h-5 w-5 text-foreground/70 transition-colors hover:text-primary" />
-      </Link>
-    </div>
   )
 }
