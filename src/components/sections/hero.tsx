@@ -4,7 +4,7 @@ import Image from "next/image"
 import { PlaceHolderImages } from "@/lib/placeholder-images"
 import Autoplay from "embla-carousel-autoplay"
 import * as React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 import {
   Carousel,
@@ -14,117 +14,34 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+function HeroImage({ image, priority }: { image: (typeof PlaceHolderImages)[number], priority: boolean }) {
+  const [imageSrc, setImageSrc] = useState(image.imageUrl);
+
+  return (
+    <Image
+      fill
+      src={imageSrc}
+      alt={image.description}
+      data-ai-hint={image.imageHint}
+      className="w-full h-full object-cover"
+      priority={priority}
+      onError={() => {
+        console.warn(`Erreur de chargement de l'image principale : ${image.imageUrl}. Utilisation de l'image de secours.`);
+        setImageSrc(`https://placehold.co/1200x800?text=Image+Indisponible`);
+      }}
+    />
+  )
+}
+
 export function Hero({ dict }: { dict: any }) {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [heroImages, setHeroImages] = useState<(typeof PlaceHolderImages[number])[]>([]);
-  const [hasError, setHasError] = useState(false);
-  
-  const fallbackImages = [
-    {
-      id: "fallback-1",
-      description: "Image de secours pour le restaurant",
-      imageUrl: "https://placehold.co/1200x800?text=Restaurant+Le+Lof",
-      imageHint: "restaurant placeholder"
-    },
-    {
-      id: "fallback-2",
-      description: "Image de secours pour le restaurant",
-      imageUrl: "https://placehold.co/1200x800?text=Cuisine+Africaine",
-      imageHint: "restaurant placeholder"
-    }
-  ];
+  const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"));
   
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
-  useEffect(() => {
-    const filteredImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"));
-    
-    if (filteredImages.length === 0) {
-      console.warn("Aucune image hero trouvée, utilisation des images de secours");
-      setHeroImages(fallbackImages);
-      setHasError(true);
-      setImagesLoaded(true);
-      return;
-    }
-    
-    let loadedCount = 0;
-    let errorCount = 0;
-    
-    filteredImages.forEach(image => {
-      const img = document.createElement("img");
-      
-      img.onload = () => {
-        loadedCount++;
-        if (loadedCount + errorCount === filteredImages.length) {
-          if (errorCount > 0 && loadedCount === 0) {
-            setHeroImages(fallbackImages);
-            setHasError(true);
-          } else {
-             setHeroImages(filteredImages);
-          }
-          setImagesLoaded(true);
-        }
-      };
-      
-      img.onerror = () => {
-        console.error(`Erreur de chargement d'image: ${image.id}, URL: ${image.imageUrl}`);
-        errorCount++;
-        if (loadedCount + errorCount === filteredImages.length) {
-          if (loadedCount === 0) {
-            setHeroImages(fallbackImages);
-            setHasError(true);
-          } else {
-            setHeroImages(filteredImages.filter(img => {
-                let found = false;
-                try {
-                    const i = new Image();
-                    i.src = img.imageUrl;
-                    found = true;
-                } catch(e) {
-                    //
-                }
-                return found;
-            }));
-          }
-          setImagesLoaded(true);
-        }
-      };
-      
-      img.src = image.imageUrl;
-    });
-
-    if (filteredImages.length === 0) {
-        setImagesLoaded(true);
-        setHeroImages(fallbackImages);
-        setHasError(true);
-    } else {
-       setHeroImages(filteredImages);
-    }
-  }, []);
-
-  if (!imagesLoaded) {
-    return (
-      <section className="relative w-full h-[calc(100vh-5rem)] max-h-[800px] bg-gray-900 flex items-center justify-center">
-        <div className="text-white text-center">
-          <div className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-white border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite] mb-4"></div>
-          <p className="text-lg">Chargement des images...</p>
-        </div>
-      </section>
-    );
-  }
-
-  const imagesToDisplay = hasError ? fallbackImages : heroImages.filter(img => img.id.startsWith("hero-"));
-
   return (
-    <section className="relative w-full h-[calc(100vh-5rem)] max-h-[800px]">
-      {hasError && (
-        <div className="absolute top-0 left-0 z-10 bg-yellow-500/80 text-white px-4 py-2 text-sm">
-          Attention: Certaines images n'ont pas pu être chargées. Images de secours affichées.
-        </div>
-      )}
-      
+    <section className="relative w-full h-[calc(100vh-5rem)] max-h-[800px] bg-background">
       <Carousel
         className="h-full w-full"
         plugins={[plugin.current]}
@@ -135,22 +52,10 @@ export function Hero({ dict }: { dict: any }) {
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent className="h-full">
-          {imagesToDisplay.map((image, index) => (
-            <CarouselItem key={image.id} className="h-full p-0">
-              <div className="relative w-full h-full bg-gray-900">
-                <Image
-                  fill
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  className="w-full h-full object-cover"
-                  priority={index === 0}
-                  onError={(e) => {
-                    console.error(`Erreur d'affichage Next.js Image: ${image.id}`);
-                    setHasError(true);
-                    setHeroImages(fallbackImages);
-                  }}
-                />
+          {heroImages.map((image, index) => (
+            <CarouselItem key={image.id} className="h-full">
+              <div className="relative w-full h-full">
+                <HeroImage image={image} priority={index === 0} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
               </div>
             </CarouselItem>
