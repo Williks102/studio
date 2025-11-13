@@ -1,7 +1,7 @@
-import type {NextConfig} from 'next';
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
         port: '',
-        pathname: '/**',
+        pathname: '/**', // Simplification pour éviter les problèmes avec les variables d'environnement
       },
     ],
   },
