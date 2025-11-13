@@ -1,0 +1,32 @@
+/* Fix pour le carousel Hero - élimine les décalages sur mobile */
+
+/* Force la suppression des marges négatives du carousel */
+.hero-carousel [data-carousel-content] {
+    margin-left: 0 !important;
+  }
+  
+  .hero-carousel [data-carousel-item] {
+    padding-left: 0 !important;
+  }
+  
+  /* Assure que le carousel ne déborde pas de son conteneur */
+  .hero-carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  /* Assure un affichage parfait sur tous les écrans */
+  .hero-carousel .embla {
+    overflow: hidden;
+  }
+  
+  .hero-carousel .embla__container {
+    display: flex;
+    margin-left: 0;
+  }
+  
+  .hero-carousel .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    padding-left: 0;
+  }
