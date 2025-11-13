@@ -1,7 +1,7 @@
 
 {
     "header": {
-        "about": "A Propos",
+        "about": "À propos",
         "menu": "Menu",
         "formulas": "Formules",
         "updates": "Actualités",
@@ -16,15 +16,15 @@
         "whatsapp": "Contactez-nous sur WhatsApp"
     },
     "about": {
-        "title": "A Propos de Nous",
+        "title": "À propos de nous",
         "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le Lof est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",
-        "openingHoursTitle": "Nos Horaires d'Ouverture",
+        "openingHoursTitle": "Nos horaires d'ouverture",
         "day": "Journée",
         "evening": "Soir"
     },
     "menu": {
-        "title": "Découvrez Notre Menu",
-        "breakfast": "Petit Déjeuner",
+        "title": "Découvrez notre menu",
+        "breakfast": "Petit déjeuner",
         "lunch": "Déjeuner",
         "dinner": "Dîner",
         "drinks": "Boissons",
@@ -40,7 +40,7 @@
         }
     },
     "formulas": {
-        "title": "Découvrez Nos Formules",
+        "title": "Découvrez nos formules",
         "brunch": {
             "title": "Brunch",
             "short": "Un moment de partage gourmand et convivial pour vos week-ends.",
@@ -56,10 +56,10 @@
             "short": "Une abondance de saveurs pour vos événements et célébrations.",
             "long": "Pour vos événements, nous proposons une formule buffet généreuse et variée. Un large éventail de nos meilleures créations, des entrées aux desserts, est présenté pour ravir tous vos convives. Idéal pour les anniversaires, les réceptions professionnelles ou toute autre grande célébration."
         },
-        "makeReservation": "Faire ma Reservation"
+        "makeReservation": "Faire ma reservation"
     },
     "updates": {
-        "title": "Nos Actualités",
+        "title": "Nos actualités",
         "description": "Restez informé de nos dernières nouvelles, événements et offres spéciales.",
         "types": {
             "info": "Info",
@@ -69,7 +69,7 @@
         }
     },
     "africanVibes": {
-        "title": "African Vibes",
+        "title": "African vibes",
         "decor": {
             "title": "Le décor ethnique chic",
             "description": "Notre décor ethnique chic crée une atmosphère chaleureuse et accueillante, idéale pour savourer des plats traditionnels revisités. Chaque détail, des œuvres d'art aux meubles, reflète la richesse culturelle du continent africain tout en offrant une touche moderne."
@@ -79,12 +79,12 @@
             "description": "Au LOF, chaque repas devient une expérience sensorielle unique. Musique douce en fond sonore, ambiance apaisante, éclairage tamisé, cadre chaleureux."
         },
         "activities": {
-            "title": "Les Activités",
+            "title": "Les activités",
             "description": "Vibrez au rythme de nos soirées live, découvrez des talents en acoustique, amusez-vous lors de nos karaokés ou profitez de nos buffets thématiques."
         }
     },
     "quote": {
-        "title": "Faire une Reservation",
+        "title": "Faire une reservation",
         "description": "Organisez votre prochain événement avec nous. Remplissez le formulaire ci-dessous.",
         "form": {
             "name": "Nom et prénoms",
@@ -98,7 +98,7 @@
                 "private": "Expérience culinaire privée",
                 "buffet": "Buffet"
             },
-            "submit": "Faire ma Reservation",
+            "submit": "Faire ma reservation",
             "submitting": "Envoi...",
             "successTitle": "Demande de devis envoyée",
             "successDescription": "Votre demande a été redirigée vers WhatsApp. Veuillez finaliser l'envoi."
