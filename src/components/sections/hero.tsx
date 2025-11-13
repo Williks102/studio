@@ -15,12 +15,10 @@ import {
 } from "@/components/ui/carousel"
 
 export function Hero({ dict }: { dict: any }) {
-  // State pour suivre les images chargées
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [heroImages, setHeroImages] = useState<typeof PlaceHolderImages>([]);
+  const [heroImages, setHeroImages] = useState<(typeof PlaceHolderImages[number])[]>([]);
   const [hasError, setHasError] = useState(false);
   
-  // Valeurs de secours en cas d'erreur avec les images Cloudinary
   const fallbackImages = [
     {
       id: "fallback-1",
@@ -40,12 +38,9 @@ export function Hero({ dict }: { dict: any }) {
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
 
-  // Effet pour charger et vérifier les images
   useEffect(() => {
-    // Filtrer les images héro
     const filteredImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"));
     
-    // Si aucune image n'est trouvée, utiliser les images de secours
     if (filteredImages.length === 0) {
       console.warn("Aucune image hero trouvée, utilisation des images de secours");
       setHeroImages(fallbackImages);
@@ -54,17 +49,21 @@ export function Hero({ dict }: { dict: any }) {
       return;
     }
     
-    // Vérifier que toutes les images peuvent être chargées
     let loadedCount = 0;
     let errorCount = 0;
     
     filteredImages.forEach(image => {
-      // Correction: créer l'élément image avec document.createElement
       const img = document.createElement("img");
       
       img.onload = () => {
         loadedCount++;
         if (loadedCount + errorCount === filteredImages.length) {
+          if (errorCount > 0 && loadedCount === 0) {
+            setHeroImages(fallbackImages);
+            setHasError(true);
+          } else {
+             setHeroImages(filteredImages);
+          }
           setImagesLoaded(true);
         }
       };
@@ -73,10 +72,21 @@ export function Hero({ dict }: { dict: any }) {
         console.error(`Erreur de chargement d'image: ${image.id}, URL: ${image.imageUrl}`);
         errorCount++;
         if (loadedCount + errorCount === filteredImages.length) {
-          if (errorCount === loadedCount + errorCount) { // Check if all images failed
-            // Toutes les images ont échoué, utiliser les images de secours
+          if (loadedCount === 0) {
             setHeroImages(fallbackImages);
             setHasError(true);
+          } else {
+            setHeroImages(filteredImages.filter(img => {
+                let found = false;
+                try {
+                    const i = new Image();
+                    i.src = img.imageUrl;
+                    found = true;
+                } catch(e) {
+                    //
+                }
+                return found;
+            }));
           }
           setImagesLoaded(true);
         }
@@ -84,14 +94,16 @@ export function Hero({ dict }: { dict: any }) {
       
       img.src = image.imageUrl;
     });
-    
-    // Définir les images héro
-    if (errorCount < filteredImages.length) {
-      setHeroImages(filteredImages);
+
+    if (filteredImages.length === 0) {
+        setImagesLoaded(true);
+        setHeroImages(fallbackImages);
+        setHasError(true);
+    } else {
+       setHeroImages(filteredImages);
     }
   }, []);
 
-  // Afficher un état de chargement si les images ne sont pas encore prêtes
   if (!imagesLoaded) {
     return (
       <section className="relative w-full h-[calc(100vh-5rem)] max-h-[800px] bg-gray-900 flex items-center justify-center">
@@ -102,6 +114,8 @@ export function Hero({ dict }: { dict: any }) {
       </section>
     );
   }
+
+  const imagesToDisplay = hasError ? fallbackImages : heroImages.filter(img => img.id.startsWith("hero-"));
 
   return (
     <section className="relative w-full h-[calc(100vh-5rem)] max-h-[800px]">
@@ -121,7 +135,7 @@ export function Hero({ dict }: { dict: any }) {
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent className="h-full">
-          {heroImages.map((image, index) => (
+          {imagesToDisplay.map((image, index) => (
             <CarouselItem key={image.id} className="h-full p-0">
               <div className="relative w-full h-full bg-gray-900">
                 <Image
@@ -133,10 +147,10 @@ export function Hero({ dict }: { dict: any }) {
                   priority={index === 0}
                   onError={(e) => {
                     console.error(`Erreur d'affichage Next.js Image: ${image.id}`);
-                    // If an image fails, we could swap it for a fallback, but the initial check should prevent this.
+                    setHasError(true);
+                    setHeroImages(fallbackImages);
                   }}
                 />
-                {/* Overlay avec gradient pour une meilleure visibilité du texte */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
               </div>
             </CarouselItem>

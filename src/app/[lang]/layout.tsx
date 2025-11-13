@@ -18,10 +18,7 @@ type RootLayoutProps = {
   params: { lang: Locale };
 };
 
-export default function RootLayout({
-  children,
-  params,
-}: RootLayoutProps) {
+export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={params.lang}>
       <head>
