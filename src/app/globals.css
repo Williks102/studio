@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './carousel-fixes.css';
 
 @layer base {
   :root {
@@ -85,4 +86,3 @@
     @apply bg-background text-foreground;
   }
 }
-@import './carousel-fixes.css';
