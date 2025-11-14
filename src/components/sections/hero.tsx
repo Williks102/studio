@@ -1,8 +1,9 @@
 "use client"
 
+import { PlaceHolderImages } from "@/lib/placeholder-images"
 import Autoplay from "embla-carousel-autoplay"
 import * as React from "react"
-import { PlaceHolderImages } from "@/lib/placeholder-images"
+import { useState } from "react"
 
 import {
   Carousel,
@@ -12,6 +13,25 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+function HeroImage({ image, priority }: { image: (typeof PlaceHolderImages)[number], priority: boolean }) {
+  const [imageSrc, setImageSrc] = useState(image.imageUrl);
+
+  return (
+    <img
+      src={imageSrc}
+      alt={image.description}
+      data-ai-hint={image.imageHint}
+      className="w-full h-auto object-cover"
+      loading={priority ? "eager" : "lazy"}
+      onError={() => {
+        console.warn(`Erreur de chargement de l'image principale : ${image.imageUrl}.
+Utilisation de l'image de secours.`);
+        setImageSrc(`https://placehold.co/1200x800?text=Image+Indisponible`);
+      }}
+    />
+  )
+}
+
 export function Hero({ dict }: { dict: any }) {
   const heroImages = PlaceHolderImages.filter((img) => img.id.startsWith("hero-"));
   
@@ -20,9 +40,9 @@ export function Hero({ dict }: { dict: any }) {
   );
 
   return (
-    <section className="relative w-full h-[calc(100vh-5rem)] max-h-[800px] bg-[#F2E7D5] overflow-hidden">
-      <Carousel
-        className="w-full h-full hero-carousel"
+    <section className="w-full relative bg-[#F2E7D5]">
+      <Carousel 
+        className="w-full"
         plugins={[plugin.current]}
         opts={{ 
           loop: true,
@@ -30,34 +50,33 @@ export function Hero({ dict }: { dict: any }) {
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent className="h-full !ml-0" data-carousel-content>
+        <CarouselContent>
           {heroImages.map((image, index) => (
-            <CarouselItem key={image.id} className="h-full !pl-0 basis-full" data-carousel-item>
-              <div className="relative w-full h-full">
-                <img
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  className="w-full h-full object-cover"
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent" />
+            <CarouselItem key={image.id}>
+              {/* Container relatif pour positionner l'overlay et le texte */}
+              <div className="w-full relative">
+                <HeroImage image={image} priority={index === 0} />
+                
+                {/* Overlay gradient pour le contraste du texte */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/40" />
+                
+                {/* Texte centré par-dessus l'image */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 z-10">
+                  <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_20px_rgb(0_0_0_/_80%),_0_0_40px_rgb(0_0_0_/_60%)]">
+                    {dict.title}
+                  </h1>
+                  <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_15px_rgb(0_0_0_/_80%),_0_0_30px_rgb(0_0_0_/_60%)]">
+                    {dict.subtitle}
+                  </p>
+                </div>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
         
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 pointer-events-none z-10">
-            <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.7)]" style={{textShadow: '0 2px 20px rgb(0 0 0 / 80%), 0 0 40px rgb(0 0 0 / 60%)'}}>
-            {dict.title}
-            </h1>
-            <p className="mt-4 max-w-2xl text-lg sm:text-xl md:text-2xl lg:text-3xl text-white drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]" style={{textShadow: '0 2px 15px rgb(0 0 0 / 80%), 0 0 30px rgb(0 0 0 / 60%)'}}>
-            {dict.subtitle}
-            </p>
-        </div>
-        
-        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/40 text-white border-white/40 backdrop-blur-sm transition-all duration-200 z-20" />
-        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/40 text-white border-white/40 backdrop-blur-sm transition-all duration-200 z-20" />
+        {/* Boutons de navigation */}
+        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/40 text-white border-white/40 backdrop-blur-sm transition-all duration-200" />
+        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/30 hover:bg-white/40 text-white border-white/40 backdrop-blur-sm transition-all duration-200" />
       </Carousel>
     </section>
   )
