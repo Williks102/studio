@@ -15,7 +15,8 @@ type HomePageProps = {
   params: { lang: Locale };
 };
 
-export default async function Home({ params }: HomePageProps) {
+export default async function Home(props: HomePageProps) {
+  const { params } = props;
   const { lang } = params;
   const dict = await getDictionary(lang);
   return (

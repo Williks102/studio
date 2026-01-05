@@ -8,7 +8,8 @@
         "vibes": "African vibes",
         "contact": "Contact",
         "bookNow": "Book Now",
-        "language": "Language"
+        "language": "Language",
+        "menuPage": "Menu"
     },
     "hero": {
         "title": "Le Lof",
@@ -16,14 +17,14 @@
         "whatsapp": "Contact us on WhatsApp"
     },
     "about": {
-        "title": "About Us",
+        "title": "About us",
         "description": "Born from a passion for African flavors and the desire to elevate them, Le Lof is a place where tradition meets modernity. Here, every plate tells a story, that of a continent rich in colors, spices, and emotions. Our team of enthusiasts promises you an unforgettable culinary journey, between authenticity and creativity.",
-        "openingHoursTitle": "Our Opening Hours",
+        "openingHoursTitle": "Our opening hours",
         "day": "Daytime",
         "evening": "Evening"
     },
     "menu": {
-        "title": "Discover Our Menu",
+        "title": "Discover our menu",
         "breakfast": "Breakfast",
         "lunch": "Lunch",
         "dinner": "Dinner",
@@ -39,15 +40,58 @@
             "the": "Traditional Mint Tea"
         }
     },
+    "menuPage": {
+        "title": "Our menu",
+        "description": "A culinary journey through the authentic and refined flavors of Africa.",
+        "starters": "Starters",
+        "mainCourses": "Main courses",
+        "desserts": "Desserts",
+        "drinks": "Drinks",
+        "currency": "FCFA",
+        "dishes": {
+            "africanSalad": {
+                "name": "Freshness of the Oasis",
+                "description": "Mixed salad with seasonal vegetables, avocado, and citrus vinaigrette."
+            },
+            "tunaPastels": {
+                "name": "Golden pastels",
+                "description": "Crispy turnovers filled with spicy tuna, served with a sweet and sour sauce."
+            },
+            "chickenYassa": {
+                "name": "The essential chicken yassa",
+                "description": "Chicken marinated in lemon and onions, grilled and served with white rice."
+            },
+            "beefMaafe": {
+                "name": "The unctuous beef maafe",
+                "description": "Beef simmered in a creamy peanut sauce with vegetables."
+            },
+            "thiakry": {
+                "name": "Sweet thiakry",
+                "description": "Millet couscous with sweetened yogurt and dried fruits."
+            },
+            "exoticFruitSalad": {
+                "name": "Exotic farandole",
+                "description": "Assortment of fresh seasonal fruits (mango, papaya, pineapple)."
+            },
+            "bissapJuice": {
+                "name": "Bissap juice",
+                "description": "Refreshing drink made from hibiscus flowers."
+            },
+            "gingerJuice": {
+                "name": "Gnamakoudji",
+                "description": "Energizing juice with a strong ginger taste, slightly sweetened."
+            }
+        }
+    },
     "formulas": {
-        "title": "Discover Our Formulas",
+        "title": "Discover our formulas",
         "brunch": {
             "title": "Brunch",
             "short": "A gourmet and convivial moment of sharing for your weekends.",
             "long": "Our brunch formula is an invitation to relaxation and indulgence. Every weekend, discover a varied buffet with sweet and savory flavors, hot dishes, pastries, fresh juices, and revisited African specialties. It's the perfect opportunity to get together with family or friends in a warm atmosphere."
         },
         "private": {
-            "title": "Private Culinary Experience",
+            "title": "Private culinary experience",
             "short": "A chef at your disposal for an exclusive and memorable evening.",
             "long": "Experience an exceptional evening with our private culinary experience. One of our chefs is entirely dedicated to your table to create a tailor-made menu according to your desires. It is the ideal formula for a special occasion, a romantic dinner, or an intimate celebration, where each dish is a work of art."
         },
@@ -59,7 +103,7 @@
         "makeReservation": "Make my Reservation"
     },
     "updates": {
-        "title": "Our News",
+        "title": "Our news",
         "description": "Stay informed of our latest news, events, and special offers.",
         "types": {
             "info": "Info",
@@ -69,7 +113,7 @@
         }
     },
     "africanVibes": {
-        "title": "African Vibes",
+        "title": "African vibes",
         "decor": {
             "title": "The chic ethnic decor",
             "description": "Our chic ethnic decor creates a warm and welcoming atmosphere, ideal for savoring revisited traditional dishes. Every detail, from the works of art to the furniture, reflects the cultural richness of the African continent while offering a modern touch."
@@ -84,7 +128,7 @@
         }
     },
     "quote": {
-        "title": "Make a Reservation",
+        "title": "Make a reservation",
         "description": "Organize your next event with us. Fill out the form below.",
         "form": {
             "name": "Full name",

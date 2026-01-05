@@ -8,7 +8,8 @@
         "vibes": "African vibes",
         "contact": "Contact",
         "bookNow": "Réservez maintenant",
-        "language": "Langue"
+        "language": "Langue",
+        "menuPage": "La Carte"
     },
     "hero": {
         "title": "Le Lof",
@@ -37,6 +38,49 @@
             "brochettes": "Brochettes de Boeuf Épicées",
             "cocktail": "Cocktail 'Le Coucher du Soleil'",
             "the": "Thé à la Menthe Traditionnel"
+        }
+    },
+    "menuPage": {
+        "title": "Notre carte",
+        "description": "Un voyage culinaire à travers les saveurs authentiques et raffinées de l'Afrique.",
+        "starters": "Entrées",
+        "mainCourses": "Plats principaux",
+        "desserts": "Desserts",
+        "drinks": "Boissons",
+        "currency": "FCFA",
+        "dishes": {
+            "africanSalad": {
+                "name": "Fraîcheur de l'Oasis",
+                "description": "Salade composée de légumes de saison, avocat et vinaigrette aux agrumes."
+            },
+            "tunaPastels": {
+                "name": "Pastels dorés",
+                "description": "Chaussons croustillants farcis au thon épicé, servis avec une sauce aigre-douce."
+            },
+            "chickenYassa": {
+                "name": "L'incontournable poulet yassa",
+                "description": "Poulet mariné au citron et aux oignons, grillé et servi avec du riz blanc."
+            },
+            "beefMaafe": {
+                "name": "L'onctueux mafé au boeuf",
+                "description": "Boeuf mijoté dans une sauce onctueuse à base d'arachide et de légumes."
+            },
+            "thiakry": {
+                "name": "Thiakry gourmand",
+                "description": "Couscous de mil au yaourt sucré et aux fruits secs."
+            },
+            "exoticFruitSalad": {
+                "name": "Farandole exotique",
+                "description": "Assortiment de fruits frais de saison (mangue, papaye, ananas)."
+            },
+            "bissapJuice": {
+                "name": "Jus de bissap",
+                "description": "Boisson rafraîchissante à base de fleurs d'hibiscus."
+            },
+            "gingerJuice": {
+                "name": "Gnamakoudji",
+                "description": "Jus énergisant au goût puissant de gingembre, légèrement sucré."
+            }
         }
     },
     "formulas": {

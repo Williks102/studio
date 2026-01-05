@@ -41,12 +41,12 @@ export function Header({ dict }: { dict: any }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: "#about", label: dict.about },
-    { href: "#menu", label: dict.menu },
-    { href: "#formulas", label: dict.formulas },
-    { href: "#updates", label: dict.updates },
-    { href: "#vibes", label: dict.vibes },
-    { href: "#quote", label: dict.contact },
+    { href: "/#about", label: dict.about },
+    { href: "/menu", label: dict.menuPage },
+    { href: "/#formulas", label: dict.formulas },
+    { href: "/#updates", label: dict.updates },
+    { href: "/#vibes", label: dict.vibes },
+    { href: "/#quote", label: dict.contact },
   ]
 
   useEffect(() => {
@@ -135,7 +135,7 @@ export function Header({ dict }: { dict: any }) {
                     </nav>
                     <div className="mt-8 flex flex-col items-center gap-4 w-full px-8">
                         <SocialIcons />
-                        <BookingModal dict={dict.bookingModal} fullWidth />
+                        <BookingModal dict={dict.bookingModal} />
                     </div>
                 </div>
             </SheetContent>
