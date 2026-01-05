@@ -40,7 +40,7 @@ export function Hero({ dict }: { dict: any }) {
   );
 
   return (
-    <section className="w-full relative bg-[#F2E7D5]">
+    <section className="w-full relative">
       <Carousel 
         className="w-full"
         plugins={[plugin.current]}
