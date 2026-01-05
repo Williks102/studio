@@ -1,4 +1,8 @@
+"use client"
+
 import { PartyPopper, Users, ShieldCheck } from "lucide-react"
+import Image from "next/image"
+import { PlaceHolderImages } from "@/lib/placeholder-images"
 import {
   Card,
   CardContent,
@@ -30,19 +34,22 @@ export function Formulas({ dict }: { dict: any }) {
       icon: 'PartyPopper',
       title: dict.brunch.title,
       shortDescription: dict.brunch.short,
-      longDescription: dict.brunch.long
+      longDescription: dict.brunch.long,
+      imageId: "formula-brunch"
     },
     {
       icon: 'ShieldCheck',
       title: dict.private.title,
       shortDescription: dict.private.short,
-      longDescription: dict.private.long
+      longDescription: dict.private.long,
+      imageId: "formula-private"
     },
     {
       icon: 'Users',
       title: dict.buffet.title,
       shortDescription: dict.buffet.short,
-      longDescription: dict.buffet.long
+      longDescription: dict.buffet.long,
+      imageId: "formula-buffet"
     },
   ];
 
@@ -57,6 +64,7 @@ export function Formulas({ dict }: { dict: any }) {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {formulas.map((formula, index) => {
             const Icon = iconMap[formula.icon]
+            const image = PlaceHolderImages.find(img => img.id === formula.imageId)
             return (
               <Dialog key={index}>
                 <DialogTrigger asChild>
@@ -72,22 +80,35 @@ export function Formulas({ dict }: { dict: any }) {
                     </CardContent>
                   </Card>
                 </DialogTrigger>
-                <DialogContent className="bg-background">
-                  <DialogHeader>
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
-                      <Icon className="h-8 w-8" />
+                <DialogContent className="bg-background p-0 max-w-md">
+                   {image && (
+                    <div className="relative aspect-[16/9] w-full">
+                      <Image
+                        src={image.imageUrl}
+                        alt={formula.title}
+                        data-ai-hint={image.imageHint}
+                        fill
+                        className="object-cover rounded-t-lg"
+                      />
                     </div>
-                    <DialogTitle className="text-center font-headline text-2xl text-primary">{formula.title}</DialogTitle>
-                    <CardDescription className="text-center pt-2">
-                      {formula.longDescription}
-                    </CardDescription>
-                  </DialogHeader>
-                  <div className="flex justify-center pt-4">
-                    <DialogClose asChild>
-                      <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                        <Link href="#quote">{dict.makeReservation}</Link>
-                      </Button>
-                    </DialogClose>
+                  )}
+                  <div className="p-6">
+                    <DialogHeader>
+                      <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-4 -mt-14 bg-background z-10 relative border-4 border-background">
+                        <Icon className="h-8 w-8" />
+                      </div>
+                      <DialogTitle className="text-center font-headline text-2xl text-primary -mt-2">{formula.title}</DialogTitle>
+                      <CardDescription className="text-center pt-2">
+                        {formula.longDescription}
+                      </CardDescription>
+                    </DialogHeader>
+                    <div className="flex justify-center pt-4">
+                      <DialogClose asChild>
+                        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+                          <Link href="#quote">{dict.makeReservation}</Link>
+                        </Button>
+                      </DialogClose>
+                    </div>
                   </div>
                 </DialogContent>
               </Dialog>

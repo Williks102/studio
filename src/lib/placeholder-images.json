@@ -203,6 +203,24 @@
       "description": "Un plat de pâtes gastronomique",
       "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013110/253A3546_m8lz35.jpg",
       "imageHint": "plat pates"
+    },
+    {
+      "id": "formula-brunch",
+      "description": "Table de brunch bien garnie avec une variété de plats",
+      "imageUrl": "https://images.unsplash.com/photo-1542444592-717895273df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxicnVuY2glMjB0YWJsZXxlbnwwfHx8fDE3NjIxMTE0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brunch table"
+    },
+    {
+      "id": "formula-private",
+      "description": "Chef présentant un plat gastronomique dans un cadre privé",
+      "imageUrl": "https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb25hbCUyMGNoZWZ8ZW58MHx8fHwxNzYyMTExNDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "personal chef"
+    },
+    {
+      "id": "formula-buffet",
+      "description": "Buffet de traiteur bien garni lors d'un événement",
+      "imageUrl": "https://images.unsplash.com/photo-1555243896-c709b02b2790?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXRlcmluZyUyMGJ1ZmZldHxlbnwwfHx8fDE3NjIxMTE0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "catering buffet"
     }
   ]
 }
