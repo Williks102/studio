@@ -2,12 +2,12 @@
 "use client"
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from '@/components/ui/dialog';
 import { useState } from 'react';
 
 export function Gallery({ dict }: { dict: any }) {
   const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{url: string, alt: string} | null>(null);
 
   return (
     <section id="gallery" className="py-16 md:py-24 bg-background">
@@ -24,7 +24,7 @@ export function Gallery({ dict }: { dict: any }) {
         <Dialog>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4 md:gap-4">
             {galleryImages.map((image) => (
-              <DialogTrigger key={image.id} asChild onClick={() => setSelectedImage(image.imageUrl)}>
+              <DialogTrigger key={image.id} asChild onClick={() => setSelectedImage({ url: image.imageUrl, alt: image.description })}>
                 <div className="relative aspect-square cursor-pointer overflow-hidden rounded-lg transition-transform hover:scale-105">
                   <Image
                     src={image.imageUrl}
@@ -40,9 +40,10 @@ export function Gallery({ dict }: { dict: any }) {
           </div>
           {selectedImage && (
             <DialogContent className="max-w-4xl p-0 bg-transparent border-0">
+                <DialogTitle className="sr-only">{selectedImage.alt}</DialogTitle>
                 <Image
-                    src={selectedImage}
-                    alt="Image en gros plan"
+                    src={selectedImage.url}
+                    alt={selectedImage.alt}
                     width={1200}
                     height={800}
                     className="rounded-lg object-contain w-full h-auto"
