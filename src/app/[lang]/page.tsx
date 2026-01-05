@@ -3,7 +3,6 @@ import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
 import { Showcase } from '@/components/sections/showcase';
 import { About } from '@/components/sections/about';
-import { Menu } from '@/components/sections/menu';
 import { Formulas } from '@/components/sections/formulas';
 import { Updates } from '@/components/sections/updates';
 import { AfricanVibes } from '@/components/sections/african-vibes';
@@ -31,7 +30,6 @@ export default async function Home(props: HomePageProps) {
         <Hero dict={dict.hero} />
         <Showcase dict={dict.showcase} />
         <About dict={dict.about} />
-        <Menu dict={dict.menu} />
         <Formulas dict={dict.formulas} />
         <Updates dict={dict.updates} />
         <AfricanVibes dict={dict.africanVibes} />
