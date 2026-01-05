@@ -6,6 +6,7 @@ import { Menu } from '@/components/sections/menu';
 import { Formulas } from '@/components/sections/formulas';
 import { Updates } from '@/components/sections/updates';
 import { AfricanVibes } from '@/components/sections/african-vibes';
+import { Gallery } from '@/components/sections/gallery';
 import { Quote } from '@/components/sections/quote';
 import { BookingModal } from '@/components/modals/booking-modal';
 import { getDictionary } from '@/get-dictionary';
@@ -29,6 +30,7 @@ export default async function Home(props: HomePageProps) {
         <Formulas dict={dict.formulas} />
         <Updates dict={dict.updates} />
         <AfricanVibes dict={dict.africanVibes} />
+        <Gallery dict={dict.gallery} />
         <Quote dict={dict.quote} />
       </main>
       <Footer dict={dict.footer} />

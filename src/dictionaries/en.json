@@ -127,6 +127,10 @@
             "description": "Vibrate to the rhythm of our live evenings, discover acoustic talents, have fun during our karaoke sessions, or enjoy our themed buffets."
         }
     },
+    "gallery": {
+        "title": "Our Gallery",
+        "description": "A glimpse of the Lof experience: our setting, our atmosphere, our dishes."
+    },
     "quote": {
         "title": "Make a reservation",
         "description": "Organize your next event with us. Fill out the form below.",

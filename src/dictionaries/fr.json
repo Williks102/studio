@@ -127,6 +127,10 @@
             "description": "Vibrez au rythme de nos soirées live, découvrez des talents en acoustique, amusez-vous lors de nos karaokés ou profitez de nos buffets thématiques."
         }
     },
+    "gallery": {
+        "title": "Notre Galerie",
+        "description": "Un aperçu de l'expérience Lof : notre cadre, notre ambiance, nos plats."
+    },
     "quote": {
         "title": "Faire une reservation",
         "description": "Organisez votre prochain événement avec nous. Remplissez le formulaire ci-dessous.",

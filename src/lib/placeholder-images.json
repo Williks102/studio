@@ -155,6 +155,54 @@
       "description": "Jus de gingembre",
       "imageUrl": "https://images.unsplash.com/photo-1622597468473-84f65fdc3fc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnaW5nZXIlMjBqdWljZXxlbnwwfHx8fDE3Njc2MTQ4Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ginger juice"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Plat africain élégamment présenté",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013427/253A0409_dljx4p.jpg",
+      "imageHint": "nourriture africaine"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Ambiance du restaurant avec des clients",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013474/WhatsApp_Image_2025-02-06_at_10.53.50_2_sl237d.jpg",
+      "imageHint": "ambiance restaurant"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Un cocktail coloré servi au bar",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013456/WhatsApp_Image_2025-02-06_at_10.50.53_2_panfp7.jpg",
+      "imageHint": "cocktail exotique"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Décor chic et ethnique de l'intérieur du restaurant",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013281/488622267_1220068850122111_5436014174674905878_n_t4azjy.jpg",
+      "imageHint": "ethnic decor"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Performance de musique live au restaurant",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013007/1L7A9940_sgzfeh.jpg",
+      "imageHint": "live music"
+    },
+    {
+      "id": "gallery-6",
+      "description": "Un plat de pâtes gastronomique",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013477/WhatsApp_Image_2025-02-27_at_10.17.53_1_ct8gp3.jpg",
+      "imageHint": "plat pates"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Un plat de pâtes gastronomique",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013292/WhatsApp_Image_2025-02-06_at_10.53.53_1_vmfbsq.jpg",
+      "imageHint": "plat pates"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Un plat de pâtes gastronomique",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1762013110/253A3546_m8lz35.jpg",
+      "imageHint": "plat pates"
     }
   ]
 }
