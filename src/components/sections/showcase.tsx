@@ -7,11 +7,19 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { getShowcaseData } from '@/lib/showcase-data';
 
 export function Showcase({ dict }: { dict: any }) {
-    const showcaseItems = getShowcaseData(dict);
+    const showcaseItems = getShowcaseData(dict.items);
 
     return (
         <section className="py-16 md:py-24 bg-background">
             <div className="container mx-auto px-4 md:px-6">
+                <div className="mx-auto max-w-3xl text-center mb-12">
+                    <h2 className="font-headline text-3xl font-bold tracking-tight text-primary md:text-4xl">
+                        {dict.title}
+                    </h2>
+                    <p className="mt-4 text-lg text-muted-foreground">
+                        {dict.description}
+                    </p>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {showcaseItems.map((item) => {
                         const image = PlaceHolderImages.find((img) => img.id === item.imageId);

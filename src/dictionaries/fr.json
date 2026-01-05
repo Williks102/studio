@@ -17,29 +17,33 @@
         "whatsapp": "Contactez-nous sur WhatsApp"
     },
     "showcase": {
-        "gastronomy": {
-            "badge": "Gastronomie",
-            "title": "La Table d'Épicure",
-            "description": "Une cuisine fusion entre Afrique et Occident, pensée comme une véritable expérience gastronomique.",
-            "linkText": "Découvrir la carte"
-        },
-        "ambiance": {
-            "badge": "Ambiance",
-            "title": "L'Ambiance Lof",
-            "description": "Une oasis lumineuse et végétale au coeur de la ville, signature du lieu pour vos soirées.",
-            "linkText": "Voir les photos"
-        },
-        "brunch": {
-            "badge": "Dimanche",
-            "title": "Les Brunchs",
-            "description": "Le rendez-vous dominical incontournable à Abidjan, généreux et musical.",
-            "linkText": "Réserver le brunch"
-        },
-        "events": {
-            "badge": "Nightlife",
-            "title": "Les Soirées",
-            "description": "Groupes live, DJs, ambiance raffinée pour vos nuits abidjanaises.",
-            "linkText": "Découvrir le programme"
+        "title": "Nos Expériences",
+        "description": "Découvrez les différentes facettes du Lof, de notre cuisine raffinée à nos soirées animées.",
+        "items": {
+            "gastronomy": {
+                "badge": "Gastronomie",
+                "title": "La Table d'Épicure",
+                "description": "Une cuisine fusion entre Afrique et Occident, pensée comme une véritable expérience gastronomique.",
+                "linkText": "Découvrir la carte"
+            },
+            "ambiance": {
+                "badge": "Ambiance",
+                "title": "L'Ambiance Lof",
+                "description": "Une oasis lumineuse et végétale au coeur de la ville, signature du lieu pour vos soirées.",
+                "linkText": "Voir les photos"
+            },
+            "brunch": {
+                "badge": "Dimanche",
+                "title": "Les Brunchs",
+                "description": "Le rendez-vous dominical incontournable à Abidjan, généreux et musical.",
+                "linkText": "Réserver le brunch"
+            },
+            "events": {
+                "badge": "Nightlife",
+                "title": "Les Soirées",
+                "description": "Groupes live, DJs, ambiance raffinée pour vos nuits abidjanaises.",
+                "linkText": "Découvrir le programme"
+            }
         }
     },
     "about": {

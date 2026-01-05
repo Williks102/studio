@@ -17,29 +17,33 @@
         "whatsapp": "Contact us on WhatsApp"
     },
     "showcase": {
-        "gastronomy": {
-            "badge": "Gastronomy",
-            "title": "The Epicure's Table",
-            "description": "A fusion cuisine between Africa and the West, conceived as a true gastronomic experience.",
-            "linkText": "Discover the menu"
-        },
-        "ambiance": {
-            "badge": "Ambiance",
-            "title": "The Lof Ambiance",
-            "description": "A luminous and vegetal oasis in the heart of the city, the signature of the place for your evenings.",
-            "linkText": "See the photos"
-        },
-        "brunch": {
-            "badge": "Sunday",
-            "title": "The Brunches",
-            "description": "The unmissable Sunday meeting in Abidjan, generous and musical.",
-            "linkText": "Book the brunch"
-        },
-        "events": {
-            "badge": "Nightlife",
-            "title": "The Evenings",
-            "description": "Live bands, DJs, refined atmosphere for your Abidjan nights.",
-            "linkText": "Discover the program"
+        "title": "Our Experiences",
+        "description": "Discover the different facets of Le Lof, from our refined cuisine to our vibrant evenings.",
+        "items": {
+            "gastronomy": {
+                "badge": "Gastronomy",
+                "title": "The Epicure's Table",
+                "description": "A fusion cuisine between Africa and the West, conceived as a true gastronomic experience.",
+                "linkText": "Discover the menu"
+            },
+            "ambiance": {
+                "badge": "Ambiance",
+                "title": "The Lof Ambiance",
+                "description": "A luminous and vegetal oasis in the heart of the city, the signature of the place for your evenings.",
+                "linkText": "See the photos"
+            },
+            "brunch": {
+                "badge": "Sunday",
+                "title": "The Brunches",
+                "description": "The unmissable Sunday meeting in Abidjan, generous and musical.",
+                "linkText": "Book the brunch"
+            },
+            "events": {
+                "badge": "Nightlife",
+                "title": "The Evenings",
+                "description": "Live bands, DJs, refined atmosphere for your Abidjan nights.",
+                "linkText": "Discover the program"
+            }
         }
     },
     "about": {
