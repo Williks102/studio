@@ -16,6 +16,32 @@
         "subtitle": "African vibes",
         "whatsapp": "Contact us on WhatsApp"
     },
+    "showcase": {
+        "gastronomy": {
+            "badge": "Gastronomy",
+            "title": "The Epicure's Table",
+            "description": "A fusion cuisine between Africa and the West, conceived as a true gastronomic experience.",
+            "linkText": "Discover the menu"
+        },
+        "ambiance": {
+            "badge": "Ambiance",
+            "title": "The Lof Ambiance",
+            "description": "A luminous and vegetal oasis in the heart of the city, the signature of the place for your evenings.",
+            "linkText": "See the photos"
+        },
+        "brunch": {
+            "badge": "Sunday",
+            "title": "The Brunches",
+            "description": "The unmissable Sunday meeting in Abidjan, generous and musical.",
+            "linkText": "Book the brunch"
+        },
+        "events": {
+            "badge": "Nightlife",
+            "title": "The Evenings",
+            "description": "Live bands, DJs, refined atmosphere for your Abidjan nights.",
+            "linkText": "Discover the program"
+        }
+    },
     "about": {
         "title": "About us",
         "description": "Born from a passion for African flavors and the desire to elevate them, Le Lof is a place where tradition meets modernity. Here, every plate tells a story, that of a continent rich in colors, spices, and emotions. Our team of enthusiasts promises you an unforgettable culinary journey, between authenticity and creativity.",

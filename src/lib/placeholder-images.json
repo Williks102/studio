@@ -221,6 +221,30 @@
       "description": "Buffet de traiteur bien garni lors d'un événement",
       "imageUrl": "https://images.unsplash.com/photo-1555243896-c709b02b2790?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYXRlcmluZyUyMGJ1ZmZldHxlbnwwfHx8fDE3NjIxMTE0NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "catering buffet"
+    },
+    {
+      "id": "showcase-gastronomy",
+      "description": "Table de restaurant élégamment dressée",
+      "imageUrl": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxyZXN0YXVyYW50JTIwdGFibGV8ZW58MHx8fHwxNzY4MjgzODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "restaurant table"
+    },
+    {
+      "id": "showcase-ambiance",
+      "description": "Ambiance chaleureuse d'un restaurant avec des lumières douces",
+      "imageUrl": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwYW1iaWFuY2V8ZW58MHx8fHwxNzY4MjgzODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "restaurant ambiance"
+    },
+    {
+      "id": "showcase-brunch",
+      "description": "Personnes profitant d'un brunch dominical",
+      "imageUrl": "https://images.unsplash.com/photo-1543362905-f484434241e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxicnVuY2h8ZW58MHx8fHwxNzY4MjgzODU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sunday brunch"
+    },
+    {
+      "id": "showcase-events",
+      "description": "Foule lors d'une soirée animée",
+      "imageUrl": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxuaWdodGxpZmUlMjBldmVudHxlbnwwfHx8fDE3NjgyODM4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nightlife event"
     }
   ]
 }

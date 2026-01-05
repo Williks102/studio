@@ -16,6 +16,32 @@
         "subtitle": "African vibes",
         "whatsapp": "Contactez-nous sur WhatsApp"
     },
+    "showcase": {
+        "gastronomy": {
+            "badge": "Gastronomie",
+            "title": "La Table d'Épicure",
+            "description": "Une cuisine fusion entre Afrique et Occident, pensée comme une véritable expérience gastronomique.",
+            "linkText": "Découvrir la carte"
+        },
+        "ambiance": {
+            "badge": "Ambiance",
+            "title": "L'Ambiance Lof",
+            "description": "Une oasis lumineuse et végétale au coeur de la ville, signature du lieu pour vos soirées.",
+            "linkText": "Voir les photos"
+        },
+        "brunch": {
+            "badge": "Dimanche",
+            "title": "Les Brunchs",
+            "description": "Le rendez-vous dominical incontournable à Abidjan, généreux et musical.",
+            "linkText": "Réserver le brunch"
+        },
+        "events": {
+            "badge": "Nightlife",
+            "title": "Les Soirées",
+            "description": "Groupes live, DJs, ambiance raffinée pour vos nuits abidjanaises.",
+            "linkText": "Découvrir le programme"
+        }
+    },
     "about": {
         "title": "À propos de nous",
         "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le Lof est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",

@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
+import { Showcase } from '@/components/sections/showcase';
 import { About } from '@/components/sections/about';
 import { Menu } from '@/components/sections/menu';
 import { Formulas } from '@/components/sections/formulas';
@@ -18,13 +19,17 @@ type HomePageProps = {
 
 export default async function Home(props: HomePageProps) {
   const { params } = props;
-  const { lang } = params;
+  const lang = params.lang;
+  if (!lang || typeof lang !== 'string') {
+    return <div>Invalid language</div>;
+  }
   const dict = await getDictionary(lang);
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header dict={{...dict.header, bookingModal: dict.bookingModal}} />
       <main className="flex-1">
         <Hero dict={dict.hero} />
+        <Showcase dict={dict.showcase} />
         <About dict={dict.about} />
         <Menu dict={dict.menu} />
         <Formulas dict={dict.formulas} />
