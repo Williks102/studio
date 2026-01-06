@@ -79,21 +79,49 @@
         "drinks": "Boissons",
         "currency": "FCFA",
         "dishes": {
-            "africanSalad": {
-                "name": "Fraîcheur de l'Oasis",
-                "description": "Salade composée de légumes de saison, avocat et vinaigrette aux agrumes."
+            "miniBrochettes": {
+                "name": "Mini brochettes de poulet yassa sauce verte légère",
+                "description": "De tendres brochettes de poulet avec une sauce Yassa fraîche et acidulée."
             },
-            "tunaPastels": {
-                "name": "Pastels dorés",
-                "description": "Chaussons croustillants farcis au thon épicé, servis avec une sauce aigre-douce."
+            "croquettesTubercules": {
+                "name": "Croquettes de tubercules aux herbes sauce crème",
+                "description": "Des croquettes croustillantes accompagnées d'une sauce onctueuse aux herbes et d'une salade croquante."
             },
-            "chickenYassa": {
-                "name": "L'incontournable poulet yassa",
-                "description": "Poulet mariné au citron et aux oignons, grillé et servi avec du riz blanc."
+            "veloutePatatesDouces": {
+                "name": "Velouté de patates douces coco et son croustillant",
+                "description": "Une soupe douce et exotique, relevée par une touche de croquant."
             },
-            "beefMaafe": {
-                "name": "L'onctueux mafé au boeuf",
-                "description": "Boeuf mijoté dans une sauce onctueuse à base d'arachide et de légumes."
+            "saladeFraicheur": {
+                "name": "Salade fraîcheur",
+                "description": "Un mélange de roquette, pastèque, fromage et une vinaigrette à la mangue."
+            },
+            "fonioCremeux": {
+                "name": "Fonio crémeux aux légumes croquants",
+                "description": "Un plat réconfortant et sain avec une belle variété de textures."
+            },
+            "demiPintadeRoti": {
+                "name": "Demi-pintade rôtie, sauce gingembre-miel",
+                "description": "Une volaille tendre et savoureuse accompagnée d'une sauce douce et épicée."
+            },
+            "carreAgneauRoti": {
+                "name": "Carré d'agneau rôti aux herbes africaines, jus corsé",
+                "description": "Une pièce de viande noble sublimée par un jus de caractère."
+            },
+            "paveCapitaineRoti": {
+                "name": "Pavé de capitaine rôti, sauce beurre citronné",
+                "description": "Un poisson fin et délicat, cuit simplement pour en révéler les saveurs."
+            },
+            "choukouyaMouton": {
+                "name": "Choukouya de mouton",
+                "description": "Un grand classique ivoirien, du mouton grillé aux épices."
+            },
+            "choukouyaPoulet": {
+                "name": "Choukouya de poulet",
+                "description": "La délicieuse version au poulet grillé du célèbre plat ivoirien."
+            },
+            "gambasGrillees": {
+                "name": "Gambas grillées, sauce bissap-citronnelle",
+                "description": "Des gambas juteuses accompagnées d'une sauce florale et acidulée unique."
             },
             "thiakry": {
                 "name": "Thiakry gourmand",

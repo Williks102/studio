@@ -79,21 +79,49 @@
         "drinks": "Drinks",
         "currency": "FCFA",
         "dishes": {
-            "africanSalad": {
-                "name": "Freshness of the Oasis",
-                "description": "Mixed salad with seasonal vegetables, avocado, and citrus vinaigrette."
+            "miniBrochettes": {
+                "name": "Mini chicken skewers Yassa style with light green sauce",
+                "description": "Tender chicken skewers with a fresh and tangy Yassa sauce."
             },
-            "tunaPastels": {
-                "name": "Golden pastels",
-                "description": "Crispy turnovers filled with spicy tuna, served with a sweet and sour sauce."
+            "croquettesTubercules": {
+                "name": "Tuber croquettes with herbs and cream sauce",
+                "description": "Crispy croquettes with a creamy herb sauce and a crunchy salad."
             },
-            "chickenYassa": {
-                "name": "The essential chicken yassa",
-                "description": "Chicken marinated in lemon and onions, grilled and served with white rice."
+            "veloutePatatesDouces": {
+                "name": "Sweet potato and coconut velouté with its crispy topping",
+                "description": "A smooth and exotic soup, enhanced with a touch of crunch."
             },
-            "beefMaafe": {
-                "name": "The unctuous beef maafe",
-                "description": "Beef simmered in a creamy peanut sauce with vegetables."
+            "saladeFraicheur": {
+                "name": "Freshness salad",
+                "description": "A mix of rocket, watermelon, cheese, and a mango vinaigrette."
+            },
+            "fonioCremeux": {
+                "name": "Creamy fonio with crispy vegetables",
+                "description": "A comforting and healthy dish with a variety of textures."
+            },
+            "demiPintadeRoti": {
+                "name": "Roasted half guinea fowl with ginger-honey sauce",
+                "description": "Tender and flavorful meat with a sweet and spicy sauce."
+            },
+            "carreAgneauRoti": {
+                "name": "Roasted rack of lamb with African herbs",
+                "description": "A noble piece of meat enhanced by a full-bodied juice."
+            },
+            "paveCapitaineRoti": {
+                "name": "Roasted captain fish steak with lemon butter sauce",
+                "description": "A fine and delicate fish, simply cooked to reveal its flavors."
+            },
+            "choukouyaMouton": {
+                "name": "Mutton Choukouya",
+                "description": "A classic Ivorian dish, grilled mutton with spices."
+            },
+            "choukouyaPoulet": {
+                "name": "Chicken Choukouya",
+                "description": "The delicious grilled chicken version of the famous Ivorian dish."
+            },
+            "gambasGrillees": {
+                "name": "Grilled prawns with bissap-lemongrass sauce",
+                "description": "Juicy prawns with a unique floral and tangy sauce."
             },
             "thiakry": {
                 "name": "Sweet thiakry",
