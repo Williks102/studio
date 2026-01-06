@@ -32,7 +32,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
         port: '',
-        pathname: '/**', // Simplification pour éviter les problèmes avec les variables d'environnement
+        pathname: '/**',
       },
     ],
   },
