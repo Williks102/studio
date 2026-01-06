@@ -62,39 +62,261 @@
     },
     {
       "id": "menu-starter-1",
-      "description": "Salade africaine fraîche",
-      "imageUrl": "https://images.unsplash.com/photo-1751151497813-1280d81b5312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnJpY2FuJTIwc2FsYWR8ZW58MHx8fHwxNzY3NjE0ODI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "african salad"
+      "description": "Mini brochettes de poulet",
+      "imageUrl": "https://images.unsplash.com/photo-1634003310704-9a1a5771ab8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGlja2VuJTIwc2tld2Vyc3xlbnwwfHx8fDE3Njc2MTQzNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken skewers"
     },
     {
       "id": "menu-starter-2",
-      "description": "Pastels au thon",
-      "imageUrl": "https://images.unsplash.com/photo-1716032935138-32074080d3f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0dW5hJTIwcGFzdGVsc3xlbnwwfHx8fDE3Njc2MTQ4Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tuna pastels"
+      "description": "Croquettes de tubercules",
+      "imageUrl": "https://images.unsplash.com/photo-1585758932243-e79d46905bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dWJlciUyMGNyb3F1ZXR0ZXN8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tuber croquettes"
+    },
+    {
+      "id": "menu-starter-3",
+      "description": "Velouté de patates douces",
+      "imageUrl": "https://images.unsplash.com/photo-1763261790435-c0ea9b185fd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzd2VldCUyMHBvdGF0byUyMHNvdXB8ZW58MHx8fHwxNzY3NzE1NTg2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sweet potato soup"
+    },
+    {
+      "id": "menu-starter-4",
+      "description": "Salade fraîcheur",
+      "imageUrl": "https://images.unsplash.com/photo-1654458804670-2f4f26ab3154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmVzaCUyMHNhbGFkfGVufDB8fHx8MTc2NzYzNjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh salad"
+    },
+    {
+      "id": "menu-starter-5",
+      "description": "Carpaccio d'ananas",
+      "imageUrl": "https://images.unsplash.com/photo-1735052963684-f9e1f4f3ba38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwaW5lYXBwbGUlMjBjYXJwYWNjaW98ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pineapple carpaccio"
     },
     {
       "id": "menu-main-1",
-      "description": "Poulet Yassa",
-      "imageUrl": "https://images.unsplash.com/photo-1701717447276-d10d32220d56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlja2VuJTIweWFzc2F8ZW58MHx8fHwxNzY3NjE0ODI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chicken yassa"
+      "description": "Filet de boeuf",
+      "imageUrl": "https://images.unsplash.com/photo-1680169104720-9113b0bf0a2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiZWVmJTIwZmlsbGV0fGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef fillet"
     },
     {
       "id": "menu-main-2",
-      "description": "Maafe au boeuf",
-      "imageUrl": "https://picsum.photos/seed/menu4/600/400",
-      "imageHint": "beef maafe"
+      "description": "Magret de canard",
+      "imageUrl": "https://images.unsplash.com/photo-1555852109-f8256fd28989?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZHVjayUyMGJyZWFzdHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "duck breast"
+    },
+    {
+      "id": "menu-main-3",
+      "description": "Carré d'agneau",
+      "imageUrl": "https://images.unsplash.com/photo-1761983723667-99c7fd98af53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyYWNrJTIwb2YlMjBsYW1ifGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rack of lamb"
+    },
+    {
+      "id": "menu-main-4",
+      "description": "Pavé de capitaine",
+      "imageUrl": "https://images.unsplash.com/photo-1576124343963-69d29d247ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXB0YWluJTIwZmlzaHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "captain fish"
+    },
+    {
+      "id": "menu-main-5",
+      "description": "Demi-pintade rôtie",
+      "imageUrl": "https://images.unsplash.com/photo-1689760661321-7266dc502a45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2FzdGVkJTIwZ3VpbmVhJTIwZm93bHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "roasted guinea fowl"
+    },
+    {
+      "id": "menu-main-6",
+      "description": "Gambas grillées",
+      "imageUrl": "https://images.unsplash.com/photo-1759271082074-6cde09f86550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxncmlsbGVkJTIwcHJhd25zfGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grilled prawns"
+    },
+    {
+      "id": "menu-burger-1",
+      "description": "Burger Terroir Fusion",
+      "imageUrl": "https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWVmJTIwYnVyZ2VyfGVufDB8fHx8MTc2NzY0NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef burger"
+    },
+    {
+      "id": "menu-burger-2",
+      "description": "Burger Suprême Fusion",
+      "imageUrl": "https://images.unsplash.com/photo-1613985216255-a26ecf1df4a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hpY2tlbiUyMGJ1cmdlcnxlbnwwfHx8fDE3Njc2MzAxMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken burger"
+    },
+    {
+      "id": "menu-burger-3",
+      "description": "Burger Green Fusion",
+      "imageUrl": "https://images.unsplash.com/photo-1661529515567-dcb300f41da5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2ZWdnaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzY3NzA4MDEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "veggie burger"
+    },
+    {
+      "id": "menu-flavor-1",
+      "description": "Sauce graine",
+      "imageUrl": "https://images.unsplash.com/photo-1647998270792-69ac80570183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYWxtJTIwbnV0JTIwc291cHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "palm nut soup"
+    },
+    {
+      "id": "menu-flavor-2",
+      "description": "Sauce pistache",
+      "imageUrl": "https://images.unsplash.com/photo-1643845258159-5c4bc4f38182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwaXN0YWNoaW8lMjBzYXVjZXxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pistachio sauce"
+    },
+    {
+      "id": "menu-flavor-3",
+      "description": "Sauce gouagouassou",
+      "imageUrl": "https://images.unsplash.com/photo-1639428134238-b548770d4b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZ2dwbGFudCUyMHNhdWNlfGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eggplant sauce"
+    },
+    {
+      "id": "menu-flavor-4",
+      "description": "Kedjenou de pintade",
+      "imageUrl": "https://picsum.photos/seed/mf4/600/400",
+      "imageHint": "kedjenou"
+    },
+    {
+      "id": "menu-flavor-5",
+      "description": "Soupe du pêcheur",
+      "imageUrl": "https://images.unsplash.com/photo-1609355108742-dcbc6c51a3a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaXNoJTIwc291cHxlbnwwfHx8fDE3Njc2ODAxMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fish soup"
+    },
+    {
+      "id": "menu-flavor-6",
+      "description": "Ragout de jarret de boeuf",
+      "imageUrl": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiZWVmJTIwc3Rld3xlbnwwfHx8fDE3Njc2NTc4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef stew"
+    },
+    {
+      "id": "menu-flavor-7",
+      "description": "Sauce feuille",
+      "imageUrl": "https://images.unsplash.com/photo-1559847844-1ff4d5bcd3b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsZWFmJTIwc2F1Y2V8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leaf sauce"
+    },
+    {
+      "id": "menu-flavor-8",
+      "description": "Sauce wèrè wèrè",
+      "imageUrl": "https://images.unsplash.com/photo-1741519301128-8426ea15d03e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcGljeSUyMHNhdWNlfGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spicy sauce"
+    },
+    {
+      "id": "menu-flavor-9",
+      "description": "Sauce gombo",
+      "imageUrl": "https://images.unsplash.com/photo-1603076218042-64efad4281b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxva3JhJTIwc2F1Y2V8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "okra sauce"
+    },
+    {
+      "id": "menu-flavor-10",
+      "description": "Sauce arachide",
+      "imageUrl": "https://images.unsplash.com/photo-1658010581734-f5c0813f0ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZWFudXQlMjBzYXVjZXxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peanut sauce"
+    },
+    {
+      "id": "menu-flavor-11",
+      "description": "Tchep",
+      "imageUrl": "https://images.unsplash.com/photo-1569058242252-623df46b5025?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxqb2xsb2YlMjByaWNlfGVufDB8fHx8MTc2NzcwMjk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "jollof rice"
+    },
+    {
+      "id": "menu-side-1",
+      "description": "Fonio pilaf",
+      "imageUrl": "https://picsum.photos/seed/m-side1/600/400",
+      "imageHint": "fonio pilaf"
+    },
+    {
+      "id": "menu-side-2",
+      "description": "Frites de patate douce",
+      "imageUrl": "https://images.unsplash.com/photo-1555291818-aa342c4e1870?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzd2VldCUyMHBvdGF0byUyMGZyaWVzfGVufDB8fHx8MTc2NzcxNTU4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sweet potato fries"
+    },
+    {
+      "id": "menu-side-3",
+      "description": "Frites d'igname",
+      "imageUrl": "https://images.unsplash.com/photo-1707773726979-4b87cd1c838a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5YW0lMjBmcmllc3xlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yam fries"
+    },
+    {
+      "id": "menu-side-4",
+      "description": "Riz coco",
+      "imageUrl": "https://images.unsplash.com/photo-1602567497402-ac0d17ce36f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2NvbnV0JTIwcmljZXxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coconut rice"
+    },
+    {
+      "id": "menu-side-5",
+      "description": "Purée de taro",
+      "imageUrl": "https://picsum.photos/seed/m-side5/600/400",
+      "imageHint": "taro puree"
+    },
+    {
+      "id": "menu-side-6",
+      "description": "Légumes grillés",
+      "imageUrl": "https://images.unsplash.com/photo-1594741110899-100869ebd967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncmlsbGVkJTIwdmVnZXRhYmxlc3xlbnwwfHx8fDE3Njc3MTU1ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grilled vegetables"
+    },
+    {
+      "id": "menu-side-7",
+      "description": "Attiéké",
+      "imageUrl": "https://picsum.photos/seed/m-side7/600/400",
+      "imageHint": "attieke"
+    },
+    {
+      "id": "menu-side-8",
+      "description": "Alloco",
+      "imageUrl": "https://images.unsplash.com/photo-1762884601729-0eeeafbdfb8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcmllZCUyMHBsYW50YWlufGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fried plantain"
     },
     {
       "id": "menu-dessert-1",
-      "description": "Thiackry",
-      "imageUrl": "https://images.unsplash.com/photo-1598564506812-55cc8937d682?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGhpYWNrcnklMjBkZXNzZXJ0fGVufDB8fHx8MTc2NzYxNDgyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "thiackry dessert"
+      "description": "Paris-Brest revisité",
+      "imageUrl": "https://images.unsplash.com/photo-1603408208616-8851bdc59bcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJpcyUyMGJyZXN0fGVufDB8fHx8MTc2NzcxNTU4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paris brest"
     },
     {
       "id": "menu-dessert-2",
-      "description": "Salade de fruits exotiques",
-      "imageUrl": "https://images.unsplash.com/photo-1689057009374-ce11bce5d976?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxleG90aWMlMjBmcnVpdHN8ZW58MHx8fHwxNzY3NjE0ODI4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "exotic fruits"
+      "description": "Cheesecake mangue",
+      "imageUrl": "https://images.unsplash.com/photo-1754652327423-4e71f0d71b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW5nbyUyMGNoZWVzZWNha2V8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mango cheesecake"
+    },
+    {
+      "id": "menu-dessert-3",
+      "description": "Tartelettes chocolat",
+      "imageUrl": "https://images.unsplash.com/photo-1616031037011-087000171abe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjB0YXJ0fGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate tart"
+    },
+    {
+      "id": "menu-dessert-4",
+      "description": "Crumble ananas",
+      "imageUrl": "https://images.unsplash.com/photo-1591519032431-61846409b320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaW5lYXBwbGUlMjBjcnVtYmxlfGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pineapple crumble"
+    },
+    {
+      "id": "menu-sorbet-1",
+      "description": "Sorbet Mangue",
+      "imageUrl": "https://images.unsplash.com/photo-1627373717516-0f4bb24c487d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW5nbyUyMHNvcmJldHxlbnwwfHx8fDE3Njc2MDE1MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mango sorbet"
+    },
+    {
+      "id": "menu-sorbet-2",
+      "description": "Sorbet Passion",
+      "imageUrl": "https://images.unsplash.com/photo-1597995463377-911fb3779867?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXNzaW9uJTIwZnJ1aXQlMjBzb3JiZXR8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "passion fruit sorbet"
+    },
+    {
+      "id": "menu-sorbet-3",
+      "description": "Sorbet Bissap",
+      "imageUrl": "https://picsum.photos/seed/mso3/600/400",
+      "imageHint": "bissap sorbet"
+    },
+    {
+      "id": "menu-sorbet-4",
+      "description": "Sorbet Tamarin",
+      "imageUrl": "https://images.unsplash.com/photo-1671871695722-b91911e9c072?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGFtYXJpbmQlMjBzb3JiZXR8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tamarind sorbet"
+    },
+    {
+      "id": "menu-sorbet-5",
+      "description": "Sorbet Baobab",
+      "imageUrl": "https://images.unsplash.com/photo-1704588332809-c5bc59c4cfac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYW9iYWIlMjBzb3JiZXR8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "baobab sorbet"
+    },
+    {
+      "id": "menu-sorbet-6",
+      "description": "Sorbet Citron",
+      "imageUrl": "https://images.unsplash.com/photo-1583118289889-f9e5ee78c82a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsZW1vbiUyMHNvcmJldHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lemon sorbet"
     },
     {
       "id": "menu-drink-1",

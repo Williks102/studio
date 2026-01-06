@@ -53,55 +53,50 @@
         "day": "Journée",
         "evening": "Soir"
     },
-    "menu": {
-        "title": "Découvrez notre menu",
-        "breakfast": "Petit déjeuner",
-        "lunch": "Déjeuner",
-        "dinner": "Dîner",
-        "drinks": "Boissons",
-        "items": {
-            "symphonie": "Symphonie Matinale",
-            "douceur": "Douceur Exotique",
-            "poisson": "Poisson Braisé Signature",
-            "riz": "Riz Jolof Royal",
-            "tagine": "Tagine d'Agneau Confie",
-            "brochettes": "Brochettes de Boeuf Épicées",
-            "cocktail": "Cocktail 'Le Coucher du Soleil'",
-            "the": "Thé à la Menthe Traditionnel"
-        }
-    },
     "menuPage": {
         "title": "Notre carte",
         "description": "Un voyage culinaire à travers les saveurs authentiques et raffinées de l'Afrique.",
-        "starters": "Entrées",
-        "mainCourses": "Plats principaux",
-        "desserts": "Desserts",
-        "drinks": "Boissons",
+        "starters": "Nos Entrées",
+        "mainCourses": "Nos Plats",
+        "desserts": "Nos Desserts",
+        "drinks": "Nos Boissons",
+        "burgers": "Nos Burgers Fusion Lof",
+        "sides": "Nos Accompagnements",
+        "sorbets": {
+            "title": "Nos Sorbets Maison"
+        },
+        "africanFlavors": {
+            "title": "Saveur Africa (sur réservation)"
+        },
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
                 "name": "Mini brochettes de poulet yassa sauce verte légère",
-                "description": "De tendres brochettes de poulet avec une sauce Yassa fraîche et acidulée."
+                "description": "Poulet tendre mariné à la sauce Yassa, servi avec une sauce verte rafraîchissante."
             },
             "croquettesTubercules": {
                 "name": "Croquettes de tubercules aux herbes sauce crème",
-                "description": "Des croquettes croustillantes accompagnées d'une sauce onctueuse aux herbes et d'une salade croquante."
+                "description": "Mélange de tubercules locaux en croquettes croustillantes, sauce crémeuse aux herbes."
             },
             "veloutePatatesDouces": {
                 "name": "Velouté de patates douces coco et son croustillant",
-                "description": "Une soupe douce et exotique, relevée par une touche de croquant."
+                "description": "Soupe onctueuse de patate douce et lait de coco, garnie d'un topping croustillant."
             },
             "saladeFraicheur": {
                 "name": "Salade fraîcheur",
-                "description": "Un mélange de roquette, pastèque, fromage et une vinaigrette à la mangue."
+                "description": "Roquette, pastèque, fromage, et une vinaigrette à la mangue."
             },
-            "fonioCremeux": {
-                "name": "Fonio crémeux aux légumes croquants",
-                "description": "Un plat réconfortant et sain avec une belle variété de textures."
+            "carpaccioAnanas": {
+                "name": "Carpaccio d'ananas, vinaigrette passion, crevette snackée",
+                "description": "Fines tranches d'ananas frais, vinaigrette exotique à la passion et crevettes justes saisies."
             },
-            "demiPintadeRoti": {
-                "name": "Demi-pintade rôtie, sauce gingembre-miel",
-                "description": "Une volaille tendre et savoureuse accompagnée d'une sauce douce et épicée."
+            "filetBoeuf": {
+                "name": "Filet de boeuf, sauce aux champignons, écrasé de pomme de terre",
+                "description": "Tendre filet de boeuf nappé d'une sauce riche aux champignons, accompagné d'un écrasé de pomme de terre maison."
+            },
+            "magretCanard": {
+                "name": "Magret de canard, sauce vin rouge, purée de patate douce",
+                "description": "Magret de canard rosé, sauce corsée au vin rouge et une purée onctueuse de patate douce."
             },
             "carreAgneauRoti": {
                 "name": "Carré d'agneau rôti aux herbes africaines, jus corsé",
@@ -111,26 +106,91 @@
                 "name": "Pavé de capitaine rôti, sauce beurre citronné",
                 "description": "Un poisson fin et délicat, cuit simplement pour en révéler les saveurs."
             },
-            "choukouyaMouton": {
-                "name": "Choukouya de mouton",
-                "description": "Un grand classique ivoirien, du mouton grillé aux épices."
-            },
-            "choukouyaPoulet": {
-                "name": "Choukouya de poulet",
-                "description": "La délicieuse version au poulet grillé du célèbre plat ivoirien."
+            "demiPintadeRoti": {
+                "name": "Demi-pintade rôtie, sauce gingembre-miel",
+                "description": "Une volaille tendre et savoureuse accompagnée d'une sauce douce et épicée."
             },
             "gambasGrillees": {
                 "name": "Gambas grillées, sauce bissap-citronnelle",
                 "description": "Des gambas juteuses accompagnées d'une sauce florale et acidulée unique."
             },
-            "thiakry": {
-                "name": "Thiakry gourmand",
-                "description": "Couscous de mil au yaourt sucré et aux fruits secs."
+            "lofTerroirFusion": {
+                "name": "Lof Terroir Fusion",
+                "description": "Pain brioché maison, steak de bœuf local, fromage fondu, sauce piment doux, frites de patate douce."
             },
-            "exoticFruitSalad": {
-                "name": "Farandole exotique",
-                "description": "Assortiment de fruits frais de saison (mangue, papaye, ananas)."
+            "lofSupremeFusion": {
+                "name": "Lof Suprême Fusion",
+                "description": "Pain brioché maison, blanc de poulet croustillant, achard de légumes, sauce yaourt coco, chips banane plantain."
             },
+            "lofGreenFusion": {
+                "name": "Lof Green Fusion",
+                "description": "Pain brioché au curcuma maison, galette veggie (haricot rouge patate douce), avocat sauce bissap moutarde douce."
+            },
+            "fonioPilaf": {
+                "name": "Fonio pilaf aux légumes croquants",
+                "description": "Céréale ancestrale cuisinée en pilaf avec des légumes frais et croquants."
+            },
+            "fritesPatateDouce": {
+                "name": "Frites de patate douce",
+                "description": "Frites maison de patate douce, légèrement sucrées et croustillantes."
+            },
+            "fritesIgname": {
+                "name": "Frites d'igname",
+                "description": "Frites originales d'igname, une alternative savoureuse."
+            },
+            "rizCoco": {
+                "name": "Riz coco",
+                "description": "Riz parfumé cuit avec du lait de coco."
+            },
+            "pureeTaro": {
+                "name": "Purée de taro",
+                "description": "Purée onctueuse de taro, un tubercule au goût fin."
+            },
+            "legumesGrilles": {
+                "name": "Légumes grillé de saison",
+                "description": "Assortiment de légumes frais de saison, simplement grillés."
+            },
+            "attieke": {
+                "name": "Attiéké",
+                "description": "Semoule de manioc traditionnelle, incontournable accompagnement ivoirien."
+            },
+            "alloco": {
+                "name": "Alloco",
+                "description": "Morceaux de banane plantain mûre frits, un classique sucré-salé."
+            },
+            "parisBrest": {
+                "name": "Paris-Brest revisité",
+                "description": "Choux craquelin, crème arachide onctueuse pour une touche africaine."
+            },
+            "cheesecakeMangue": {
+                "name": "Cheesecake mangue",
+                "description": "Base croquante, crème légère et un coulis exotique à la mangue."
+            },
+            "tartelettesChocolat": {
+                "name": "Tartelettes chocolat revisité aux 3 chocolats",
+                "description": "Une gourmandise intense pour les amateurs de chocolat."
+            },
+            "crumbleAnanas": {
+                "name": "Crumble ananas citron vert",
+                "description": "Fraîcheur et gourmandise avec ce crumble fruité et acidulé."
+            },
+            "sorbetMangue": { "name": "Mangue", "description": "Sorbets faits maison, selon la saison." },
+            "sorbetPassion": { "name": "Passion", "description": "Sorbets faits maison, selon la saison." },
+            "sorbetBissap": { "name": "Bissap", "description": "Sorbets faits maison, selon la saison." },
+            "sorbetTamarin": { "name": "Tamarin", "description": "Sorbets faits maison, selon la saison." },
+            "sorbetBaobab": { "name": "Baobab", "description": "Sorbets faits maison, selon la saison." },
+            "sorbetCitron": { "name": "Citron", "description": "Sorbets faits maison, selon la saison." },
+            "sauceGraine": { "name": "Sauce graine à la queue de bœuf", "description": "Un classique de la cuisine ivoirienne, riche et savoureux." },
+            "saucePistache": { "name": "Sauce pistache à la pintade", "description": "Une sauce onctueuse à base de pistaches africaines et de pintade." },
+            "sauceGouagouassou": { "name": "Sauce gouagouassou à la queue de bœuf", "description": "Une sauce aubergine typique, mijotée avec de la queue de bœuf." },
+            "kedjenouPintade": { "name": "Kedjenou de pintade", "description": "Pintade cuite à l'étouffée avec des légumes et des épices." },
+            "soupePecheur": { "name": "Soupe du pêcheur", "description": "Soupe riche en fruits de mer et poissons frais." },
+            "ragoutJarret": { "name": "Ragout de jarret de bœuf", "description": "Un plat mijoté réconfortant et plein de saveurs." },
+            "sauceFeuille": { "name": "Sauce feuille à la viande / poisson", "description": "Sauce à base de feuilles de patate douce ou autres, mijotée avec viande ou poisson." },
+            "sauceWereWere": { "name": "Sauce wèrè wèrè", "description": "Une sauce traditionnelle épicée." },
+            "sauceGombo": { "name": "Sauce gombo à la viande / poisson", "description": "Sauce gluante à base de gombo, avec viande ou poisson." },
+            "sauceArachide": { "name": "Sauce arachide à la viande", "description": "La célèbre sauce mafé, onctueuse et savoureuse." },
+            "tchep": { "name": "Tchep au poisson / viande", "description": "Le plat national sénégalais, riz cuit dans un bouillon riche." },
             "bissapJuice": {
                 "name": "Jus de bissap",
                 "description": "Boisson rafraîchissante à base de fleurs d'hibiscus."

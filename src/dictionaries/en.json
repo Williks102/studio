@@ -53,55 +53,50 @@
         "day": "Daytime",
         "evening": "Evening"
     },
-    "menu": {
-        "title": "Discover our menu",
-        "breakfast": "Breakfast",
-        "lunch": "Lunch",
-        "dinner": "Dinner",
-        "drinks": "Drinks",
-        "items": {
-            "symphonie": "Morning Symphony",
-            "douceur": "Exotic Sweetness",
-            "poisson": "Signature Grilled Fish",
-            "riz": "Royal Jollof Rice",
-            "tagine": "Lamb Tagine",
-            "brochettes": "Spicy Beef Skewers",
-            "cocktail": "Cocktail 'The Sunset'",
-            "the": "Traditional Mint Tea"
-        }
-    },
     "menuPage": {
         "title": "Our menu",
         "description": "A culinary journey through the authentic and refined flavors of Africa.",
-        "starters": "Starters",
-        "mainCourses": "Main courses",
-        "desserts": "Desserts",
-        "drinks": "Drinks",
+        "starters": "Our Starters",
+        "mainCourses": "Our Main Courses",
+        "desserts": "Our Desserts",
+        "drinks": "Our Drinks",
+        "burgers": "Our Lof Fusion Burgers",
+        "sides": "Our Side Dishes",
+        "sorbets": {
+            "title": "Our Homemade Sorbets"
+        },
+        "africanFlavors": {
+            "title": "Taste of Africa (by reservation)"
+        },
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
                 "name": "Mini chicken skewers Yassa style with light green sauce",
-                "description": "Tender chicken skewers with a fresh and tangy Yassa sauce."
+                "description": "Tender chicken marinated in Yassa sauce, served with a refreshing green sauce."
             },
             "croquettesTubercules": {
                 "name": "Tuber croquettes with herbs and cream sauce",
-                "description": "Crispy croquettes with a creamy herb sauce and a crunchy salad."
+                "description": "Mix of local tubers in crispy croquettes, with a creamy herb sauce."
             },
             "veloutePatatesDouces": {
                 "name": "Sweet potato and coconut velouté with its crispy topping",
-                "description": "A smooth and exotic soup, enhanced with a touch of crunch."
+                "description": "Creamy sweet potato and coconut milk soup, garnished with a crispy topping."
             },
             "saladeFraicheur": {
                 "name": "Freshness salad",
                 "description": "A mix of rocket, watermelon, cheese, and a mango vinaigrette."
             },
-            "fonioCremeux": {
-                "name": "Creamy fonio with crispy vegetables",
-                "description": "A comforting and healthy dish with a variety of textures."
+            "carpaccioAnanas": {
+                "name": "Pineapple carpaccio, passion fruit vinaigrette, seared shrimp",
+                "description": "Thin slices of fresh pineapple, exotic passion fruit vinaigrette, and lightly seared shrimp."
             },
-            "demiPintadeRoti": {
-                "name": "Roasted half guinea fowl with ginger-honey sauce",
-                "description": "Tender and flavorful meat with a sweet and spicy sauce."
+            "filetBoeuf": {
+                "name": "Beef fillet, mushroom sauce, mashed potatoes",
+                "description": "Tender beef fillet topped with a rich mushroom sauce, served with homemade mashed potatoes."
+            },
+            "magretCanard": {
+                "name": "Duck breast, red wine sauce, sweet potato purée",
+                "description": "Pink-cooked duck breast, a full-bodied red wine sauce, and a creamy sweet potato purée."
             },
             "carreAgneauRoti": {
                 "name": "Roasted rack of lamb with African herbs",
@@ -111,26 +106,91 @@
                 "name": "Roasted captain fish steak with lemon butter sauce",
                 "description": "A fine and delicate fish, simply cooked to reveal its flavors."
             },
-            "choukouyaMouton": {
-                "name": "Mutton Choukouya",
-                "description": "A classic Ivorian dish, grilled mutton with spices."
-            },
-            "choukouyaPoulet": {
-                "name": "Chicken Choukouya",
-                "description": "The delicious grilled chicken version of the famous Ivorian dish."
+            "demiPintadeRoti": {
+                "name": "Roasted half guinea fowl with ginger-honey sauce",
+                "description": "Tender and flavorful meat with a sweet and spicy sauce."
             },
             "gambasGrillees": {
                 "name": "Grilled prawns with bissap-lemongrass sauce",
                 "description": "Juicy prawns with a unique floral and tangy sauce."
             },
-            "thiakry": {
-                "name": "Sweet thiakry",
-                "description": "Millet couscous with sweetened yogurt and dried fruits."
+            "lofTerroirFusion": {
+                "name": "Lof Terroir Fusion",
+                "description": "Homemade brioche bun, local beef steak, melted cheese, sweet chili sauce, sweet potato fries."
             },
-            "exoticFruitSalad": {
-                "name": "Exotic farandole",
-                "description": "Assortment of fresh seasonal fruits (mango, papaya, pineapple)."
+            "lofSupremeFusion": {
+                "name": "Lof Supreme Fusion",
+                "description": "Homemade brioche bun, crispy chicken breast, vegetable achard, coconut yogurt sauce, plantain chips."
             },
+            "lofGreenFusion": {
+                "name": "Lof Green Fusion",
+                "description": "Homemade turmeric brioche bun, veggie patty (red bean sweet potato), avocado, sweet bissap mustard sauce."
+            },
+            "fonioPilaf": {
+                "name": "Fonio pilaf with crispy vegetables",
+                "description": "Ancient grain cooked as a pilaf with fresh, crispy vegetables."
+            },
+            "fritesPatateDouce": {
+                "name": "Sweet potato fries",
+                "description": "Homemade sweet potato fries, slightly sweet and crispy."
+            },
+            "fritesIgname": {
+                "name": "Yam fries",
+                "description": "Original yam fries, a tasty alternative."
+            },
+            "rizCoco": {
+                "name": "Coconut rice",
+                "description": "Fragrant rice cooked with coconut milk."
+            },
+            "pureeTaro": {
+                "name": "Taro purée",
+                "description": "Creamy purée of taro, a tuber with a delicate taste."
+            },
+            "legumesGrilles": {
+                "name": "Grilled seasonal vegetables",
+                "description": "Assortment of fresh seasonal vegetables, simply grilled."
+            },
+            "attieke": {
+                "name": "Attiéké",
+                "description": "Traditional cassava semolina, a must-have Ivorian side dish."
+            },
+            "alloco": {
+                "name": "Alloco",
+                "description": "Fried ripe plantain pieces, a sweet and savory classic."
+            },
+            "parisBrest": {
+                "name": "Revisited Paris-Brest",
+                "description": "Craquelin choux pastry, creamy peanut cream for an African touch."
+            },
+            "cheesecakeMangue": {
+                "name": "Mango cheesecake",
+                "description": "Crispy base, light cream, and an exotic mango coulis."
+            },
+            "tartelettesChocolat": {
+                "name": "Revisited 3 chocolates tartlets",
+                "description": "An intense treat for chocolate lovers."
+            },
+            "crumbleAnanas": {
+                "name": "Pineapple and lime crumble",
+                "description": "Freshness and indulgence with this fruity and tangy crumble."
+            },
+            "sorbetMangue": { "name": "Mango", "description": "Homemade sorbets, depending on the season." },
+            "sorbetPassion": { "name": "Passion Fruit", "description": "Homemade sorbets, depending on the season." },
+            "sorbetBissap": { "name": "Bissap", "description": "Homemade sorbets, depending on the season." },
+            "sorbetTamarin": { "name": "Tamarind", "description": "Homemade sorbets, depending on the season." },
+            "sorbetBaobab": { "name": "Baobab", "description": "Homemade sorbets, depending on the season." },
+            "sorbetCitron": { "name": "Lemon", "description": "Homemade sorbets, depending on the season." },
+            "sauceGraine": { "name": "Palm nut soup with oxtail", "description": "A rich and savory classic of Ivorian cuisine." },
+            "saucePistache": { "name": "Pistachio sauce with guinea fowl", "description": "A creamy sauce made from African pistachios and guinea fowl." },
+            "sauceGouagouassou": { "name": "Gouagouassou sauce with oxtail", "description": "A typical eggplant sauce, simmered with oxtail." },
+            "kedjenouPintade": { "name": "Guinea fowl Kedjenou", "description": "Guinea fowl stewed with vegetables and spices." },
+            "soupePecheur": { "name": "Fisherman's soup", "description": "Rich soup with fresh seafood and fish." },
+            "ragoutJarret": { "name": "Beef shank ragout", "description": "A comforting and flavorful slow-cooked dish." },
+            "sauceFeuille": { "name": "Leaf sauce with meat / fish", "description": "Sauce made from sweet potato leaves or other greens, simmered with meat or fish." },
+            "sauceWereWere": { "name": "Wèrè wèrè sauce", "description": "A traditional spicy sauce." },
+            "sauceGombo": { "name": "Okra sauce with meat / fish", "description": "Slimy sauce made from okra, with meat or fish." },
+            "sauceArachide": { "name": "Peanut sauce with meat", "description": "The famous mafé sauce, creamy and tasty." },
+            "tchep": { "name": "Tchep with fish / meat", "description": "The Senegalese national dish, rice cooked in a rich broth." },
             "bissapJuice": {
                 "name": "Bissap juice",
                 "description": "Refreshing drink made from hibiscus flowers."
