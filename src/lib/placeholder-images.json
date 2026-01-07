@@ -62,14 +62,14 @@
     },
     {
       "id": "menu-starter-1",
-      "description": "Mini brochettes de poulet",
-      "imageUrl": "https://images.unsplash.com/photo-1634003310704-9a1a5771ab8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGlja2VuJTIwc2tld2Vyc3xlbnwwfHx8fDE3Njc2MTQzNzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Mini brochettes de poulet yassa",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767613089/IMG-20260102-WA0036_ocb9zn.jpg",
       "imageHint": "chicken skewers"
     },
     {
       "id": "menu-starter-2",
       "description": "Croquettes de tubercules",
-      "imageUrl": "https://images.unsplash.com/photo-1585758932243-e79d46905bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0dWJlciUyMGNyb3F1ZXR0ZXN8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767781992/IMG-20260107-WA0010_au9ywm.jpg",
       "imageHint": "tuber croquettes"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "menu-starter-4",
       "description": "Salade fraîcheur",
-      "imageUrl": "https://images.unsplash.com/photo-1654458804670-2f4f26ab3154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmVzaCUyMHNhbGFkfGVufDB8fHx8MTc2NzYzNjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767613090/IMG-20260102-WA0034_kn54do.jpg",
       "imageHint": "fresh salad"
     },
     {
@@ -105,13 +105,13 @@
     {
       "id": "menu-main-3",
       "description": "Carré d'agneau",
-      "imageUrl": "https://images.unsplash.com/photo-1761983723667-99c7fd98af53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyYWNrJTIwb2YlMjBsYW1ifGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767612675/IMG-20260102-WA0025_rr4cnu.jpg",
       "imageHint": "rack of lamb"
     },
     {
       "id": "menu-main-4",
       "description": "Pavé de capitaine",
-      "imageUrl": "https://images.unsplash.com/photo-1576124343963-69d29d247ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjYXB0YWluJTIwZmlzaHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767612677/IMG-20260102-WA0029_jvzk0e.jpg",
       "imageHint": "captain fish"
     },
     {
@@ -129,7 +129,7 @@
     {
       "id": "menu-burger-1",
       "description": "Burger Terroir Fusion",
-      "imageUrl": "https://images.unsplash.com/photo-1610440042657-612c34d95e9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiZWVmJTIwYnVyZ2VyfGVufDB8fHx8MTc2NzY0NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767612658/IMG-20260102-WA0049_lylhfd.jpg",
       "imageHint": "beef burger"
     },
     {
