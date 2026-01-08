@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { BookingModal } from "@/components/modals/booking-modal"
 import { LanguageSwitcher } from "@/components/layout/language-switcher"
+import { TiktokIcon } from "@/components/icons/tiktok-icon"
 
 function SocialIcons() {
   return (
@@ -19,6 +20,7 @@ function SocialIcons() {
         target="_blank" 
         rel="noopener noreferrer"
         className="text-foreground/60 transition-colors hover:text-primary"
+        aria-label="Facebook"
       >
         <Facebook className="h-5 w-5" />
         <span className="sr-only">Facebook</span>
@@ -28,9 +30,20 @@ function SocialIcons() {
         target="_blank" 
         rel="noopener noreferrer"
         className="text-foreground/60 transition-colors hover:text-primary"
+        aria-label="Instagram"
       >
         <Instagram className="h-5 w-5" />
         <span className="sr-only">Instagram</span>
+      </Link>
+      <Link
+        href="https://www.tiktok.com/@lelofabidjan?_r=1&_t=ZN-92u7HnGnYYw"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-foreground/60 transition-colors hover:text-primary"
+        aria-label="TikTok"
+      >
+        <TiktokIcon className="h-5 w-5" />
+        <span className="sr-only">TikTok</span>
       </Link>
     </div>
   )

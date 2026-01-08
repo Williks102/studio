@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react"
+import { TiktokIcon } from "@/components/icons/tiktok-icon"
 
 export function Footer({ dict }: { dict: any }) {
   return (
@@ -26,6 +27,9 @@ export function Footer({ dict }: { dict: any }) {
               </Link>
               <Link href="https://www.facebook.com/share/17hdPuU8Bu/" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+              </Link>
+              <Link href="https://www.tiktok.com/@lelofabidjan?_r=1&_t=ZN-92u7HnGnYYw" aria-label="TikTok">
+                <TiktokIcon className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
               </Link>
             </div>
           </div>
