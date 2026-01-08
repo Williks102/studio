@@ -147,43 +147,43 @@
     {
       "id": "menu-flavor-1",
       "description": "Sauce graine",
-      "imageUrl": "https://images.unsplash.com/photo-1647998270792-69ac80570183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwYWxtJTIwbnV0JTIwc291cHxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886621/i192561-poulet-a-la-sauce-graine_ewh50o.webp",
       "imageHint": "palm nut soup"
     },
     {
       "id": "menu-flavor-2",
       "description": "Sauce pistache",
-      "imageUrl": "https://images.unsplash.com/photo-1643845258159-5c4bc4f38182?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwaXN0YWNoaW8lMjBzYXVjZXxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886620/Recette-sauce-pistache--768x1024_uqjatq.jpg",
       "imageHint": "pistachio sauce"
     },
     {
       "id": "menu-flavor-3",
       "description": "Sauce gouagouassou",
-      "imageUrl": "https://images.unsplash.com/photo-1639428134238-b548770d4b77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlZ2dwbGFudCUyMHNhdWNlfGVufDB8fHx8MTc2NzcxNTU4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886620/images_3_pipelz.jpg",
       "imageHint": "eggplant sauce"
     },
     {
       "id": "menu-flavor-4",
       "description": "Kedjenou de pintade",
-      "imageUrl": "https://picsum.photos/seed/mf4/600/400",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886620/image_1024_xujb70.jpg",
       "imageHint": "kedjenou"
     },
     {
       "id": "menu-flavor-5",
       "description": "Soupe du pêcheur",
-      "imageUrl": "https://images.unsplash.com/photo-1609355108742-dcbc6c51a3a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaXNoJTIwc291cHxlbnwwfHx8fDE3Njc2ODAxMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886620/hq720_mziyu5.jpg",
       "imageHint": "fish soup"
     },
     {
       "id": "menu-flavor-6",
       "description": "Ragout de jarret de boeuf",
-      "imageUrl": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiZWVmJTIwc3Rld3xlbnwwfHx8fDE3Njc2NTc4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886624/052_gfdv4j.jpg",
       "imageHint": "beef stew"
     },
     {
       "id": "menu-flavor-7",
       "description": "Sauce feuille",
-      "imageUrl": "https://images.unsplash.com/photo-1559847844-1ff4d5bcd3b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsZWFmJTIwc2F1Y2V8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886622/maxresdefault_jo5wno.jpg",
       "imageHint": "leaf sauce"
     },
     {
@@ -195,19 +195,19 @@
     {
       "id": "menu-flavor-9",
       "description": "Sauce gombo",
-      "imageUrl": "https://images.unsplash.com/photo-1603076218042-64efad4281b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxva3JhJTIwc2F1Y2V8ZW58MHx8fHwxNzY3NzE1NTg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886620/images_4_hagcht.jpg",
       "imageHint": "okra sauce"
     },
     {
       "id": "menu-flavor-10",
       "description": "Sauce arachide",
-      "imageUrl": "https://images.unsplash.com/photo-1658010581734-f5c0813f0ad9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZWFudXQlMjBzYXVjZXxlbnwwfHx8fDE3Njc3MTU1ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886622/20180829_mafe_kandja_1_689x689_hylvsu.jpg",
       "imageHint": "peanut sauce"
     },
     {
       "id": "menu-flavor-11",
       "description": "Tchep",
-      "imageUrl": "https://images.unsplash.com/photo-1569058242252-623df46b5025?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxqb2xsb2YlMjByaWNlfGVufDB8fHx8MTc2NzcwMjk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/db4hmbdv3/image/upload/v1767886622/fb_img_1580035594333_l5ruvx.jpg",
       "imageHint": "jollof rice"
     },
     {
