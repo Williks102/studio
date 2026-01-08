@@ -235,7 +235,7 @@ export interface MenuItem {
           name: dict.dishes.parisBrest.name,
           description: dict.dishes.parisBrest.description,
           price: 7000,
-          imageId: 'menu-dessert-1',
+          imageId: '',
         },
         {
           id: 'dessert-2',
