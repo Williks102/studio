@@ -4,6 +4,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images"
 import Autoplay from "embla-carousel-autoplay"
 import * as React from "react"
 import { useState } from "react"
+import "@/app/carousel-fixes.css"
 
 import {
   Carousel,
@@ -42,7 +43,7 @@ export function Hero({ dict }: { dict: any }) {
   return (
     <section className="w-full relative">
       <Carousel 
-        className="w-full"
+        className="w-full hero-carousel"
         plugins={[plugin.current]}
         opts={{ 
           loop: true,
