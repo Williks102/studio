@@ -53,8 +53,8 @@ export function Footer({ dict }: { dict: any }) {
           <div className="space-y-4">
             <h3 className="font-semibold tracking-wider text-foreground">{dict.hoursTitle}</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>{dict.hoursDay}</li>
-              <li>{dict.hoursEvening}</li>
+              <li>{dict.weekHours}</li>
+              <li>{dict.sundayHours}</li>
             </ul>
           </div>
         </div>

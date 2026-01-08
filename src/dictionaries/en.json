@@ -49,9 +49,7 @@
     "about": {
         "title": "About us",
         "description": "Born from a passion for African flavors and the desire to elevate them, Le Lof is a place where tradition meets modernity. Here, every plate tells a story, that of a continent rich in colors, spices, and emotions. Our team of enthusiasts promises you an unforgettable culinary journey, between authenticity and creativity.",
-        "openingHoursTitle": "Our opening hours",
-        "day": "Daytime",
-        "evening": "Evening"
+        "openingHoursTitle": "Our opening hours"
     },
     "menuPage": {
         "title": "Our menu",
@@ -295,8 +293,8 @@
         "phone": "+225 0704353535",
         "email": "contact@restaurantlelof.com",
         "hoursTitle": "HOURS",
-        "hoursDay": "Day: 11AM - 3PM",
-        "hoursEvening": "Evening: 6PM - 12AM",
+        "weekHours": "Tuesday - Saturday: 12 PM - 11 PM",
+        "sundayHours": "Sunday: 11 AM - 4 PM",
         "copyright": "Restaurant Lelof. All rights reserved."
     }
 }

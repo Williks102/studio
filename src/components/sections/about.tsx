@@ -13,8 +13,8 @@ export function About({ dict }: { dict: any }) {
         <div className="mt-12 rounded-lg border bg-card p-8 text-center shadow-sm">
             <h3 className="text-xl font-semibold font-headline text-primary">{dict.openingHoursTitle}</h3>
             <div className="mt-4 flex flex-col items-center justify-center space-y-2 text-foreground/80 md:flex-row md:space-x-8 md:space-y-0">
-                <p><span className="font-semibold">{dict.day} :</span> 11H - 15H</p>
-                <p><span className="font-semibold">{dict.evening} :</span> 18H - 00H</p>
+                <p>{dict.weekHours}</p>
+                <p>{dict.sundayHours}</p>
             </div>
         </div>
       </div>
