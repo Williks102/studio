@@ -29,7 +29,7 @@ export default async function Home(props: HomePageProps) {
       <main className="flex-1">
         <Hero dict={dict.hero} />
         <Showcase dict={dict.showcase} />
-        <About dict={dict.about} />
+        <About dict={{...dict.about, ...dict.footer}} />
         <Formulas dict={dict.formulas} />
         <Updates dict={dict.updates} />
         <AfricanVibes dict={dict.africanVibes} />
