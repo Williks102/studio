@@ -276,12 +276,12 @@ export interface MenuItem {
       id: 'sorbets',
       title: dict.sorbets.title,
       items: [
-        { id: 'sorbet-1', name: dict.dishes.sorbetMangue.name, description: dict.dishes.sorbetMangue.description, price: 3500, imageId: 'menu-sorbet-1' },
-        { id: 'sorbet-2', name: dict.dishes.sorbetPassion.name, description: dict.dishes.sorbetPassion.description, price: 3500, imageId: 'menu-sorbet-2' },
-        { id: 'sorbet-3', name: dict.dishes.sorbetBissap.name, description: dict.dishes.sorbetBissap.description, price: 3500, imageId: 'menu-sorbet-3' },
-        { id: 'sorbet-4', name: dict.dishes.sorbetTamarin.name, description: dict.dishes.sorbetTamarin.description, price: 3500, imageId: 'menu-sorbet-4' },
-        { id: 'sorbet-5', name: dict.dishes.sorbetBaobab.name, description: dict.dishes.sorbetBaobab.description, price: 3500, imageId: 'menu-sorbet-5' },
-        { id: 'sorbet-6', name: dict.dishes.sorbetCitron.name, description: dict.dishes.sorbetCitron.description, price: 3500, imageId: 'menu-sorbet-6' },
+        { id: 'sorbet-1', name: dict.dishes.sorbetMangue.name, description: dict.dishes.sorbetMangue.description, price: 3500, imageId: '' },
+        { id: 'sorbet-2', name: dict.dishes.sorbetPassion.name, description: dict.dishes.sorbetPassion.description, price: 3500, imageId: '' },
+        { id: 'sorbet-3', name: dict.dishes.sorbetBissap.name, description: dict.dishes.sorbetBissap.description, price: 3500, imageId: '' },
+        { id: 'sorbet-4', name: dict.dishes.sorbetTamarin.name, description: dict.dishes.sorbetTamarin.description, price: 3500, imageId: '' },
+        { id: 'sorbet-5', name: dict.dishes.sorbetBaobab.name, description: dict.dishes.sorbetBaobab.description, price: 3500, imageId: '' },
+        { id: 'sorbet-6', name: dict.dishes.sorbetCitron.name, description: dict.dishes.sorbetCitron.description, price: 3500, imageId: '' },
       ]
     },
     {
