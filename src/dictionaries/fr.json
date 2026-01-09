@@ -86,47 +86,47 @@
         "dishes": {
             "miniBrochettes": {
                 "name": "Mini brochettes de poulet yassa",
-                "description": "Tender chicken marinated in Yassa sauce, served with a refreshing green sauce."
+                "description": "Poulet tendre mariné dans une sauce Yassa, servi avec une sauce verte rafraîchissante."
             },
             "croquettesTubercules": {
                 "name": "Croquettes de tubercules aux herbes",
-                "description": "Mix of local tubers in crispy croquettes, with a creamy herb sauce."
+                "description": "Mélange de tubercules locaux en croquettes croustillantes, sauce crémeuse aux herbes."
             },
             "veloutePatatesDouces": {
                 "name": "Velouté de patates douces coco et son croustillant",
-                "description": "Creamy sweet potato and coconut milk soup, garnished with a crispy topping."
+                "description": "Soupe onctueuse de patate douce et lait de coco, garnie d'un topping croustillant."
             },
             "saladeFraicheur": {
                 "name": "Salade fraîcheur",
-                "description": "A mix of arugula, watermelon, cheese, and a mango vinaigrette."
+                "description": "Mélange de roquette, pastèque, fromage et une vinaigrette à la mangue."
             },
             "carpaccioAnanas": {
                 "name": "Carpaccio d'ananas, vinaigrette passion, crevette snackée",
-                "description": "Thin slices of fresh pineapple, exotic passion fruit vinaigrette, and lightly seared shrimp."
+                "description": "Fines tranches d'ananas frais, vinaigrette exotique à la passion et crevette légèrement saisie."
             },
             "filetBoeuf": {
                 "name": "Filet de boeuf, sauce aux champignons, écrasé de pomme de terre",
-                "description": "Tender beef fillet topped with a rich mushroom sauce, served with homemade mashed potatoes."
+                "description": "Tendre filet de bœuf nappé d'une riche sauce aux champignons, servi avec un écrasé de pomme de terre maison."
             },
             "magretCanard": {
                 "name": "Magret de canard, sauce vin rouge, purée de patate douce",
-                "description": "Pink-cooked duck breast, a full-bodied red wine sauce, and a creamy sweet potato purée."
+                "description": "Magret de canard cuit rosé, une sauce vin rouge corsée et une onctueuse purée de patate douce."
             },
             "carreAgneauRoti": {
-                "name": "Carré d'agneau rôti aux herbes africaines",
-                "description": "Une pièce de viande noble sublimée par un jus de caractère."
+                "name": "Carré d’agneau rôti aux herbes africaines",
+                "description": "Jus corsé."
             },
             "paveCapitaineRoti": {
                 "name": "Pavé de capitaine rôti",
-                "description": "Un poisson fin et délicat, cuit simplement pour en révéler les saveurs."
+                "description": "Sauce beurre citronné."
             },
             "demiPintadeRoti": {
-                "name": "Demi-pintade rôtie, sauce gingembre-miel",
-                "description": "Tender and flavorful meat with a sweet and spicy sauce."
+                "name": "Demi-pintade rôtie",
+                "description": "Sauce gingembre–miel, accompagné."
             },
             "gambasGrillees": {
-                "name": "Gambas grillées, sauce bissap-citronnelle",
-                "description": "Des gambas juteuses accompagnées d'une sauce florale et acidulée unique."
+                "name": "Gambas grillées",
+                "description": "Sauce bissap – citronnelle."
             },
             "lofTerroirFusion": {
                 "name": "Lof Terroir Fusion",
@@ -158,31 +158,31 @@
             },
             "fritesPatateDouce": {
                 "name": "Frites de patate douce",
-                "description": "Frites maison de patate douce, légèrement sucrées et croustillantes."
+                "description": ""
             },
             "fritesIgname": {
                 "name": "Frites d'igname",
-                "description": "Frites originales d'igname, une alternative savoureuse."
+                "description": ""
             },
             "rizCoco": {
                 "name": "Riz coco",
-                "description": "Riz parfumé cuit avec du lait de coco."
+                "description": ""
             },
             "pureeTaro": {
                 "name": "Purée de taro",
-                "description": "Purée onctueuse de taro, un tubercule au goût fin."
+                "description": ""
             },
             "legumesGrilles": {
                 "name": "Légumes grillé de saison",
-                "description": "Assortiment de légumes frais de saison, simplement grillés."
+                "description": ""
             },
             "attieke": {
                 "name": "Attiéké",
-                "description": "Semoule de manioc traditionnelle, incontournable accompagnement ivoirien."
+                "description": ""
             },
             "alloco": {
                 "name": "Alloco",
-                "description": "Morceaux de banane plantain mûre frits, un classique sucré-salé."
+                "description": ""
             },
             "parisBrest": {
                 "name": "Paris-Brest revisité",
@@ -200,12 +200,12 @@
                 "name": "Crumble ananas citron vert",
                 "description": "Fraîcheur et gourmandise avec ce crumble fruité et acidulé."
             },
-            "sorbetMangue": { "name": "Mangue", "description": "Sorbets faits maison, selon la saison." },
-            "sorbetPassion": { "name": "Passion", "description": "Sorbets faits maison, selon la saison." },
-            "sorbetBissap": { "name": "Bissap", "description": "Sorbets faits maison, selon la saison." },
-            "sorbetTamarin": { "name": "Tamarin", "description": "Sorbets faits maison, selon la saison." },
-            "sorbetBaobab": { "name": "Baobab", "description": "Sorbets faits maison, selon la saison." },
-            "sorbetCitron": { "name": "Citron", "description": "Sorbets faits maison, selon la saison." },
+            "sorbetMangue": { "name": "Mangue", "description": "" },
+            "sorbetPassion": { "name": "Passion", "description": "" },
+            "sorbetBissap": { "name": "Bissap", "description": "" },
+            "sorbetTamarin": { "name": "Tamarin", "description": "" },
+            "sorbetBaobab": { "name": "Baobab", "description": "" },
+            "sorbetCitron": { "name": "Citron", "description": "" },
             "sauceGraine": { "name": "Sauce graine à la queue de bœuf", "description": "Un classique de la cuisine ivoirienne, riche et savoureux." },
             "saucePistache": { "name": "Sauce pistache à la pintade", "description": "Une sauce onctueuse à base de pistaches africaines et de pintade." },
             "sauceGouagouassou": { "name": "Sauce gouagouassou à la queue de bœuf", "description": "Une sauce aubergine typique, mijotée avec de la queue de bœuf." },

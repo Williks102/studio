@@ -83,7 +83,7 @@ export interface MenuItem {
             id: 'main-4',
             name: dict.dishes.paveCapitaineRoti.name,
             description: dict.dishes.paveCapitaineRoti.description,
-            price: 12000,
+            price: 10000,
             imageId: 'menu-main-4', 
         },
         {
@@ -97,7 +97,7 @@ export interface MenuItem {
             id: 'main-3',
             name: dict.dishes.carreAgneauRoti.name,
             description: dict.dishes.carreAgneauRoti.description,
-            price: 18000,
+            price: 15500,
             imageId: 'menu-main-3', 
         },
         {

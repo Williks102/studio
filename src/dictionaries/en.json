@@ -118,15 +118,15 @@
             },
             "paveCapitaineRoti": {
                 "name": "Roasted captain fish steak",
-                "description": "A fine and delicate fish, simply cooked to reveal its flavors."
+                "description": "Lemon butter sauce."
             },
             "demiPintadeRoti": {
-                "name": "Roasted half guinea fowl, ginger-honey sauce",
-                "description": "Tender and flavorful guinea fowl with a sweet and spicy sauce."
+                "name": "Roasted half guinea fowl",
+                "description": "Ginger-honey sauce, with a side."
             },
             "gambasGrillees": {
-                "name": "Grilled prawns, bissap-lemongrass sauce",
-                "description": "Juicy prawns with a unique floral and tangy sauce."
+                "name": "Grilled prawns",
+                "description": "Bissap-lemongrass sauce."
             },
             "lofTerroirFusion": {
                 "name": "Lof Terroir Fusion",
@@ -200,12 +200,12 @@
                 "name": "Pineapple and lime crumble",
                 "description": "Freshness and indulgence with this fruity and tangy crumble."
             },
-            "sorbetMangue": { "name": "Mango", "description": "Homemade sorbets, depending on the season." },
-            "sorbetPassion": { "name": "Passion Fruit", "description": "Homemade sorbets, depending on the season." },
-            "sorbetBissap": { "name": "Bissap", "description": "Homemade sorbets, depending on the season." },
-            "sorbetTamarin": { "name": "Tamarind", "description": "Homemade sorbets, depending on the season." },
-            "sorbetBaobab": { "name": "Baobab", "description": "Homemade sorbets, depending on the season." },
-            "sorbetCitron": { "name": "Lemon", "description": "Homemade sorbets, depending on the season." },
+            "sorbetMangue": { "name": "Mango", "description": "" },
+            "sorbetPassion": { "name": "Passion Fruit", "description": "" },
+            "sorbetBissap": { "name": "Bissap", "description": "" },
+            "sorbetTamarin": { "name": "Tamarind", "description": "" },
+            "sorbetBaobab": { "name": "Baobab", "description": "" },
+            "sorbetCitron": { "name": "Lemon", "description": "" },
             "sauceGraine": { "name": "Palm nut soup with oxtail", "description": "A rich and savory classic of Ivorian cuisine." },
             "saucePistache": { "name": "Pistachio sauce with guinea fowl", "description": "A creamy sauce made from African pistachios and guinea fowl." },
             "sauceGouagouassou": { "name": "Gouagouassou sauce with oxtail", "description": "A typical eggplant sauce, simmered with oxtail." },
