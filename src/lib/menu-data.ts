@@ -7,7 +7,7 @@ export interface MenuItem {
   }
   
   export interface MenuCategory {
-    id: 'starters' | 'mainCourses' | 'burgers' | 'africanFlavors' | 'sides' | 'desserts' | 'sorbets' | 'drinks' | 'coffeeAndTea' | 'sodas';
+    id: 'starters' | 'mainCourses' | 'burgers' | 'africanFlavors' | 'sides' | 'desserts' | 'sorbets' | 'coffeeAndTea' | 'sodas' | 'waters' | 'beers' | 'naturalJuices' | 'localJuices' | 'detox' | 'mocktails';
     title: string;
     items: MenuItem[];
   }
@@ -58,17 +58,38 @@ export interface MenuItem {
       title: dict.mainCourses,
       items: [
         {
-          id: 'main-fonio',
-          name: dict.dishes.fonioCremeux.name,
-          description: dict.dishes.fonioCremeux.description,
-          price: 7000,
-          imageId: '',
+            id: 'main-chouk-poulet',
+            name: dict.dishes.choukouyaPoulet.name,
+            description: dict.dishes.choukouyaPoulet.description,
+            price: 8500,
+            imageId: '',
+        },
+        {
+            id: 'main-chouk-mouton',
+            name: dict.dishes.choukouyaMouton.name,
+            description: dict.dishes.choukouyaMouton.description,
+            price: 9000,
+            imageId: '',
         },
         {
             id: 'main-5',
             name: dict.dishes.demiPintadeRoti.name,
             description: dict.dishes.demiPintadeRoti.description,
             price: 10000,
+            imageId: '',
+        },
+        {
+            id: 'main-4',
+            name: dict.dishes.paveCapitaineRoti.name,
+            description: dict.dishes.paveCapitaineRoti.description,
+            price: 12000,
+            imageId: 'menu-main-4', 
+        },
+        {
+            id: 'main-6',
+            name: dict.dishes.gambasGrillees.name,
+            description: dict.dishes.gambasGrillees.description,
+            price: 14000,
             imageId: '',
         },
         {
@@ -79,32 +100,11 @@ export interface MenuItem {
             imageId: 'menu-main-3', 
         },
         {
-            id: 'main-4',
-            name: dict.dishes.paveCapitaineRoti.name,
-            description: dict.dishes.paveCapitaineRoti.description,
-            price: 12000,
-            imageId: 'menu-main-4', 
-        },
-        {
-            id: 'main-chouk-mouton',
-            name: dict.dishes.choukouyaMouton.name,
-            description: dict.dishes.choukouyaMouton.description,
-            price: 9000,
-            imageId: '',
-        },
-        {
-            id: 'main-chouk-poulet',
-            name: dict.dishes.choukouyaPoulet.name,
-            description: dict.dishes.choukouyaPoulet.description,
-            price: 8500,
-            imageId: '',
-        },
-        {
-            id: 'main-6',
-            name: dict.dishes.gambasGrillees.name,
-            description: dict.dishes.gambasGrillees.description,
-            price: 14000,
-            imageId: '',
+          id: 'main-fonio',
+          name: dict.dishes.fonioCremeux.name,
+          description: dict.dishes.fonioCremeux.description,
+          price: 7000,
+          imageId: '',
         },
         {
           id: 'main-1',
@@ -285,6 +285,62 @@ export interface MenuItem {
       ]
     },
     {
+        id: 'waters',
+        title: dict.waters,
+        items: [
+          { id: 'water-1', name: dict.dishes.celeste.name, description: '', price: 2500, imageId: '' },
+          { id: 'water-2', name: dict.dishes.kirene.name, description: '', price: 3000, imageId: '' },
+          { id: 'water-3', name: dict.dishes.perrier.name, description: '', price: 4000, imageId: '' },
+        ],
+    },
+    {
+        id: 'beers',
+        title: dict.beers,
+        items: [
+            { id: 'beer-1', name: dict.dishes.beaufort.name, description: '', price: 2000, imageId: '' },
+            { id: 'beer-2', name: dict.dishes.heineken.name, description: '', price: 2000, imageId: '' },
+            { id: 'beer-3', name: dict.dishes.desperados.name, description: '', price: 2000, imageId: '' },
+            { id: 'beer-4', name: dict.dishes.castelle.name, description: '', price: 2000, imageId: '' },
+            { id: 'beer-5', name: dict.dishes.corona.name, description: '', price: 2000, imageId: '' },
+            { id: 'beer-6', name: dict.dishes.tequila.name, description: '', price: 2000, imageId: '' },
+        ]
+    },
+    {
+        id: 'naturalJuices',
+        title: dict.naturalJuices,
+        items: [
+            { id: 'natural-juice-1', name: dict.dishes.orangeJuice.name, description: '', price: 2500, imageId: '' },
+            { id: 'natural-juice-2', name: dict.dishes.pineappleJuice.name, description: '', price: 2500, imageId: '' },
+            { id: 'natural-juice-3', name: dict.dishes.mangoJuice.name, description: '', price: 2500, imageId: '' },
+        ]
+    },
+    {
+        id: 'localJuices',
+        title: dict.localJuices,
+        items: [
+            { id: 'local-juice-1', name: dict.dishes.bissapJuice.name, description: '', price: 2000, imageId: '' },
+            { id: 'local-juice-2', name: dict.dishes.gingerJuice.name, description: '', price: 2000, imageId: '' },
+            { id: 'local-juice-3', name: dict.dishes.tamarindJuice.name, description: '', price: 2000, imageId: '' },
+        ]
+    },
+    {
+        id: 'detox',
+        title: dict.detox,
+        items: [
+            { id: 'detox-1', name: dict.dishes.lofCucumber.name, description: '', price: 2500, imageId: '' },
+        ]
+    },
+    {
+        id: 'mocktails',
+        title: dict.mocktails,
+        items: [
+            { id: 'mocktail-1', name: dict.dishes.akwabaLof.name, description: dict.dishes.akwabaLof.description, price: 5000, imageId: '' },
+            { id: 'mocktail-2', name: dict.dishes.virginMojito.name, description: dict.dishes.virginMojito.description, price: 5000, imageId: '' },
+            { id: 'mocktail-3', name: dict.dishes.boraBora.name, description: dict.dishes.boraBora.description, price: 5000, imageId: '' },
+            { id: 'mocktail-4', name: dict.dishes.virginBloodyMary.name, description: dict.dishes.virginBloodyMary.description, price: 5000, imageId: '' },
+        ]
+    },
+    {
       id: 'coffeeAndTea',
       title: dict.coffeeAndTea,
       items: [
@@ -297,7 +353,6 @@ export interface MenuItem {
         { id: 'coffee-7', name: dict.dishes.iceTea.name, description: '', price: 2000, imageId: '' },
         { id: 'coffee-8', name: dict.dishes.camomille.name, description: '', price: 2000, imageId: '' },
         { id: 'coffee-9', name: dict.dishes.homemadeInfusion.name, description: '', price: 2000, imageId: '' },
-        { id: 'coffee-10', name: dict.dishes.softDrink.name, description: '', price: 2000, imageId: '' },
       ],
     },
     {

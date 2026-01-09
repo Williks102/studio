@@ -68,6 +68,12 @@
         },
         "coffeeAndTea": "Café & Thé",
         "sodas": "Sodas",
+        "waters": "Eaux",
+        "beers": "Bières",
+        "naturalJuices": "Jus Naturels",
+        "localJuices": "Jus du Pays",
+        "detox": "Détox",
+        "mocktails": "Mocktails",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
@@ -216,7 +222,27 @@
             "coca": { "name": "Coca", "description": "" },
             "sprite": { "name": "Sprite", "description": "" },
             "fanta": { "name": "Fanta", "description": "" },
-            "schweppes": { "name": "Schweppes", "description": "" }
+            "schweppes": { "name": "Schweppes", "description": "" },
+            "celeste": { "name": "Céleste 0,75 CL", "description": "" },
+            "kirene": { "name": "Kirene Pétillante", "description": "" },
+            "perrier": { "name": "Perrier", "description": "" },
+            "beaufort": { "name": "Beaufort", "description": "" },
+            "heineken": { "name": "Heineken", "description": "" },
+            "desperados": { "name": "Desperados", "description": "" },
+            "castelle": { "name": "Castelle", "description": "" },
+            "corona": { "name": "Corona", "description": "" },
+            "tequila": { "name": "Tequila", "description": "" },
+            "orangeJuice": { "name": "Orange", "description": "" },
+            "pineappleJuice": { "name": "Ananas", "description": "" },
+            "mangoJuice": { "name": "Mangue", "description": "" },
+            "bissapJuice": { "name": "Bissap", "description": "" },
+            "gingerJuice": { "name": "Gingembre", "description": "" },
+            "tamarindJuice": { "name": "Tamarin", "description": "" },
+            "lofCucumber": { "name": "Lof Comcombre", "description": "" },
+            "akwabaLof": { "name": "Akwaba Lof", "description": "Bissap, gingembre, épice maison, feuilles de menthe" },
+            "virginMojito": { "name": "Virgin Mojito", "description": "Feuilles de menthe, citron, sucre, eau gazeuse" },
+            "boraBora": { "name": "Bora Bora", "description": "Jus de passion, jus d'ananas, citron, sirop de grenadine" },
+            "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Jus de citron, jus de tomate, sucre" }
         }
     },
     "formulas": {

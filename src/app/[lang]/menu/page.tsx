@@ -61,6 +61,21 @@ export default async function MenuPage(props: MenuPageProps) {
     const dict = await getDictionary(lang);
     const menuData = getMenuData(dict.menuPage);
 
+    // Group drink categories
+    const mainCategories = menuData.filter(cat => !['waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
+    const drinkCategories = menuData.filter(cat => ['waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
+    
+    const drinksCategory: MenuCategory = {
+        id: 'drinks',
+        title: dict.menuPage.drinks,
+        items: drinkCategories.flatMap(cat => cat.items.map(item => ({...item, groupTitle: cat.title})))
+    };
+
+    // Custom sort order for drinks
+    const drinkCategoryOrder = ['waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'];
+    const sortedDrinkCategories = drinkCategories.sort((a, b) => drinkCategoryOrder.indexOf(a.id) - drinkCategoryOrder.indexOf(b.id));
+
+
     return (
         <div className="flex min-h-screen flex-col bg-background">
             <Header dict={{ ...dict.header, bookingModal: dict.bookingModal }} />
@@ -75,9 +90,26 @@ export default async function MenuPage(props: MenuPageProps) {
                         </p>
                     </div>
 
-                    {menuData.map((category) => (
+                    {mainCategories.map((category) => (
                         <MenuSection key={category.id} category={category} />
                     ))}
+                    
+                    <section id="drinks" className="py-8 md:py-12">
+                        <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-8">
+                            {dict.menuPage.drinks}
+                        </h2>
+                        {sortedDrinkCategories.map(category => (
+                            <div key={category.id} className="mb-12">
+                                <h3 className="font-headline text-2xl font-semibold text-primary mb-6">{category.title}</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    {category.items.map((item) => (
+                                        <MenuCard key={item.id} item={item} currency="FCFA" />
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </section>
+
                 </div>
             </main>
             <Footer dict={dict.footer} />
