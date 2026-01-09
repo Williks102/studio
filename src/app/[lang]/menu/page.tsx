@@ -32,9 +32,11 @@ const MenuCard = ({ item, currency }: { item: MenuItem; currency: string }) => {
             </CardHeader>
             <CardContent className="flex-grow flex flex-col justify-between">
                 <CardDescription>{item.description}</CardDescription>
-                <p className="mt-4 text-lg font-semibold text-foreground self-end">
-                    {item.price.toLocaleString('fr-FR')} {currency}
-                </p>
+                {item.price && (
+                    <p className="mt-4 text-lg font-semibold text-foreground self-end">
+                        {item.price.toLocaleString('fr-FR')} {currency}
+                    </p>
+                )}
             </CardContent>
         </Card>
     );

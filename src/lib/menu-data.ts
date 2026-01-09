@@ -2,7 +2,7 @@ export interface MenuItem {
     id: string;
     name: string;
     description: string;
-    price: number;
+    price?: number;
     imageId: string;
   }
   
@@ -216,14 +216,14 @@ export interface MenuItem {
       id: 'sides',
       title: dict.sides,
       items: [
-        { id: 'side-1', name: dict.dishes.fonioPilaf.name, description: dict.dishes.fonioPilaf.description, price: 3000, imageId: '' },
-        { id: 'side-2', name: dict.dishes.fritesPatateDouce.name, description: dict.dishes.fritesPatateDouce.description, price: 3000, imageId: '' },
-        { id: 'side-3', name: dict.dishes.fritesIgname.name, description: dict.dishes.fritesIgname.description, price: 3000, imageId: '' },
-        { id: 'side-4', name: dict.dishes.rizCoco.name, description: dict.dishes.rizCoco.description, price: 3000, imageId: '' },
-        { id: 'side-5', name: dict.dishes.pureeTaro.name, description: dict.dishes.pureeTaro.description, price: 3000, imageId: '' },
-        { id: 'side-6', name: dict.dishes.legumesGrilles.name, description: dict.dishes.legumesGrilles.description, price: 3000, imageId: '' },
-        { id: 'side-7', name: dict.dishes.attieke.name, description: dict.dishes.attieke.description, price: 3000, imageId: '' },
-        { id: 'side-8', name: dict.dishes.alloco.name, description: dict.dishes.alloco.description, price: 3000, imageId: '' },
+        { id: 'side-1', name: dict.dishes.fonioPilaf.name, description: dict.dishes.fonioPilaf.description, imageId: '' },
+        { id: 'side-2', name: dict.dishes.fritesPatateDouce.name, description: dict.dishes.fritesPatateDouce.description, imageId: '' },
+        { id: 'side-3', name: dict.dishes.fritesIgname.name, description: dict.dishes.fritesIgname.description, imageId: '' },
+        { id: 'side-4', name: dict.dishes.rizCoco.name, description: dict.dishes.rizCoco.description, imageId: '' },
+        { id: 'side-5', name: dict.dishes.pureeTaro.name, description: dict.dishes.pureeTaro.description, imageId: '' },
+        { id: 'side-6', name: dict.dishes.legumesGrilles.name, description: dict.dishes.legumesGrilles.description, imageId: '' },
+        { id: 'side-7', name: dict.dishes.attieke.name, description: dict.dishes.attieke.description, imageId: '' },
+        { id: 'side-8', name: dict.dishes.alloco.name, description: dict.dishes.alloco.description, imageId: '' },
       ]
     },
     {
