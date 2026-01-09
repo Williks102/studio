@@ -7,7 +7,7 @@ export interface MenuItem {
   }
   
   export interface MenuCategory {
-    id: 'starters' | 'mainCourses' | 'burgers' | 'africanFlavors' | 'sides' | 'desserts' | 'sorbets' | 'coffeeAndTea' | 'sodas' | 'waters' | 'beers' | 'naturalJuices' | 'localJuices' | 'detox' | 'mocktails';
+    id: 'starters' | 'mainCourses' | 'burgers' | 'africanFlavors' | 'sides' | 'desserts' | 'sorbets' | 'coffeeAndTea' | 'sodas' | 'waters' | 'beers' | 'naturalJuices' | 'localJuices' | 'detox' | 'mocktails' | 'signatures' | 'aperitifs' | 'whiskyLiqueur' | 'cognac';
     title: string;
     items: MenuItem[];
   }
@@ -283,6 +283,45 @@ export interface MenuItem {
         { id: 'sorbet-5', name: dict.dishes.sorbetBaobab.name, description: dict.dishes.sorbetBaobab.description, price: 3500, imageId: 'menu-sorbet-5' },
         { id: 'sorbet-6', name: dict.dishes.sorbetCitron.name, description: dict.dishes.sorbetCitron.description, price: 3500, imageId: 'menu-sorbet-6' },
       ]
+    },
+    {
+      id: 'signatures',
+      title: dict.signatures,
+      items: [
+        { id: 'sig-1', name: dict.dishes.punchDuLof.name, description: dict.dishes.punchDuLof.description, price: 10000, imageId: '' },
+        { id: 'sig-2', name: dict.dishes.sexyBaby.name, description: dict.dishes.sexyBaby.description, price: 10000, imageId: '' },
+        { id: 'sig-3', name: dict.dishes.miaNazir.name, description: dict.dishes.miaNazir.description, price: 10000, imageId: '' },
+        { id: 'sig-4', name: dict.dishes.perfectIce.name, description: dict.dishes.perfectIce.description, price: 10000, imageId: '' },
+        { id: 'sig-5', name: dict.dishes.expressionDuBarman.name, description: dict.dishes.expressionDuBarman.description, price: 10000, imageId: '' },
+      ],
+    },
+    {
+      id: 'aperitifs',
+      title: dict.aperitifs,
+      items: [
+        { id: 'ap-1', name: dict.dishes.campari.name, description: '', price: 4000, imageId: '' },
+        { id: 'ap-2', name: dict.dishes.aperol.name, description: '', price: 4000, imageId: '' },
+        { id: 'ap-3', name: dict.dishes.afro.name, description: '', price: 4000, imageId: '' },
+      ],
+    },
+    {
+      id: 'whiskyLiqueur',
+      title: dict.whiskyLiqueur,
+      items: [
+        { id: 'wl-1', name: dict.dishes.jackDaniels.name, description: '', price: 5000, imageId: '' },
+        { id: 'wl-2', name: dict.dishes.redLabel.name, description: '', price: 5000, imageId: '' },
+        { id: 'wl-3', name: dict.dishes.blackLabel.name, description: '', price: 60000, imageId: '' },
+        { id: 'wl-4', name: dict.dishes.chivas.name, description: '', price: 60000, imageId: '' },
+        { id: 'wl-5', name: dict.dishes.baileys.name, description: '', price: 60000, imageId: '' },
+      ],
+    },
+    {
+      id: 'cognac',
+      title: dict.cognac,
+      items: [
+        { id: 'co-1', name: dict.dishes.hennessyVS.name, description: '', price: 8500, imageId: '' },
+        { id: 'co-2', name: dict.dishes.hennessyXO.name, description: '', price: 8500, imageId: '' },
+      ],
     },
     {
         id: 'waters',

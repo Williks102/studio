@@ -16,7 +16,7 @@ const MenuCard = ({ item, currency }: { item: MenuItem; currency: string }) => {
 
     return (
         <Card className="overflow-hidden flex flex-col">
-            {image && (
+            {image && item.imageId && (
                 <div className="relative aspect-[4/3] w-full">
                     <Image
                         src={image.imageUrl}
@@ -62,8 +62,8 @@ export default async function MenuPage(props: MenuPageProps) {
     const menuData = getMenuData(dict.menuPage);
 
     // Group drink categories
-    const mainCategories = menuData.filter(cat => !['waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
-    const drinkCategories = menuData.filter(cat => ['waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
+    const mainCategories = menuData.filter(cat => !['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
+    const drinkCategories = menuData.filter(cat => ['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
     
     const drinksCategory: MenuCategory = {
         id: 'drinks',
@@ -72,7 +72,7 @@ export default async function MenuPage(props: MenuPageProps) {
     };
 
     // Custom sort order for drinks
-    const drinkCategoryOrder = ['waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'];
+    const drinkCategoryOrder = ['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'];
     const sortedDrinkCategories = drinkCategories.sort((a, b) => drinkCategoryOrder.indexOf(a.id) - drinkCategoryOrder.indexOf(b.id));
 
 

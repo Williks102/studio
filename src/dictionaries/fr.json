@@ -74,6 +74,10 @@
         "localJuices": "Jus du Pays",
         "detox": "Détox",
         "mocktails": "Mocktails",
+        "signatures": "Signatures Uniques",
+        "aperitifs": "Apéritifs",
+        "whiskyLiqueur": "Whisky / Liqueur",
+        "cognac": "Cognac",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
@@ -242,7 +246,37 @@
             "akwabaLof": { "name": "Akwaba Lof", "description": "Bissap, gingembre, épice maison, feuilles de menthe" },
             "virginMojito": { "name": "Virgin Mojito", "description": "Feuilles de menthe, citron, sucre, eau gazeuse" },
             "boraBora": { "name": "Bora Bora", "description": "Jus de passion, jus d'ananas, citron, sirop de grenadine" },
-            "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Jus de citron, jus de tomate, sucre" }
+            "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Jus de citron, jus de tomate, sucre" },
+            "punchDuLof": {
+                "name": "Punch du Lof",
+                "description": "Jus de coco, jus d'ananas, clou de girofle, rhum blanc, Malibu, vodka"
+            },
+            "sexyBaby": {
+                "name": "Sexy Baby",
+                "description": "Canelle, clou de girofle, jus de citron, jus d'orange, rhum ambré"
+            },
+            "miaNazir": {
+                "name": "Mia Nazir",
+                "description": "Petit cola, feuille d'hibiscus, sirop de canne, sirop de vanille, jus d'orange, jus de citron, rhum blanc"
+            },
+            "perfectIce": {
+                "name": "Perfect Ice",
+                "description": "Noix de muscade, poudre de cacao, crème fraîche, purée de caramel"
+            },
+            "expressionDuBarman": {
+                "name": "Expression du Barman",
+                "description": ""
+            },
+            "campari": { "name": "Campari", "description": "" },
+            "aperol": { "name": "Aperol", "description": "" },
+            "afro": { "name": "Afro : Kassapreko, Vrai Garçon", "description": "" },
+            "jackDaniels": { "name": "Jack Daniel's", "description": "" },
+            "redLabel": { "name": "Red Label", "description": "" },
+            "blackLabel": { "name": "Black Label", "description": "" },
+            "chivas": { "name": "Chivas 12 Ans", "description": "" },
+            "baileys": { "name": "Baileys", "description": "" },
+            "hennessyVS": { "name": "Hennessy VS", "description": "" },
+            "hennessyXO": { "name": "Hennessy X.O", "description": "" }
         }
     },
     "formulas": {

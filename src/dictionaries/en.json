@@ -74,6 +74,10 @@
         "localJuices": "Local Juices",
         "detox": "Detox",
         "mocktails": "Mocktails",
+        "signatures": "Unique Signatures",
+        "aperitifs": "Aperitifs",
+        "whiskyLiqueur": "Whisky / Liqueur",
+        "cognac": "Cognac",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
@@ -242,7 +246,37 @@
             "akwabaLof": { "name": "Akwaba Lof", "description": "Bissap, ginger, homemade spice, mint leaves" },
             "virginMojito": { "name": "Virgin Mojito", "description": "Mint leaves, lemon, sugar, sparkling water" },
             "boraBora": { "name": "Bora Bora", "description": "Passion fruit juice, pineapple juice, lemon, grenadine syrup" },
-            "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Lemon juice, tomato juice, sugar" }
+            "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Lemon juice, tomato juice, sugar" },
+            "punchDuLof": {
+                "name": "Punch du Lof",
+                "description": "Coconut juice, pineapple juice, clove, white rum, Malibu, vodka"
+            },
+            "sexyBaby": {
+                "name": "Sexy Baby",
+                "description": "Cinnamon, clove, lemon juice, orange juice, amber rum"
+            },
+            "miaNazir": {
+                "name": "Mia Nazir",
+                "description": "Small cola, hibiscus leaf, cane syrup, vanilla syrup, orange juice, lemon juice, white rum"
+            },
+            "perfectIce": {
+                "name": "Perfect Ice",
+                "description": "Nutmeg, cocoa powder, fresh cream, caramel purée"
+            },
+            "expressionDuBarman": {
+                "name": "Bartender's Expression",
+                "description": ""
+            },
+            "campari": { "name": "Campari", "description": "" },
+            "aperol": { "name": "Aperol", "description": "" },
+            "afro": { "name": "Afro: Kassapreko, Vrai Garçon", "description": "" },
+            "jackDaniels": { "name": "Jack Daniel's", "description": "" },
+            "redLabel": { "name": "Red Label", "description": "" },
+            "blackLabel": { "name": "Black Label", "description": "" },
+            "chivas": { "name": "Chivas 12 Ans", "description": "" },
+            "baileys": { "name": "Baileys", "description": "" },
+            "hennessyVS": { "name": "Hennessy VS", "description": "" },
+            "hennessyXO": { "name": "Hennessy X.O", "description": "" }
         }
     },
     "formulas": {
