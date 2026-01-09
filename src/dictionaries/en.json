@@ -300,7 +300,9 @@
             "chablis": { "name": "Chablis", "description": "" },
             "irresistibleWhite": { "name": "Irrésistible", "description": "" },
             "refugeMoelleux": { "name": "Refuge Moelleux", "description": "" },
-            "refugeSec": { "name": "Refuge Sec", "description": "" }
+            "refugeSec": { "name": "Refuge Sec", "description": "" },
+            "plaisirRose": { "name": "Plaisir", "description": "" },
+            "cheminDesSables": { "name": "Chemin des Sables", "description": "" }
         }
     },
     "formulas": {

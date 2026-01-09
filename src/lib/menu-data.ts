@@ -362,6 +362,14 @@ export interface MenuItem {
       ],
     },
     {
+      id: 'roseWines',
+      title: dict.roseWines,
+      items: [
+        { id: 'rose-wine-1', name: dict.dishes.plaisirRose.name, description: '', price: 15000, imageId: '' },
+        { id: 'rose-wine-2', name: dict.dishes.cheminDesSables.name, description: '', price: 15000, imageId: '' },
+      ],
+    },
+    {
         id: 'waters',
         title: dict.waters,
         items: [
