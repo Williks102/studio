@@ -4,6 +4,7 @@ export interface MenuItem {
     description: string;
     price?: number;
     imageId: string;
+    groupTitle?: string;
   }
   
   export interface MenuCategory {
@@ -21,14 +22,14 @@ export interface MenuItem {
           id: 'starter-1',
           name: dict.dishes.miniBrochettes.name,
           description: dict.dishes.miniBrochettes.description,
-          price: 8000,
+          price: 4000,
           imageId: 'menu-starter-1',
         },
         {
           id: 'starter-2',
           name: dict.dishes.croquettesTubercules.name,
           description: dict.dishes.croquettesTubercules.description,
-          price: 6000,
+          price: 4000,
           imageId: 'menu-starter-2',
         },
         {
@@ -42,7 +43,7 @@ export interface MenuItem {
             id: 'starter-4',
             name: dict.dishes.saladeFraicheur.name,
             description: dict.dishes.saladeFraicheur.description,
-            price: 8000,
+            price: 6000,
             imageId: 'menu-starter-4', 
         },
         {
