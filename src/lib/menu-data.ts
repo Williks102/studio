@@ -46,12 +46,6 @@ export interface MenuItem {
             price: 6000,
             imageId: 'menu-starter-4', 
         },
-        {
-          id: 'starter-5',
-          name: dict.dishes.carpaccioAnanas.name,
-          description: dict.dishes.carpaccioAnanas.description,
-          imageId: '',
-      },
       ],
     },
     {
@@ -115,22 +109,22 @@ export interface MenuItem {
       items: [
         {
           id: 'burger-1',
-          name: dict.dishes.lofTerroirFusion.name,
-          description: dict.dishes.lofTerroirFusion.description,
+          name: dict.dishes.LOFTerroirFusion.name,
+          description: dict.dishes.LOFTerroirFusion.description,
           price: 12500,
           imageId: 'menu-burger-1',
         },
         {
           id: 'burger-2',
-          name: dict.dishes.lofSupremeFusion.name,
-          description: dict.dishes.lofSupremeFusion.description,
+          name: dict.dishes.LOFSupremeFusion.name,
+          description: dict.dishes.LOFSupremeFusion.description,
           price: 12500,
           imageId: 'menu-burger-2',
         },
         {
           id: 'burger-3',
-          name: dict.dishes.lofGreenFusion.name,
-          description: dict.dishes.lofGreenFusion.description,
+          name: dict.dishes.LOFGreenFusion.name,
+          description: dict.dishes.LOFGreenFusion.description,
           price: 12500,
           imageId: 'menu-burger-3',
         },
@@ -283,7 +277,7 @@ export interface MenuItem {
       id: 'signatures',
       title: dict.signatures,
       items: [
-        { id: 'sig-1', name: dict.dishes.punchDuLof.name, description: dict.dishes.punchDuLof.description, price: 10000, imageId: '' },
+        { id: 'sig-1', name: dict.dishes.punchDuLOF.name, description: dict.dishes.punchDuLOF.description, price: 10000, imageId: '' },
         { id: 'sig-2', name: dict.dishes.sexyBaby.name, description: dict.dishes.sexyBaby.description, price: 10000, imageId: '' },
         { id: 'sig-3', name: dict.dishes.miaNazir.name, description: dict.dishes.miaNazir.description, price: 10000, imageId: '' },
         { id: 'sig-4', name: dict.dishes.perfectIce.name, description: dict.dishes.perfectIce.description, price: 10000, imageId: '' },
@@ -407,14 +401,14 @@ export interface MenuItem {
         id: 'detox',
         title: dict.detox,
         items: [
-            { id: 'detox-1', name: dict.dishes.lofCucumber.name, description: '', price: 2500, imageId: '' },
+            { id: 'detox-1', name: dict.dishes.LOFCucumber.name, description: '', price: 2500, imageId: '' },
         ]
     },
     {
         id: 'mocktails',
         title: dict.mocktails,
         items: [
-            { id: 'mocktail-1', name: dict.dishes.akwabaLof.name, description: dict.dishes.akwabaLof.description, price: 5000, imageId: '' },
+            { id: 'mocktail-1', name: dict.dishes.akwabaLOF.name, description: dict.dishes.akwabaLOF.description, price: 5000, imageId: '' },
             { id: 'mocktail-2', name: dict.dishes.virginMojito.name, description: dict.dishes.virginMojito.description, price: 5000, imageId: '' },
             { id: 'mocktail-3', name: dict.dishes.boraBora.name, description: dict.dishes.boraBora.description, price: 5000, imageId: '' },
             { id: 'mocktail-4', name: dict.dishes.virginBloodyMary.name, description: dict.dishes.virginBloodyMary.description, price: 5000, imageId: '' },

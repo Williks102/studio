@@ -100,10 +100,6 @@
                 "name": "Salade fraîcheur",
                 "description": "Mélange de roquette, pastèque, fromage et une vinaigrette à la mangue."
             },
-            "carpaccioAnanas": {
-                "name": "Carpaccio d'ananas, vinaigrette passion, crevette snackée",
-                "description": "Fines tranches d'ananas frais, vinaigrette exotique à la passion et crevette légèrement saisie."
-            },
             "filetBoeuf": {
                 "name": "Filet de boeuf, sauce aux champignons, écrasé de pomme de terre",
                 "description": "Tendre filet de bœuf nappé d'une riche sauce aux champignons, servi avec un écrasé de pomme de terre maison."
@@ -128,15 +124,15 @@
                 "name": "Gambas grillées",
                 "description": "Sauce bissap – citronnelle."
             },
-            "lofTerroirFusion": {
+            "LOFTerroirFusion": {
                 "name": "LOF Terroir Fusion",
                 "description": "Pain brioché maison, steak de bœuf local, fromage fondu, sauce piment doux, frites de patate douce."
             },
-            "lofSupremeFusion": {
+            "LOFSupremeFusion": {
                 "name": "LOF Suprême Fusion",
                 "description": "Pain brioché maison, blanc de poulet croustillant, achard de légumes, sauce yaourt coco, chips banane plantain."
             },
-            "lofGreenFusion": {
+            "LOFGreenFusion": {
                 "name": "LOF Green Fusion",
                 "description": "Pain brioché au curcuma maison, galette veggie (haricot rouge patate douce), avocat sauce bissap moutarde douce."
             },
@@ -246,12 +242,12 @@
             "bissapJuice": { "name": "Bissap", "description": "" },
             "gingerJuice": { "name": "Gingembre", "description": "" },
             "tamarindJuice": { "name": "Tamarin", "description": "" },
-            "lofCucumber": { "name": "LOF Comcombre", "description": "" },
-            "akwabaLof": { "name": "Akwaba LOF", "description": "Bissap, gingembre, épice maison, feuilles de menthe" },
+            "LOFCucumber": { "name": "LOF Comcombre", "description": "" },
+            "akwabaLOF": { "name": "Akwaba LOF", "description": "Bissap, gingembre, épice maison, feuilles de menthe" },
             "virginMojito": { "name": "Virgin Mojito", "description": "Feuilles de menthe, citron, sucre, eau gazeuse" },
             "boraBora": { "name": "Bora Bora", "description": "Jus de passion, jus d'ananas, citron, sirop de grenadine" },
             "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Jus de citron, jus de tomate, sucre" },
-            "punchDuLof": {
+            "punchDuLOF": {
                 "name": "Punch du LOF",
                 "description": "Jus de coco, jus d'ananas, clou de girofle, rhum blanc, Malibu, vodka"
             },
