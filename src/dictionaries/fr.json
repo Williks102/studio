@@ -73,16 +73,16 @@
                 "description": "Poulet tendre mariné à la sauce Yassa, servi avec une sauce verte rafraîchissante."
             },
             "croquettesTubercules": {
-                "name": "Croquettes de tubercules aux herbes sauce crème",
-                "description": "Mélange de tubercules locaux en croquettes croustillantes, sauce crémeuse aux herbes."
+                "name": "Croquettes de tubercules aux herbes sauce crème, salade croquante",
+                "description": "Mélange de tubercules locaux en croquettes croustillantes, avec une sauce crémeuse aux herbes."
             },
             "veloutePatatesDouces": {
                 "name": "Velouté de patates douces coco et son croustillant",
                 "description": "Soupe onctueuse de patate douce et lait de coco, garnie d'un topping croustillant."
             },
             "saladeFraicheur": {
-                "name": "Salade fraîcheur",
-                "description": "Roquette, pastèque, fromage, et une vinaigrette à la mangue."
+                "name": "Salade fraîcheur (roquette pastèque, fromage vinaigrette mangue)",
+                "description": "Un mix de roquette, pastèque, fromage, et une vinaigrette à la mangue."
             },
             "carpaccioAnanas": {
                 "name": "Carpaccio d'ananas, vinaigrette passion, crevette snackée",
@@ -105,8 +105,8 @@
                 "description": "Un poisson fin et délicat, cuit simplement pour en révéler les saveurs."
             },
             "demiPintadeRoti": {
-                "name": "Demi-pintade rôtie, sauce gingembre-miel",
-                "description": "Une volaille tendre et savoureuse accompagnée d'une sauce douce et épicée."
+                "name": "Demi-pintade rôti, sauce gingembre-miel, accompagné",
+                "description": "Tendre et flavorful meat with a sweet and spicy sauce."
             },
             "gambasGrillees": {
                 "name": "Gambas grillées, sauce bissap-citronnelle",
@@ -127,6 +127,18 @@
             "fonioPilaf": {
                 "name": "Fonio pilaf aux légumes croquants",
                 "description": "Céréale ancestrale cuisinée en pilaf avec des légumes frais et croquants."
+            },
+            "fonioCremeux": {
+                "name": "Fonio crémeux aux légumes croquants",
+                "description": "Une version onctueuse de notre fonio aux légumes."
+            },
+            "choukouyaMouton": {
+                "name": "Choukouya de mouton",
+                "description": "Mouton grillé à la perfection avec des épices traditionnelles."
+            },
+            "choukouyaPoulet": {
+                "name": "Choukouya de poulet",
+                "description": "Poulet mariné et grillé, un classique de la street-food ivoirienne."
             },
             "fritesPatateDouce": {
                 "name": "Frites de patate douce",

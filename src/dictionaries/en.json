@@ -69,11 +69,11 @@
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
-                "name": "Mini chicken skewers Yassa style with light green sauce",
+                "name": "Mini chicken yassa skewers with light green sauce",
                 "description": "Tender chicken marinated in Yassa sauce, served with a refreshing green sauce."
             },
             "croquettesTubercules": {
-                "name": "Tuber croquettes with herbs and cream sauce",
+                "name": "Tuber croquettes with herbs and cream sauce, crispy salad",
                 "description": "Mix of local tubers in crispy croquettes, with a creamy herb sauce."
             },
             "veloutePatatesDouces": {
@@ -81,8 +81,8 @@
                 "description": "Creamy sweet potato and coconut milk soup, garnished with a crispy topping."
             },
             "saladeFraicheur": {
-                "name": "Freshness salad",
-                "description": "A mix of rocket, watermelon, cheese, and a mango vinaigrette."
+                "name": "Freshness salad (arugula, watermelon, cheese, mango vinaigrette)",
+                "description": "A mix of arugula, watermelon, cheese, and a mango vinaigrette."
             },
             "carpaccioAnanas": {
                 "name": "Pineapple carpaccio, passion fruit vinaigrette, seared shrimp",
@@ -97,19 +97,19 @@
                 "description": "Pink-cooked duck breast, a full-bodied red wine sauce, and a creamy sweet potato purée."
             },
             "carreAgneauRoti": {
-                "name": "Roasted rack of lamb with African herbs",
+                "name": "Roasted rack of lamb with African herbs, rich jus",
                 "description": "A noble piece of meat enhanced by a full-bodied juice."
             },
             "paveCapitaineRoti": {
-                "name": "Roasted captain fish steak with lemon butter sauce",
+                "name": "Roasted captain fish steak, lemon butter sauce",
                 "description": "A fine and delicate fish, simply cooked to reveal its flavors."
             },
             "demiPintadeRoti": {
-                "name": "Roasted half guinea fowl with ginger-honey sauce",
-                "description": "Tender and flavorful meat with a sweet and spicy sauce."
+                "name": "Roasted half guinea fowl, ginger-honey sauce, with side",
+                "description": "Tender and flavorful guinea fowl with a sweet and spicy sauce."
             },
             "gambasGrillees": {
-                "name": "Grilled prawns with bissap-lemongrass sauce",
+                "name": "Grilled prawns, bissap-lemongrass sauce",
                 "description": "Juicy prawns with a unique floral and tangy sauce."
             },
             "lofTerroirFusion": {
@@ -127,6 +127,18 @@
             "fonioPilaf": {
                 "name": "Fonio pilaf with crispy vegetables",
                 "description": "Ancient grain cooked as a pilaf with fresh, crispy vegetables."
+            },
+            "fonioCremeux": {
+                "name": "Creamy fonio with crispy vegetables",
+                "description": "A creamy version of our fonio with vegetables."
+            },
+            "choukouyaMouton": {
+                "name": "Mutton choukouya",
+                "description": "Mutton grilled to perfection with traditional spices."
+            },
+            "choukouyaPoulet": {
+                "name": "Chicken choukouya",
+                "description": "Marinated and grilled chicken, a classic of Ivorian street food."
             },
             "fritesPatateDouce": {
                 "name": "Sweet potato fries",
