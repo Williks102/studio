@@ -22,7 +22,7 @@ function HeroImage({ image, priority }: { image: (typeof PlaceHolderImages)[numb
       src={imageSrc}
       alt={image.description}
       data-ai-hint={image.imageHint}
-      className="w-full h-auto object-cover"
+      className="w-full h-full object-cover"
       loading={priority ? "eager" : "lazy"}
       onError={() => {
         console.warn(`Erreur de chargement de l'image principale : ${image.imageUrl}.
@@ -55,7 +55,7 @@ export function Hero({ dict }: { dict: any }) {
           {heroImages.map((image, index) => (
             <CarouselItem key={image.id}>
               {/* Container relatif pour positionner l'overlay et le texte */}
-              <div className="w-full relative">
+              <div className="w-full relative h-[75vh] md:h-auto">
                 <HeroImage image={image} priority={index === 0} />
                 
                 {/* Overlay gradient pour le contraste du texte */}
