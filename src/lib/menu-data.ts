@@ -7,7 +7,7 @@ export interface MenuItem {
   }
   
   export interface MenuCategory {
-    id: 'starters' | 'mainCourses' | 'burgers' | 'africanFlavors' | 'sides' | 'desserts' | 'sorbets' | 'coffeeAndTea' | 'sodas' | 'waters' | 'beers' | 'naturalJuices' | 'localJuices' | 'detox' | 'mocktails' | 'signatures' | 'aperitifs' | 'whiskyLiqueur' | 'cognac';
+    id: 'starters' | 'mainCourses' | 'burgers' | 'africanFlavors' | 'sides' | 'desserts' | 'sorbets' | 'coffeeAndTea' | 'sodas' | 'waters' | 'beers' | 'naturalJuices' | 'localJuices' | 'detox' | 'mocktails' | 'signatures' | 'aperitifs' | 'whiskyLiqueur' | 'cognac' | 'winesByGlass' | 'redWines' | 'whiteWines' | 'roseWines';
     title: string;
     items: MenuItem[];
   }
@@ -321,6 +321,44 @@ export interface MenuItem {
       items: [
         { id: 'co-1', name: dict.dishes.hennessyVS.name, description: '', price: 8500, imageId: '' },
         { id: 'co-2', name: dict.dishes.hennessyXO.name, description: '', price: 8500, imageId: '' },
+      ],
+    },
+    {
+      id: 'winesByGlass',
+      title: dict.winesByGlass,
+      items: [
+        { id: 'wine-glass-1', name: dict.dishes.wineByGlassWhite.name, description: dict.dishes.wineByGlassWhite.description, price: 5000, imageId: '' },
+        { id: 'wine-glass-2', name: dict.dishes.wineByGlassRed.name, description: dict.dishes.wineByGlassRed.description, price: 5000, imageId: '' },
+        { id: 'wine-glass-3', name: dict.dishes.wineByGlassRose.name, description: dict.dishes.wineByGlassRose.description, price: 5000, imageId: '' },
+      ],
+    },
+    {
+      id: 'redWines',
+      title: dict.redWines,
+      items: [
+        { id: 'red-wine-1', name: dict.dishes.chateauRocDeSegur.name, description: '', price: 35000, imageId: '' },
+        { id: 'red-wine-2', name: dict.dishes.laCroixBonis.name, description: '', price: 48000, imageId: '' },
+        { id: 'red-wine-3', name: dict.dishes.chateauDesArnaud.name, description: '', price: 35000, imageId: '' },
+        { id: 'red-wine-4', name: dict.dishes.coteDuRhoneRocca.name, description: '', price: 30000, imageId: '' },
+        { id: 'red-wine-5', name: dict.dishes.nicolasDeBourgueil.name, description: '', price: 28000, imageId: '' },
+        { id: 'red-wine-6', name: dict.dishes.sancerreRed.name, description: '', price: 45000, imageId: '' },
+        { id: 'red-wine-7', name: dict.dishes.domaineALaBaume.name, description: '', price: 25000, imageId: '' },
+        { id: 'red-wine-8', name: dict.dishes.chanvermeil.name, description: '', price: 15000, imageId: '' },
+        { id: 'red-wine-9', name: dict.dishes.belleVille.name, description: '', price: 15000, imageId: '' },
+        { id: 'red-wine-10', name: dict.dishes.chevalierDore.name, description: '', price: 20000, imageId: '' },
+      ],
+    },
+    {
+      id: 'whiteWines',
+      title: dict.whiteWines,
+      items: [
+        { id: 'white-wine-1', name: dict.dishes.sancerreWhite.name, description: '', price: 42000, imageId: '' },
+        { id: 'white-wine-2', name: dict.dishes.pouillyFume.name, description: '', price: 42000, imageId: '' },
+        { id: 'white-wine-3', name: dict.dishes.sauvignonBlanc.name, description: '', price: 20000, imageId: '' },
+        { id: 'white-wine-4', name: dict.dishes.chablis.name, description: '', price: 42000, imageId: '' },
+        { id: 'white-wine-5', name: dict.dishes.irresistibleWhite.name, description: '', price: 15000, imageId: '' },
+        { id: 'white-wine-6', name: dict.dishes.refugeMoelleux.name, description: '', price: 30000, imageId: '' },
+        { id: 'white-wine-7', name: dict.dishes.refugeSec.name, description: '', price: 25000, imageId: '' },
       ],
     },
     {

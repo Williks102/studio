@@ -78,6 +78,10 @@
         "aperitifs": "Aperitifs",
         "whiskyLiqueur": "Whisky / Liqueur",
         "cognac": "Cognac",
+        "winesByGlass": "Wines by the Glass",
+        "redWines": "Red Wines by the Bottle",
+        "whiteWines": "White Wines by the Bottle",
+        "roseWines": "Rosé Wines by the Bottle",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
@@ -89,7 +93,7 @@
                 "description": "Mix of local tubers in crispy croquettes, with a creamy herb sauce."
             },
             "veloutePatatesDouces": {
-                "name": "Sweet potato and coconut velouté",
+                "name": "Sweet potato and coconut velouté with crispy topping",
                 "description": "Creamy sweet potato and coconut milk soup, garnished with a crispy topping."
             },
             "saladeFraicheur": {
@@ -101,7 +105,7 @@
                 "description": "Thin slices of fresh pineapple, exotic passion fruit vinaigrette, and lightly seared shrimp."
             },
             "filetBoeuf": {
-                "name": "Beef fillet, mushroom sauce",
+                "name": "Beef fillet, mushroom sauce, mashed potatoes",
                 "description": "Tender beef fillet topped with a rich mushroom sauce, served with homemade mashed potatoes."
             },
             "magretCanard": {
@@ -273,10 +277,30 @@
             "jackDaniels": { "name": "Jack Daniel's", "description": "" },
             "redLabel": { "name": "Red Label", "description": "" },
             "blackLabel": { "name": "Black Label", "description": "" },
-            "chivas": { "name": "Chivas 12 Ans", "description": "" },
+            "chivas": { "name": "Chivas 12 Years", "description": "" },
             "baileys": { "name": "Baileys", "description": "" },
             "hennessyVS": { "name": "Hennessy VS", "description": "" },
-            "hennessyXO": { "name": "Hennessy X.O", "description": "" }
+            "hennessyXO": { "name": "Hennessy X.O", "description": "" },
+            "wineByGlassWhite": { "name": "White Wine (Le Petit Gascoun, Irrésistible)", "description": "" },
+            "wineByGlassRed": { "name": "Red Wine (Château des Cèdres)", "description": "" },
+            "wineByGlassRose": { "name": "Rosé Wine (Plaisir)", "description": "" },
+            "chateauRocDeSegur": { "name": "Château Roc de Segur", "description": "" },
+            "laCroixBonis": { "name": "La Croix Bonis Saint Estèphe", "description": "" },
+            "chateauDesArnaud": { "name": "Château des Arnaud (Pommerol)", "description": "" },
+            "coteDuRhoneRocca": { "name": "Cote du Rhône Rocca Village", "description": "" },
+            "nicolasDeBourgueil": { "name": "Nicolas de Bourgueil", "description": "" },
+            "sancerreRed": { "name": "Sancerre", "description": "" },
+            "domaineALaBaume": { "name": "Domaine à la Baume", "description": "" },
+            "chanvermeil": { "name": "Chanvermeil", "description": "" },
+            "belleVille": { "name": "Belle Ville", "description": "" },
+            "chevalierDore": { "name": "Chevalier Doré", "description": "" },
+            "sancerreWhite": { "name": "Sancerre", "description": "" },
+            "pouillyFume": { "name": "Pouilly Fumé", "description": "" },
+            "sauvignonBlanc": { "name": "Sauvignon Blanc", "description": "" },
+            "chablis": { "name": "Chablis", "description": "" },
+            "irresistibleWhite": { "name": "Irrésistible", "description": "" },
+            "refugeMoelleux": { "name": "Refuge Moelleux", "description": "" },
+            "refugeSec": { "name": "Refuge Sec", "description": "" }
         }
     },
     "formulas": {

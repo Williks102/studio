@@ -78,35 +78,39 @@
         "aperitifs": "Apéritifs",
         "whiskyLiqueur": "Whisky / Liqueur",
         "cognac": "Cognac",
+        "winesByGlass": "Vins au Verre",
+        "redWines": "Vins Rouges à la Carte",
+        "whiteWines": "Vins Blancs à la Carte",
+        "roseWines": "Vins Rosés à la Carte",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
                 "name": "Mini brochettes de poulet yassa",
-                "description": "Poulet tendre mariné à la sauce Yassa, servi avec une sauce verte rafraîchissante."
+                "description": "Tender chicken marinated in Yassa sauce, served with a refreshing green sauce."
             },
             "croquettesTubercules": {
                 "name": "Croquettes de tubercules aux herbes",
-                "description": "Mélange de tubercules locaux en croquettes croustillantes, avec une sauce crémeuse aux herbes."
+                "description": "Mix of local tubers in crispy croquettes, with a creamy herb sauce."
             },
             "veloutePatatesDouces": {
-                "name": "Velouté de patates douces coco",
-                "description": "Soupe onctueuse de patate douce et lait de coco, garnie d'un topping croustillant."
+                "name": "Velouté de patates douces coco et son croustillant",
+                "description": "Creamy sweet potato and coconut milk soup, garnished with a crispy topping."
             },
             "saladeFraicheur": {
                 "name": "Salade fraîcheur",
-                "description": "Un mix de roquette, pastèque, fromage, et une vinaigrette à la mangue."
+                "description": "A mix of arugula, watermelon, cheese, and a mango vinaigrette."
             },
             "carpaccioAnanas": {
                 "name": "Carpaccio d'ananas, vinaigrette passion, crevette snackée",
-                "description": "Fines tranches d'ananas frais, vinaigrette exotique à la passion et crevettes justes saisies."
+                "description": "Thin slices of fresh pineapple, exotic passion fruit vinaigrette, and lightly seared shrimp."
             },
             "filetBoeuf": {
-                "name": "Filet de boeuf, sauce aux champignons",
-                "description": "Tendre filet de boeuf nappé d'une sauce riche aux champignons, accompagné d'un écrasé de pomme de terre maison."
+                "name": "Filet de boeuf, sauce aux champignons, écrasé de pomme de terre",
+                "description": "Tender beef fillet topped with a rich mushroom sauce, served with homemade mashed potatoes."
             },
             "magretCanard": {
                 "name": "Magret de canard, sauce vin rouge, purée de patate douce",
-                "description": "Magret de canard rosé, sauce corsée au vin rouge et une purée onctueuse de patate douce."
+                "description": "Pink-cooked duck breast, a full-bodied red wine sauce, and a creamy sweet potato purée."
             },
             "carreAgneauRoti": {
                 "name": "Carré d'agneau rôti aux herbes africaines",
@@ -118,7 +122,7 @@
             },
             "demiPintadeRoti": {
                 "name": "Demi-pintade rôtie, sauce gingembre-miel",
-                "description": "Tendre et flavorful meat with a sweet and spicy sauce."
+                "description": "Tender and flavorful meat with a sweet and spicy sauce."
             },
             "gambasGrillees": {
                 "name": "Gambas grillées, sauce bissap-citronnelle",
@@ -276,7 +280,27 @@
             "chivas": { "name": "Chivas 12 Ans", "description": "" },
             "baileys": { "name": "Baileys", "description": "" },
             "hennessyVS": { "name": "Hennessy VS", "description": "" },
-            "hennessyXO": { "name": "Hennessy X.O", "description": "" }
+            "hennessyXO": { "name": "Hennessy X.O", "description": "" },
+            "wineByGlassWhite": { "name": "Vin Blanc (Le Petit Gascoun, Irrésistible)", "description": "" },
+            "wineByGlassRed": { "name": "Vin Rouge (Château des Cèdres)", "description": "" },
+            "wineByGlassRose": { "name": "Vin Rosé (Plaisir)", "description": "" },
+            "chateauRocDeSegur": { "name": "Château Roc de Segur", "description": "" },
+            "laCroixBonis": { "name": "La Croix Bonis Saint Estèphe", "description": "" },
+            "chateauDesArnaud": { "name": "Château des Arnaud (Pommerol)", "description": "" },
+            "coteDuRhoneRocca": { "name": "Cote du Rhône Rocca Village", "description": "" },
+            "nicolasDeBourgueil": { "name": "Nicolas de Bourgueil", "description": "" },
+            "sancerreRed": { "name": "Sancerre", "description": "" },
+            "domaineALaBaume": { "name": "Domaine à la Baume", "description": "" },
+            "chanvermeil": { "name": "Chanvermeil", "description": "" },
+            "belleVille": { "name": "Belle Ville", "description": "" },
+            "chevalierDore": { "name": "Chevalier Doré", "description": "" },
+            "sancerreWhite": { "name": "Sancerre", "description": "" },
+            "pouillyFume": { "name": "Pouilly Fumé", "description": "" },
+            "sauvignonBlanc": { "name": "Sauvignon Blanc", "description": "" },
+            "chablis": { "name": "Chablis", "description": "" },
+            "irresistibleWhite": { "name": "Irrésistible", "description": "" },
+            "refugeMoelleux": { "name": "Refuge Moelleux", "description": "" },
+            "refugeSec": { "name": "Refuge Sec", "description": "" }
         }
     },
     "formulas": {

@@ -61,9 +61,9 @@ export default async function MenuPage(props: MenuPageProps) {
     const dict = await getDictionary(lang);
     const menuData = getMenuData(dict.menuPage);
 
-    // Group drink categories
-    const mainCategories = menuData.filter(cat => !['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
-    const drinkCategories = menuData.filter(cat => ['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'].includes(cat.id));
+    const drinkCategoryIds = ['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'winesByGlass', 'redWines', 'whiteWines', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'];
+    const mainCategories = menuData.filter(cat => !drinkCategoryIds.includes(cat.id));
+    const drinkCategories = menuData.filter(cat => drinkCategoryIds.includes(cat.id));
     
     const drinksCategory: MenuCategory = {
         id: 'drinks',
@@ -71,8 +71,7 @@ export default async function MenuPage(props: MenuPageProps) {
         items: drinkCategories.flatMap(cat => cat.items.map(item => ({...item, groupTitle: cat.title})))
     };
 
-    // Custom sort order for drinks
-    const drinkCategoryOrder = ['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'];
+    const drinkCategoryOrder = ['signatures', 'aperitifs', 'whiskyLiqueur', 'cognac', 'winesByGlass', 'redWines', 'whiteWines', 'waters', 'beers', 'naturalJuices', 'localJuices', 'detox', 'mocktails', 'coffeeAndTea', 'sodas'];
     const sortedDrinkCategories = drinkCategories.sort((a, b) => drinkCategoryOrder.indexOf(a.id) - drinkCategoryOrder.indexOf(b.id));
 
 
