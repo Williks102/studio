@@ -8,11 +8,11 @@ import { format } from 'date-fns';
 import { fr, enUS } from 'date-fns/locale';
 import { useParams } from 'next/navigation';
 
-const updateTypeConfig = (dict: any) => ({
-  info: { label: dict.info, icon: Info, color: 'bg-blue-500' },
-  promotion: { label: dict.promotion, icon: Gift, color: 'bg-green-500' },
-  event: { label: dict.event, icon: Calendar, color: 'bg-purple-500' },
-  menu: { label: dict.menu, icon: Tag, color: 'bg-yellow-500' },
+const updateTypeConfig = (typesDict: any) => ({
+  info: { label: typesDict.info, icon: Info, color: 'bg-blue-500' },
+  promotion: { label: typesDict.promotion, icon: Gift, color: 'bg-green-500' },
+  event: { label: typesDict.event, icon: Calendar, color: 'bg-purple-500' },
+  menu: { label: typesDict.menu, icon: Tag, color: 'bg-yellow-500' },
 });
 
 export function Updates({ dict }: { dict: any }) {

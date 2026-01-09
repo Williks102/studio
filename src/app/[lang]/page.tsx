@@ -31,7 +31,7 @@ export default async function Home(props: HomePageProps) {
         <Showcase dict={dict.showcase} />
         <About dict={{...dict.about, ...dict.footer}} />
         <Formulas dict={dict.formulas} />
-        <Updates dict={dict.updates} />
+        <Updates dict={{...dict.updates, types: dict.updates.types}} />
         <AfricanVibes dict={dict.africanVibes} />
         <Gallery dict={dict.gallery} />
         <Quote dict={dict.quote} />
