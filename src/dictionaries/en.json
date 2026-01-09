@@ -12,13 +12,13 @@
         "menuPage": "Menu"
     },
     "hero": {
-        "title": "Le Lof",
+        "title": "Le LOF",
         "subtitle": "African vibes",
         "whatsapp": "Contact us on WhatsApp"
     },
     "showcase": {
         "title": "Our Experiences",
-        "description": "Discover the different facets of Le Lof, from our refined cuisine to our vibrant evenings.",
+        "description": "Discover the different facets of Le LOF, from our refined cuisine to our vibrant evenings.",
         "items": {
             "gastronomy": {
                 "badge": "Gastronomy",
@@ -28,7 +28,7 @@
             },
             "ambiance": {
                 "badge": "Ambiance",
-                "title": "The Lof Ambiance",
+                "title": "The LOF Ambiance",
                 "description": "A luminous and vegetal oasis in the heart of the city, the signature of the place for your evenings.",
                 "linkText": "See the photos"
             },
@@ -48,7 +48,7 @@
     },
     "about": {
         "title": "About us",
-        "description": "Born from a passion for African flavors and the desire to elevate them, Le Lof is a place where tradition meets modernity. Here, every plate tells a story, that of a continent rich in colors, spices, and emotions. Our team of enthusiasts promises you an unforgettable culinary journey, between authenticity and creativity.",
+        "description": "Born from a passion for African flavors and the desire to elevate them, Le LOF is a place where tradition meets modernity. Here, every plate tells a story, that of a continent rich in colors, spices, and emotions. Our team of enthusiasts promises you an unforgettable culinary journey, between authenticity and creativity.",
         "openingHoursTitle": "Our opening hours"
     },
     "menuPage": {
@@ -58,7 +58,7 @@
         "mainCourses": "Our Main Courses",
         "desserts": "Our Desserts",
         "drinks": "Our Drinks",
-        "burgers": "Our Lof Fusion Burgers",
+        "burgers": "Our LOF Fusion Burgers",
         "sides": "Our Side Dishes",
         "sorbets": {
             "title": "Our Homemade Sorbets"
@@ -129,15 +129,15 @@
                 "description": "Bissap-lemongrass sauce."
             },
             "lofTerroirFusion": {
-                "name": "Lof Terroir Fusion",
+                "name": "LOF Terroir Fusion",
                 "description": "Homemade brioche bun, local beef steak, melted cheese, sweet chili sauce, sweet potato fries."
             },
             "lofSupremeFusion": {
-                "name": "Lof Supreme Fusion",
+                "name": "LOF Supreme Fusion",
                 "description": "Homemade brioche bun, crispy chicken breast, vegetable achard, coconut yogurt sauce, plantain chips."
             },
             "lofGreenFusion": {
-                "name": "Lof Green Fusion",
+                "name": "LOF Green Fusion",
                 "description": "Homemade turmeric brioche bun, veggie patty (red bean sweet potato), avocado, sweet bissap mustard sauce."
             },
             "fonioPilaf": {
@@ -158,31 +158,31 @@
             },
             "fritesPatateDouce": {
                 "name": "Sweet potato fries",
-                "description": "Homemade sweet potato fries, slightly sweet and crispy."
+                "description": ""
             },
             "fritesIgname": {
                 "name": "Yam fries",
-                "description": "Original yam fries, a tasty alternative."
+                "description": ""
             },
             "rizCoco": {
                 "name": "Coconut rice",
-                "description": "Fragrant rice cooked with coconut milk."
+                "description": ""
             },
             "pureeTaro": {
                 "name": "Taro purée",
-                "description": "Creamy purée of taro, a tuber with a delicate taste."
+                "description": ""
             },
             "legumesGrilles": {
                 "name": "Grilled seasonal vegetables",
-                "description": "Assortment of fresh seasonal vegetables, simply grilled."
+                "description": ""
             },
             "attieke": {
                 "name": "Attiéké",
-                "description": "Traditional cassava semolina, a must-have Ivorian side dish."
+                "description": ""
             },
             "alloco": {
                 "name": "Alloco",
-                "description": "Fried ripe plantain pieces, a sweet and savory classic."
+                "description": ""
             },
             "parisBrest": {
                 "name": "Revisited Paris-Brest",
@@ -246,13 +246,13 @@
             "bissapJuice": { "name": "Bissap", "description": "" },
             "gingerJuice": { "name": "Ginger", "description": "" },
             "tamarindJuice": { "name": "Tamarind", "description": "" },
-            "lofCucumber": { "name": "Lof Cucumber", "description": "" },
-            "akwabaLof": { "name": "Akwaba Lof", "description": "Bissap, ginger, homemade spice, mint leaves" },
+            "lofCucumber": { "name": "LOF Cucumber", "description": "" },
+            "akwabaLof": { "name": "Akwaba LOF", "description": "Bissap, ginger, homemade spice, mint leaves" },
             "virginMojito": { "name": "Virgin Mojito", "description": "Mint leaves, lemon, sugar, sparkling water" },
             "boraBora": { "name": "Bora Bora", "description": "Passion fruit juice, pineapple juice, lemon, grenadine syrup" },
             "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Lemon juice, tomato juice, sugar" },
             "punchDuLof": {
-                "name": "Punch du Lof",
+                "name": "Punch du LOF",
                 "description": "Coconut juice, pineapple juice, clove, white rum, Malibu, vodka"
             },
             "sexyBaby": {
@@ -329,7 +329,7 @@
         "description": "Stay informed of our latest news, events, and special offers.",
         "types": {
             "info": "Info",
-            "promotion": "Promo",
+            "promotion": "Promotion",
             "event": "Event",
             "menu": "Menu"
         }
@@ -351,7 +351,7 @@
     },
     "gallery": {
         "title": "Our Gallery",
-        "description": "A glimpse of the Lof experience: our setting, our atmosphere, our dishes."
+        "description": "A glimpse of the LOF experience: our setting, our atmosphere, our dishes."
     },
     "quote": {
         "title": "Make a reservation",
@@ -401,6 +401,6 @@
         "hoursTitle": "HOURS",
         "weekHours": "Tuesday - Saturday: 12 PM - 11 PM",
         "sundayHours": "Sunday: 11 AM - 4 PM",
-        "copyright": "Restaurant Lelof. All rights reserved."
+        "copyright": "Restaurant Le LOF. All rights reserved."
     }
 }

@@ -12,7 +12,7 @@ export function Footer({ dict }: { dict: any }) {
             <Link href="/">
               <Image 
                   src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
-                  alt="Le Lof Logo" 
+                  alt="Le LOF Logo" 
                   width={120} 
                   height={60}
                   className="h-14 w-auto object-contain"

@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: 'Restaurant LeLof',
+  title: 'Restaurant Le LOF',
   description: 'African vibe',
 };
 

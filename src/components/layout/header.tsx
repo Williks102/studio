@@ -83,7 +83,7 @@ export function Header({ dict }: { dict: any }) {
         <Link href="/" className="flex-shrink-0">
             <Image 
                 src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
-                alt="Le Lof Logo" 
+                alt="Le LOF Logo" 
                 width={100} 
                 height={50}
                 className="h-12 w-auto object-contain"
@@ -128,7 +128,7 @@ export function Header({ dict }: { dict: any }) {
                     <Link href="/" className="mb-8" onClick={() => setIsMobileMenuOpen(false)}>
                         <Image 
                             src="https://res.cloudinary.com/db4hmbdv3/image/upload/v1761669062/image_ae6017a6-4978-4511-9ea7-7accf2bf4834_dfksuz.png" 
-                            alt="Le Lof Logo" 
+                            alt="Le LOF Logo" 
                             width={120} 
                             height={60}
                             className="h-14 w-auto object-contain"

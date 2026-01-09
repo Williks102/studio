@@ -12,13 +12,13 @@
         "menuPage": "La Carte"
     },
     "hero": {
-        "title": "Le Lof",
+        "title": "Le LOF",
         "subtitle": "African vibes",
         "whatsapp": "Contactez-nous sur WhatsApp"
     },
     "showcase": {
         "title": "Nos Expériences",
-        "description": "Découvrez les différentes facettes du Lof, de notre cuisine raffinée à nos soirées animées.",
+        "description": "Découvrez les différentes facettes du LOF, de notre cuisine raffinée à nos soirées animées.",
         "items": {
             "gastronomy": {
                 "badge": "Gastronomie",
@@ -28,7 +28,7 @@
             },
             "ambiance": {
                 "badge": "Ambiance",
-                "title": "L'Ambiance Lof",
+                "title": "L'Ambiance LOF",
                 "description": "Une oasis lumineuse et végétale au coeur de la ville, signature du lieu pour vos soirées.",
                 "linkText": "Voir les photos"
             },
@@ -48,7 +48,7 @@
     },
     "about": {
         "title": "À propos de nous",
-        "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le Lof est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",
+        "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le LOF est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",
         "openingHoursTitle": "Nos horaires d'ouverture"
     },
     "menuPage": {
@@ -58,7 +58,7 @@
         "mainCourses": "Nos Plats",
         "desserts": "Nos Desserts",
         "drinks": "Nos Boissons",
-        "burgers": "Nos Burgers Fusion Lof",
+        "burgers": "Nos Burgers Fusion LOF",
         "sides": "Nos Accompagnements",
         "sorbets": {
             "title": "Nos Sorbets Maison"
@@ -129,15 +129,15 @@
                 "description": "Sauce bissap – citronnelle."
             },
             "lofTerroirFusion": {
-                "name": "Lof Terroir Fusion",
+                "name": "LOF Terroir Fusion",
                 "description": "Pain brioché maison, steak de bœuf local, fromage fondu, sauce piment doux, frites de patate douce."
             },
             "lofSupremeFusion": {
-                "name": "Lof Suprême Fusion",
+                "name": "LOF Suprême Fusion",
                 "description": "Pain brioché maison, blanc de poulet croustillant, achard de légumes, sauce yaourt coco, chips banane plantain."
             },
             "lofGreenFusion": {
-                "name": "Lof Green Fusion",
+                "name": "LOF Green Fusion",
                 "description": "Pain brioché au curcuma maison, galette veggie (haricot rouge patate douce), avocat sauce bissap moutarde douce."
             },
             "fonioPilaf": {
@@ -246,13 +246,13 @@
             "bissapJuice": { "name": "Bissap", "description": "" },
             "gingerJuice": { "name": "Gingembre", "description": "" },
             "tamarindJuice": { "name": "Tamarin", "description": "" },
-            "lofCucumber": { "name": "Lof Comcombre", "description": "" },
-            "akwabaLof": { "name": "Akwaba Lof", "description": "Bissap, gingembre, épice maison, feuilles de menthe" },
+            "lofCucumber": { "name": "LOF Comcombre", "description": "" },
+            "akwabaLof": { "name": "Akwaba LOF", "description": "Bissap, gingembre, épice maison, feuilles de menthe" },
             "virginMojito": { "name": "Virgin Mojito", "description": "Feuilles de menthe, citron, sucre, eau gazeuse" },
             "boraBora": { "name": "Bora Bora", "description": "Jus de passion, jus d'ananas, citron, sirop de grenadine" },
             "virginBloodyMary": { "name": "Virgin Bloody Mary", "description": "Jus de citron, jus de tomate, sucre" },
             "punchDuLof": {
-                "name": "Punch du Lof",
+                "name": "Punch du LOF",
                 "description": "Jus de coco, jus d'ananas, clou de girofle, rhum blanc, Malibu, vodka"
             },
             "sexyBaby": {
@@ -329,7 +329,7 @@
         "description": "Restez informé de nos dernières nouvelles, événements et offres spéciales.",
         "types": {
             "info": "Info",
-            "promotion": "Promo",
+            "promotion": "Promotion",
             "event": "Événement",
             "menu": "Menu"
         }
@@ -351,7 +351,7 @@
     },
     "gallery": {
         "title": "Notre Galerie",
-        "description": "Un aperçu de l'expérience Lof : notre cadre, notre ambiance, nos plats."
+        "description": "Un aperçu de l'expérience LOF : notre cadre, notre ambiance, nos plats."
     },
     "quote": {
         "title": "Faire une reservation",
@@ -401,6 +401,6 @@
         "hoursTitle": "HORAIRES",
         "weekHours": "Mardi - Samedi : 12H - 23H",
         "sundayHours": "Dimanche : 11H - 16H",
-        "copyright": "Restaurant Lelof. Tous droits réservés."
+        "copyright": "Restaurant Le LOF. Tous droits réservés."
     }
 }
