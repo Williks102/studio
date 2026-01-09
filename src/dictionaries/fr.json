@@ -12,13 +12,13 @@
         "menuPage": "La Carte"
     },
     "hero": {
-        "title": "Le Lof",
+        "title": "Le LOF",
         "subtitle": "African vibes",
         "whatsapp": "Contactez-nous sur WhatsApp"
     },
     "showcase": {
         "title": "Nos Expériences",
-        "description": "Découvrez les différentes facettes du Lof, de notre cuisine raffinée à nos soirées animées.",
+        "description": "Découvrez les différentes facettes du LOF, de notre cuisine raffinée à nos soirées animées.",
         "items": {
             "gastronomy": {
                 "badge": "Gastronomie",
@@ -28,7 +28,7 @@
             },
             "ambiance": {
                 "badge": "Ambiance",
-                "title": "L'Ambiance Lof",
+                "title": "L'Ambiance LOF",
                 "description": "Une oasis lumineuse et végétale au coeur de la ville, signature du lieu pour vos soirées.",
                 "linkText": "Voir les photos"
             },
@@ -48,7 +48,7 @@
     },
     "about": {
         "title": "À propos de nous",
-        "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le Lof est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",
+        "description": "Né de la passion pour les saveurs africaines et du désir de les sublimer, Le LOF est un lieu où la tradition rencontre la modernité. Ici, chaque assiette raconte une histoire, celle d’un continent riche en couleurs, en épices et en émotions. Notre équipe de passionnés vous promet un voyage gustatif inoubliable, entre authenticité et créativité.",
         "openingHoursTitle": "Nos horaires d'ouverture"
     },
     "menuPage": {
@@ -58,7 +58,7 @@
         "mainCourses": "Nos Plats",
         "desserts": "Nos Desserts",
         "drinks": "Nos Boissons",
-        "burgers": "Nos Burgers Fusion Lof",
+        "burgers": "Nos Burgers Fusion LOF",
         "sides": "Nos Accompagnements",
         "sorbets": {
             "title": "Nos Sorbets Maison"
@@ -401,6 +401,6 @@
         "hoursTitle": "HORAIRES",
         "weekHours": "Mardi - Samedi : 12H - 23H",
         "sundayHours": "Dimanche : 11H - 16H",
-        "copyright": "Restaurant Lelof. Tous droits réservés."
+        "copyright": "Restaurant Le LOF. Tous droits réservés."
     }
 }
