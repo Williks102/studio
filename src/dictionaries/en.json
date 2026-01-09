@@ -66,22 +66,24 @@
         "africanFlavors": {
             "title": "Taste of Africa (by reservation)"
         },
+        "coffeeAndTea": "Coffee & Tea",
+        "sodas": "Sodas",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
-                "name": "Mini chicken yassa skewers with light green sauce",
+                "name": "Mini chicken yassa skewers",
                 "description": "Tender chicken marinated in Yassa sauce, served with a refreshing green sauce."
             },
             "croquettesTubercules": {
-                "name": "Tuber croquettes with herbs and cream sauce, crispy salad",
+                "name": "Tuber croquettes with herbs",
                 "description": "Mix of local tubers in crispy croquettes, with a creamy herb sauce."
             },
             "veloutePatatesDouces": {
-                "name": "Sweet potato and coconut velouté with its crispy topping",
+                "name": "Sweet potato and coconut velouté",
                 "description": "Creamy sweet potato and coconut milk soup, garnished with a crispy topping."
             },
             "saladeFraicheur": {
-                "name": "Freshness salad (arugula, watermelon, cheese, mango vinaigrette)",
+                "name": "Freshness salad",
                 "description": "A mix of arugula, watermelon, cheese, and a mango vinaigrette."
             },
             "carpaccioAnanas": {
@@ -89,7 +91,7 @@
                 "description": "Thin slices of fresh pineapple, exotic passion fruit vinaigrette, and lightly seared shrimp."
             },
             "filetBoeuf": {
-                "name": "Beef fillet, mushroom sauce, mashed potatoes",
+                "name": "Beef fillet, mushroom sauce",
                 "description": "Tender beef fillet topped with a rich mushroom sauce, served with homemade mashed potatoes."
             },
             "magretCanard": {
@@ -97,15 +99,15 @@
                 "description": "Pink-cooked duck breast, a full-bodied red wine sauce, and a creamy sweet potato purée."
             },
             "carreAgneauRoti": {
-                "name": "Roasted rack of lamb with African herbs, rich jus",
+                "name": "Roasted rack of lamb with African herbs",
                 "description": "A noble piece of meat enhanced by a full-bodied juice."
             },
             "paveCapitaineRoti": {
-                "name": "Roasted captain fish steak, lemon butter sauce",
+                "name": "Roasted captain fish steak",
                 "description": "A fine and delicate fish, simply cooked to reveal its flavors."
             },
             "demiPintadeRoti": {
-                "name": "Roasted half guinea fowl, ginger-honey sauce, with side",
+                "name": "Roasted half guinea fowl, ginger-honey sauce",
                 "description": "Tender and flavorful guinea fowl with a sweet and spicy sauce."
             },
             "gambasGrillees": {
@@ -201,14 +203,20 @@
             "sauceGombo": { "name": "Okra sauce with meat / fish", "description": "Slimy sauce made from okra, with meat or fish." },
             "sauceArachide": { "name": "Peanut sauce with meat", "description": "The famous mafé sauce, creamy and tasty." },
             "tchep": { "name": "Tchep with fish / meat", "description": "The Senegalese national dish, rice cooked in a rich broth." },
-            "bissapJuice": {
-                "name": "Bissap juice",
-                "description": "Refreshing drink made from hibiscus flowers."
-            },
-            "gingerJuice": {
-                "name": "Gnamakoudji",
-                "description": "Energizing juice with a strong ginger taste, slightly sweetened."
-            }
+            "minexpresso": { "name": "Minexpresso", "description": "" },
+            "americano": { "name": "Americano", "description": "" },
+            "latte": { "name": "Latte", "description": "" },
+            "cappuccino": { "name": "Cappuccino", "description": "" },
+            "tea": { "name": "Tea", "description": "" },
+            "greenBlackTea": { "name": "Green / Black", "description": "" },
+            "iceTea": { "name": "Ice Tea", "description": "" },
+            "camomille": { "name": "Camomille", "description": "" },
+            "homemadeInfusion": { "name": "Homemade Infusion", "description": "" },
+            "softDrink": { "name": "Soft Drink", "description": "" },
+            "coca": { "name": "Coca", "description": "" },
+            "sprite": { "name": "Sprite", "description": "" },
+            "fanta": { "name": "Fanta", "description": "" },
+            "schweppes": { "name": "Schweppes", "description": "" }
         }
     },
     "formulas": {

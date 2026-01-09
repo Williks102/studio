@@ -66,22 +66,24 @@
         "africanFlavors": {
             "title": "Saveur Africa (sur réservation)"
         },
+        "coffeeAndTea": "Café & Thé",
+        "sodas": "Sodas",
         "currency": "FCFA",
         "dishes": {
             "miniBrochettes": {
-                "name": "Mini brochettes de poulet yassa sauce verte légère",
+                "name": "Mini brochettes de poulet yassa",
                 "description": "Poulet tendre mariné à la sauce Yassa, servi avec une sauce verte rafraîchissante."
             },
             "croquettesTubercules": {
-                "name": "Croquettes de tubercules aux herbes sauce crème, salade croquante",
+                "name": "Croquettes de tubercules aux herbes",
                 "description": "Mélange de tubercules locaux en croquettes croustillantes, avec une sauce crémeuse aux herbes."
             },
             "veloutePatatesDouces": {
-                "name": "Velouté de patates douces coco et son croustillant",
+                "name": "Velouté de patates douces coco",
                 "description": "Soupe onctueuse de patate douce et lait de coco, garnie d'un topping croustillant."
             },
             "saladeFraicheur": {
-                "name": "Salade fraîcheur (roquette pastèque, fromage vinaigrette mangue)",
+                "name": "Salade fraîcheur",
                 "description": "Un mix de roquette, pastèque, fromage, et une vinaigrette à la mangue."
             },
             "carpaccioAnanas": {
@@ -89,7 +91,7 @@
                 "description": "Fines tranches d'ananas frais, vinaigrette exotique à la passion et crevettes justes saisies."
             },
             "filetBoeuf": {
-                "name": "Filet de boeuf, sauce aux champignons, écrasé de pomme de terre",
+                "name": "Filet de boeuf, sauce aux champignons",
                 "description": "Tendre filet de boeuf nappé d'une sauce riche aux champignons, accompagné d'un écrasé de pomme de terre maison."
             },
             "magretCanard": {
@@ -97,15 +99,15 @@
                 "description": "Magret de canard rosé, sauce corsée au vin rouge et une purée onctueuse de patate douce."
             },
             "carreAgneauRoti": {
-                "name": "Carré d'agneau rôti aux herbes africaines, jus corsé",
+                "name": "Carré d'agneau rôti aux herbes africaines",
                 "description": "Une pièce de viande noble sublimée par un jus de caractère."
             },
             "paveCapitaineRoti": {
-                "name": "Pavé de capitaine rôti, sauce beurre citronné",
+                "name": "Pavé de capitaine rôti",
                 "description": "Un poisson fin et délicat, cuit simplement pour en révéler les saveurs."
             },
             "demiPintadeRoti": {
-                "name": "Demi-pintade rôti, sauce gingembre-miel, accompagné",
+                "name": "Demi-pintade rôtie, sauce gingembre-miel",
                 "description": "Tendre et flavorful meat with a sweet and spicy sauce."
             },
             "gambasGrillees": {
@@ -201,14 +203,20 @@
             "sauceGombo": { "name": "Sauce gombo à la viande / poisson", "description": "Sauce gluante à base de gombo, avec viande ou poisson." },
             "sauceArachide": { "name": "Sauce arachide à la viande", "description": "La célèbre sauce mafé, onctueuse et savoureuse." },
             "tchep": { "name": "Tchep au poisson / viande", "description": "Le plat national sénégalais, riz cuit dans un bouillon riche." },
-            "bissapJuice": {
-                "name": "Jus de bissap",
-                "description": "Boisson rafraîchissante à base de fleurs d'hibiscus."
-            },
-            "gingerJuice": {
-                "name": "Gnamakoudji",
-                "description": "Jus énergisant au goût puissant de gingembre, légèrement sucré."
-            }
+            "minexpresso": { "name": "Minexpresso", "description": "" },
+            "americano": { "name": "Americano", "description": "" },
+            "latte": { "name": "Latte", "description": "" },
+            "cappuccino": { "name": "Cappuccino", "description": "" },
+            "tea": { "name": "Thé", "description": "" },
+            "greenBlackTea": { "name": "Vert / Noir", "description": "" },
+            "iceTea": { "name": "Ice Tea", "description": "" },
+            "camomille": { "name": "Camomille", "description": "" },
+            "homemadeInfusion": { "name": "Infusion Maison", "description": "" },
+            "softDrink": { "name": "Soft Drink", "description": "" },
+            "coca": { "name": "Coca", "description": "" },
+            "sprite": { "name": "Sprite", "description": "" },
+            "fanta": { "name": "Fanta", "description": "" },
+            "schweppes": { "name": "Schweppes", "description": "" }
         }
     },
     "formulas": {
