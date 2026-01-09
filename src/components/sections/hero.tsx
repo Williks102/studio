@@ -59,14 +59,14 @@ export function Hero({ dict }: { dict: any }) {
                 <HeroImage image={image} priority={index === 0} />
                 
                 {/* Overlay gradient pour le contraste du texte */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-black/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
                 
                 {/* Texte centré par-dessus l'image */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 z-10">
-                  <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_20px_rgb(0_0_0_/_80%),_0_0_40px_rgb(0_0_0_/_60%)]">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 z-10">
+                  <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-primary drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
                     {dict.title}
                   </h1>
-                  <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] [text-shadow:_0_2px_15px_rgb(0_0_0_/_80%),_0_0_30px_rgb(0_0_0_/_60%)]">
+                  <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
                     {dict.subtitle}
                   </p>
                 </div>
