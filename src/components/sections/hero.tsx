@@ -55,7 +55,7 @@ export function Hero({ dict }: { dict: any }) {
           {heroImages.map((image, index) => (
             <CarouselItem key={image.id}>
               {/* Container relatif pour positionner l'overlay et le texte */}
-              <div className="w-full relative h-[75vh] md:h-auto">
+              <div className="w-full relative h-[75vh] md:h-[80vh] max-h-[900px]">
                 <HeroImage image={image} priority={index === 0} />
                 
                 {/* Overlay gradient pour le contraste du texte */}
