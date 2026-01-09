@@ -30,7 +30,7 @@ export interface Update {
         title: 'Promotion Afterwork',
         content: 'Du mardi au jeudi, de 18h à 20h, profitez de -20% sur tous nos cocktails.',
         type: 'promotion',
-        isActive: true
+        isActive: false
     },
     {
         id: '4',
